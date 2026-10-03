@@ -88,7 +88,9 @@ resolve_src() {
   else die "curl or wget is required to download the pack"; fi
   local d
   for d in "$TMPD"/*/; do SRC="${d%/}"; break; done
-  [ -n "$SRC" ] && [ -f "$SRC/skills/god-of-design/SKILL.md" ] || die "the download did not contain the skill pack"
+  if [ -z "$SRC" ] || [ ! -f "$SRC/skills/god-of-design/SKILL.md" ]; then
+    die "the download did not contain the skill pack"
+  fi
 }
 
 # ---------- helpers ----------
