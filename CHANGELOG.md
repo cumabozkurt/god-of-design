@@ -2,6 +2,14 @@
 
 All notable changes are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.2] - 2026-10-03
+
+Maintenance release. No changes to skills, styles, installers or the CLI since 1.1.1.
+
+### Changed
+
+- Version metadata bumped to 1.1.2 in `package.json`, the Claude Code / Codex plugin manifests, the marketplace entry, `gemini-extension.json`, `catalog.json`, every `SKILL.md`, the generated `dist/` bundles, the generic adapter and the README version badge / pin examples (EN + TR).
+
 ## [1.1.1] - 2026-10-03
 
 Follow-up to 1.1.0: CI and rendering-check fixes, verified `npx` guidance. No changes to skill content rules.
@@ -60,6 +68,7 @@ QA release: rendering on GitHub, installer robustness and new quality gates.
 - CI on Linux, macOS and Windows: build check, validator and installer round-trip tests.
 - Research: benchmark of 52 related open-source repos (EN + TR).
 
+[1.1.2]: https://github.com/cumabozkurt/god-of-design/releases/tag/v1.1.2
 [1.1.1]: https://github.com/cumabozkurt/god-of-design/releases/tag/v1.1.1
 [1.1.0]: https://github.com/cumabozkurt/god-of-design/tree/v1.1.0
 [1.0.0]: https://github.com/cumabozkurt/god-of-design/commit/312652c

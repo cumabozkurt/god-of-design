@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/cumabozkurt/god-of-design/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/cumabozkurt/god-of-design/ci.yml?branch=main&style=flat-square&label=CI&logo=githubactions&logoColor=white"></a>
-  <img alt="Sürüm 1.1.1" src="https://img.shields.io/badge/s%C3%BCr%C3%BCm-1.1.1-141414?style=flat-square">
+  <img alt="Sürüm 1.1.2" src="https://img.shields.io/badge/s%C3%BCr%C3%BCm-1.1.2-141414?style=flat-square">
   <img alt="Beceri: 19" src="https://img.shields.io/badge/beceri-19-C8102E?style=flat-square">
   <img alt="Stil: 109" src="https://img.shields.io/badge/stil-109-1F4E9C?style=flat-square">
   <img alt="Araç: 9+" src="https://img.shields.io/badge/ara%C3%A7-9%2B-F2B705?style=flat-square">
@@ -206,7 +206,7 @@ curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/inst
 
 # Bir sürüm etiketini sabitleyin (ya da herhangi bir dal / commit)
 curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
-  | GOD_OF_DESIGN_REF=v1.1.1 bash
+  | GOD_OF_DESIGN_REF=v1.1.2 bash
 ```
 
 ```powershell
@@ -593,7 +593,7 @@ npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main
 
 Ya da Node gerektirmeyen `curl | bash` / PowerShell tek satırlıklarını kullanın.
 
-`npx` ile bir sürüm sabitlemek için etiket, dal ya da kısa bir commit karması kullanın (`github:cumabozkurt/god-of-design#v1.1.1`). npm 10, 40 karakterlik tam karmada "GitFetcher requires an Arborist constructor" hatasıyla durur.
+`npx` ile bir sürüm sabitlemek için etiket, dal ya da kısa bir commit karması kullanın (`github:cumabozkurt/god-of-design#v1.1.2`). npm 10, 40 karakterlik tam karmada "GitFetcher requires an Arborist constructor" hatasıyla durur.
 </details>
 
 <details>

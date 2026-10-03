@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/cumabozkurt/god-of-design/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/cumabozkurt/god-of-design/ci.yml?branch=main&style=flat-square&label=CI&logo=githubactions&logoColor=white"></a>
-  <img alt="Version 1.1.1" src="https://img.shields.io/badge/version-1.1.1-141414?style=flat-square">
+  <img alt="Version 1.1.2" src="https://img.shields.io/badge/version-1.1.2-141414?style=flat-square">
   <img alt="Skills: 19" src="https://img.shields.io/badge/skills-19-C8102E?style=flat-square">
   <img alt="Styles: 109" src="https://img.shields.io/badge/styles-109-1F4E9C?style=flat-square">
   <img alt="Tools: 9+" src="https://img.shields.io/badge/tools-9%2B-F2B705?style=flat-square">
@@ -206,7 +206,7 @@ curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/inst
 
 # Pin a release tag (or any branch / commit)
 curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
-  | GOD_OF_DESIGN_REF=v1.1.1 bash
+  | GOD_OF_DESIGN_REF=v1.1.2 bash
 ```
 
 ```powershell
@@ -591,7 +591,7 @@ npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main
 
 Or use the `curl | bash` / PowerShell one-liners, which don't need Node.
 
-To pin a version with `npx`, use a tag, a branch or a short commit hash (`github:cumabozkurt/god-of-design#v1.1.1`). npm 10 stops on a full 40-character hash with "GitFetcher requires an Arborist constructor".
+To pin a version with `npx`, use a tag, a branch or a short commit hash (`github:cumabozkurt/god-of-design#v1.1.2`). npm 10 stops on a full 40-character hash with "GitFetcher requires an Arborist constructor".
 </details>
 
 <details>

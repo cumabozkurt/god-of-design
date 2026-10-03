@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.1.1"
+  version: "1.1.2"
 ---
 
 # God Data Viz
