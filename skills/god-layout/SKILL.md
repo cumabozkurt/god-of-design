@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Layout
@@ -46,7 +46,8 @@ metadata:
 .grid { display:grid; gap: clamp(1rem, 2vw, 2rem);
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
 /* Classic 12-col */
-.page { display:grid; grid-template-columns: repeat(12, 1fr); gap: 24px; max-width: 1200px; margin-inline:auto; padding-inline: clamp(16px, 4vw, 48px); }
+.page { display:grid; grid-template-columns: repeat(12, 1fr); gap: 24px;
+        max-width: 1200px; margin-inline:auto; padding-inline: clamp(16px, 4vw, 48px); }
 /* Full-bleed inside a constrained column */
 .content { display:grid; grid-template-columns: 1fr min(65ch, 100% - 2rem) 1fr; }
 .content > * { grid-column: 2; } .content > .bleed { grid-column: 1 / -1; }

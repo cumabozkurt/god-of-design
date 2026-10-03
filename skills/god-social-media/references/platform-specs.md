@@ -3,6 +3,7 @@
 Platforms change specs often. These are the widely used, platform-documented sizes as of late 2026. **Verify in each platform's help centre before a paid campaign.** All values are pixels unless noted.
 
 ## Instagram
+
 | Format | Size | Ratio | Notes |
 |---|---|---|---|
 | Feed portrait (recommended) | 1080×1350 | 4:5 | Most screen space in feed. Instagram's profile grid now shows posts as 3:4 crops, so keep key content centred. |
@@ -15,6 +16,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Profile photo | 320×320 (upload ≥ 1080) | 1:1, circle crop | |
 
 ## TikTok
+
 | Format | Size | Notes |
 |---|---|---|
 | Video | 1080×1920, 9:16 | Safe zone: avoid the right ~120px (actions), bottom ~400px (caption) and top ~150px |
@@ -22,6 +24,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Profile photo | 200×200 minimum | Circle |
 
 ## YouTube
+
 | Format | Size | Notes |
 |---|---|---|
 | Thumbnail | 1280×720, 16:9 | ≤ 2MB; JPG/PNG/GIF/WEBP |
@@ -32,6 +35,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Watermark | 150×150 | |
 
 ## Facebook
+
 | Format | Size | Notes |
 |---|---|---|
 | Feed image | 1080×1350 (4:5) or 1080×1080 | |
@@ -42,6 +46,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Profile | 320×320+ | Circle |
 
 ## LinkedIn
+
 | Format | Size | Notes |
 |---|---|---|
 | Feed image | 1200×627 (1.91:1), 1080×1080, 1080×1350 | Portrait performs well on mobile |
@@ -52,6 +57,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Video | 1920×1080, 1080×1080, 1080×1920 | |
 
 ## X (Twitter)
+
 | Format | Size | Notes |
 |---|---|---|
 | In-stream image | 1600×900 (16:9) or 1080×1350 / 1080×1080 | Up to 4 images |
@@ -60,6 +66,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Link card | 1200×628 | |
 
 ## Pinterest
+
 | Format | Size | Notes |
 |---|---|---|
 | Standard pin | 1000×1500, 2:3 | Taller than 2:3 may be cropped in feed |
@@ -68,6 +75,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Profile cover | 1920×1080 | |
 
 ## Threads / Bluesky / Mastodon
+
 | Platform | Image | Notes |
 |---|---|---|
 | Threads | 1080×1350 (4:5) or 1080×1080; carousel up to 20 | Shares Instagram's identity |
@@ -75,6 +83,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Mastodon | 1280×720 or similar; header 1500×500 | Alt text culture is strong |
 
 ## Messaging & others
+
 | Platform | Format | Size |
 |---|---|---|
 | WhatsApp | Status | 1080×1920 |
@@ -89,6 +98,7 @@ Platforms change specs often. These are the widely used, platform-documented siz
 | Email header | Banner | 600–700 wide (×2 for retina: 1200–1400) |
 
 ## Ads (Meta, TikTok, Google)
+
 - Meta: 1080×1080 (1:1), 1080×1350 (4:5), 1080×1920 (9:16). Keep text concise (the old 20% rule is gone, but less text still performs better).
 - Google Display responsive: landscape 1200×628, square 1200×1200, logo 1200×1200 and 1200×300.
 - Google classic display: 300×250, 336×280, 728×90, 300×600, 320×50, 970×250.

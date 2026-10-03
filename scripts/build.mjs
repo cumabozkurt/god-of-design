@@ -106,11 +106,12 @@ for (const s of skills) {
 }
 // In the single-file bundle, relative links cannot resolve: turn them into plain text.
 full = full.replace(/\[([^\]]+)\]\((?!https?:|#|mailto:)([^)\s]+)\)/g, "$1");
-emit("dist/GOD-OF-DESIGN.md", full);
+emit("dist/GOD-OF-DESIGN.md", full.replace(/\n/, "\n<!-- god-of-design:managed -->\n"));
 
 const pick = (dir) => strip(skills.find((s) => s.dir === dir).body).trim();
-let lite = `# GOD OF DESIGN: lite system prompt (v${VERSION})\n\n> Compact edition for custom instructions / system prompts. Full edition: dist/GOD-OF-DESIGN.md · ${REPO}\n\n${core}\n\n---\n\n## Anti-slop gate\n\n${pick("god-anti-slop").split("## The slop gate")[1] ? "## The slop gate" + pick("god-anti-slop").split("## The slop gate")[1] : ""}\n\n---\n\n## Style IDs (${styles.length})\n\n`;
+let lite = `# GOD OF DESIGN: lite system prompt (v${VERSION})\n\n> Compact edition for custom instructions / system prompts. Full edition: dist/GOD-OF-DESIGN.md · <${REPO}>\n\n${core.replace(/^# .*\n+/, "")}\n\n---\n\n## Anti-slop gate\n\n${pick("god-anti-slop").split("## The slop gate")[1] ? "## The slop gate" + pick("god-anti-slop").split("## The slop gate")[1] : ""}\n\n---\n\n## Style IDs (${styles.length})\n\n`;
 for (const [file, family] of STYLE_FILES) lite += `**${family}:** ` + styles.filter((s) => s.file === file).map((s) => `${s.name} (\`${s.id}\`)`).join(", ") + "\n\n";
+lite = lite.trimEnd() + "\n";
 emit("dist/GOD-OF-DESIGN-LITE.md", lite);
 
 let llms = `# God of Design\n\n> Cross-tool design-intelligence pack for AI agents: ${skills.length} skills, ${styles.length} styles (art movements, digital UI, retro, world traditions), every design area (web/UI/UX, mobile, social media, print, branding, presentations, motion, data viz, image generation). MIT.\n\n## Docs\n- [README](${REPO}#readme)\n- [Full single-file reference](${REPO}/blob/main/dist/GOD-OF-DESIGN.md)\n- [Lite system prompt](${REPO}/blob/main/dist/GOD-OF-DESIGN-LITE.md)\n- [Style index](${REPO}/blob/main/skills/god-styles/references/00-index.md)\n\n## Skills\n`;
@@ -120,12 +121,17 @@ emit("llms.txt", llms);
 // ---------- adapters ----------
 const coreBody = core.replace(/^# .*\n+/, "");
 const H = "God of Design";
-const desc = "God of Design: design workflow, 100+ styles, anti-slop rules and routing for any visual design task (web, mobile, social, print, branding, slides, motion, data viz, image prompts).";
-emit("adapters/cursor/god-of-design.mdc", `---\ndescription: ${desc}\nglobs:\nalwaysApply: false\n---\n# ${H}\n\n${coreBody}\n`);
-emit("adapters/windsurf/god-of-design.md", `---\ntrigger: model_decision\ndescription: ${desc}\n---\n# ${H}\n\n${coreBody}\n`);
-emit("adapters/antigravity/god-of-design.md", `---\ntrigger: model_decision\ndescription: ${desc}\n---\n# ${H}\n\n${coreBody}\n`);
-emit("adapters/cline/god-of-design.md", `# ${H}\n\n${coreBody}\n`);
-emit("adapters/copilot/god-of-design.instructions.md", `---\napplyTo: "**"\ndescription: ${desc}\n---\n# ${H}\n\n${coreBody}\n`);
+// Descriptions are emitted as double-quoted YAML scalars: an unquoted ": " is invalid YAML.
+const desc = JSON.stringify(`God of Design - design workflow, ${styles.length} styles, anti-slop rules and routing for any visual design task (web, mobile, social, print, branding, slides, motion, data viz, image prompts).`);
+// Installers recognise their own files by this marker; never remove it.
+const MANAGED = "<!-- god-of-design:managed -->";
+emit("adapters/cursor/god-of-design.mdc", `---\ndescription: ${desc}\nglobs:\nalwaysApply: false\n---\n${MANAGED}\n# ${H}\n\n${coreBody}\n`);
+emit("adapters/windsurf/god-of-design.md", `---\ntrigger: model_decision\ndescription: ${desc}\n---\n${MANAGED}\n# ${H}\n\n${coreBody}\n`);
+// Windsurf's global_rules.md is plain Markdown: the block inserted there must not contain frontmatter.
+emit("adapters/windsurf/global_rules.snippet.md", `# ${H}\n\n${coreBody}\n`);
+emit("adapters/antigravity/god-of-design.md", `---\ntrigger: model_decision\ndescription: ${desc}\n---\n${MANAGED}\n# ${H}\n\n${coreBody}\n`);
+emit("adapters/cline/god-of-design.md", `${MANAGED}\n# ${H}\n\n${coreBody}\n`);
+emit("adapters/copilot/god-of-design.instructions.md", `---\napplyTo: "**"\ndescription: ${desc}\n---\n${MANAGED}\n# ${H}\n\n${coreBody}\n`);
 emit("adapters/codex/AGENTS.snippet.md", `## ${H} (design skills)\n\nFor any visual design task (web/UI, app screens, social posts, posters, logos, slides, motion, charts, image prompts), use the installed \`god-of-design\` skill first (\`$god-of-design\`). It routes to \`god-styles\`, \`god-color\`, \`god-typography\`, \`god-ui-ux\`, \`god-social-media\`, \`god-print\`, \`god-branding\`, \`god-presentations\`, \`god-anti-slop\`, \`god-review\` and others. Always: brief → one named direction → tokens → build → anti-slop and review gate. WCAG 2.2 AA, exact values, no AI slop, respectful use of cultural styles.\n`);
 emit("adapters/gemini/GEMINI.snippet.md", outputs.get("adapters/codex/AGENTS.snippet.md").replace("(`$god-of-design`)", "(activate it with `/skills` or by asking for a design task)"));
 emit("adapters/generic/SYSTEM-PROMPT.md", lite);

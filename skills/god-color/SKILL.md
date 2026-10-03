@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Color
@@ -36,11 +36,11 @@ metadata:
 ## Fast palette recipe (from one brand hex)
 
 ```text
-accent      = brand hex (check L between 0.45 and 0.65 in OKLCH for text-on-white or white-on-accent)
+accent      = brand hex (OKLCH L between 0.45 and 0.65 for text-on-white or white-on-accent)
 bg          = oklch(0.985 0.005 <brand hue>)      # tinted off-white
 surface     = oklch(0.97 0.007 <hue>)
 border      = oklch(0.90 0.01 <hue>)
-text        = oklch(0.22 0.02 <hue>)              # tinted near-black, never pure #000 on pure #fff for long reading
+text        = oklch(0.22 0.02 <hue>)              # tinted near-black; no pure #000 on #fff
 text-muted  = oklch(0.48 0.02 <hue>)              # must still hit 4.5:1 on bg
 accent-contrast = white or text, whichever passes 4.5:1 on accent
 ```

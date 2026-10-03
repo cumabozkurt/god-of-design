@@ -1,41 +1,63 @@
 #!/usr/bin/env bash
-# Standalone round-trip test for install.sh (no Node needed). Usage: bash test/install-sh.test.sh
-set -eu
+# Standalone round-trip tests for install.sh (no Node needed). Usage: bash test/install-sh.test.sh
+set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+INSTALLER="$ROOT/install.sh"
 pass=0; fail=0
-check() { if eval "$2"; then pass=$((pass+1)); echo "ok   $1"; else fail=$((fail+1)); echo "FAIL $1"; fi; }
-snap() { (cd "$1" && find . -print | LC_ALL=C sort | while IFS= read -r f; do if [ -f "$f" ]; then printf '%s %s\n' "$f" "$(cksum < "$f")"; else printf '%s/\n' "$f"; fi; done); }
+ok()   { pass=$((pass + 1)); echo "ok   $1"; }
+bad()  { fail=$((fail + 1)); echo "FAIL $1"; }
+expect() { if "${@:2}"; then ok "$1"; else bad "$1"; fi; }
+same() { if [ "$2" = "$3" ]; then ok "$1"; else bad "$1"; fi; }
+snap() { (cd "$1" && find . -print | LC_ALL=C sort | while IFS= read -r f; do
+  if [ -f "$f" ]; then printf '%s %s\n' "$f" "$(cksum < "$f")"; else printf '%s/\n' "$f"; fi; done); }
+run() { bash "$INSTALLER" "$@" >/dev/null; }
 
-T="$(mktemp -d)"; trap 'rm -rf "$T"' EXIT
-export GOD_OF_DESIGN_HOME="$T/home" XDG_CONFIG_HOME="$T/home/.config" CODEX_HOME="$T/home/.codex" NO_COLOR=1
-mkdir -p "$T/home/.codex" "$T/proj"
-printf '# My rules\n' > "$T/home/.codex/AGENTS.md"
-printf '# Project\n' > "$T/proj/AGENTS.md"
-H0="$(snap "$T/home")"; P0="$(snap "$T/proj")"
+# A sandbox whose path contains spaces, like "C:\Users\Jane Doe" or "/Users/Jane Doe".
+T="$(mktemp -d)"; trap 'chmod -R u+w "$T" 2>/dev/null || true; rm -rf "$T"' EXIT
+W="$T/with space"; mkdir -p "$W/home/.codex" "$W/proj dir"
+export GOD_OF_DESIGN_HOME="$W/home" XDG_CONFIG_HOME="$W/home/.config" CODEX_HOME="$W/home/.codex" NO_COLOR=1
+printf '# My rules\r\n\r\nUse tabs.\r\n' > "$W/home/.codex/AGENTS.md"          # CRLF
+printf '\357\273\277# Project rules' > "$W/proj dir/AGENTS.md"                   # BOM, no final newline
+H0="$(snap "$W/home")"; P0="$(snap "$W/proj dir")"
 
-bash "$ROOT/install.sh" install >/dev/null
-check "global skills for Claude Code"   '[ -f "$T/home/.claude/skills/god-of-design/SKILL.md" ]'
-check "global skills for Codex/agents"  '[ -f "$T/home/.agents/skills/god-styles/SKILL.md" ]'
-check "global skills for Antigravity"   '[ -f "$T/home/.gemini/config/skills/god-color/SKILL.md" ]'
-check "Claude commands"                 '[ -f "$T/home/.claude/commands/god-design.md" ]'
-check "OpenCode commands"               '[ -f "$T/home/.config/opencode/commands/god-design.md" ]'
-check "Codex AGENTS.md keeps user text" 'head -n 1 "$T/home/.codex/AGENTS.md" | grep -q "My rules"'
-check "Codex AGENTS.md has block"       'grep -q "god-of-design:start" "$T/home/.codex/AGENTS.md"'
-check "status reports install"          'bash "$ROOT/install.sh" status | grep -q "global: v"'
-bash "$ROOT/install.sh" install >/dev/null
-check "reinstall keeps a single block"  '[ "$(grep -c "god-of-design:start" "$T/home/.codex/AGENTS.md")" = 1 ]'
-bash "$ROOT/install.sh" uninstall >/dev/null
-check "global uninstall restores HOME"  '[ "$(snap "$T/home")" = "$H0" ]'
+run install
+expect "global skills for Claude Code"   test -f "$W/home/.claude/skills/god-of-design/SKILL.md"
+expect "global skills for Codex/agents"  test -f "$W/home/.agents/skills/god-styles/SKILL.md"
+expect "global skills for Antigravity"   test -f "$W/home/.gemini/config/skills/god-color/SKILL.md"
+expect "Claude commands"                 test -f "$W/home/.claude/commands/god-design.md"
+expect "OpenCode commands"               test -f "$W/home/.config/opencode/commands/god-design.md"
+expect "Codex block added"               grep -q "god-of-design:start" "$W/home/.codex/AGENTS.md"
+case "$(bash "$INSTALLER" status)" in *"global: v"*) ok "status reports install" ;; *) bad "status reports install" ;; esac
+run install
+same   "reinstall keeps a single block"  "$(grep -c "god-of-design:start" "$W/home/.codex/AGENTS.md")" 1
+expect "Codex block on its own CRLF lines" grep -q $'^Use tabs.\r$' "$W/home/.codex/AGENTS.md"
+expect "Codex block start on own line"    grep -q $'^<!-- god-of-design:start -->\r$' "$W/home/.codex/AGENTS.md"
+run uninstall
+same   "uninstall restores HOME byte-for-byte (CRLF file)" "$(snap "$W/home")" "$H0"
 
-(cd "$T/proj" && bash "$ROOT/install.sh" install --project --tool every >/dev/null)
-check "project cursor rule"             '[ -f "$T/proj/.cursor/rules/god-of-design.mdc" ]'
-check "project windsurf rule"           '[ -f "$T/proj/.windsurf/rules/god-of-design.md" ]'
-check "project copilot instructions"    '[ -f "$T/proj/.github/instructions/god-of-design.instructions.md" ]'
-(cd "$T/proj" && bash "$ROOT/install.sh" uninstall --project >/dev/null)
-check "project uninstall restores dir"  '[ "$(snap "$T/proj")" = "$P0" ]'
+(cd "$W/proj dir" && run install --project --tool every)
+expect "project cursor rule"             test -f "$W/proj dir/.cursor/rules/god-of-design.mdc"
+expect "project windsurf rule"           test -f "$W/proj dir/.windsurf/rules/god-of-design.md"
+expect "project block on its own line"   grep -q '^<!-- god-of-design:start -->$' "$W/proj dir/AGENTS.md"
+expect "project copilot instructions"    test -f "$W/proj dir/.github/instructions/god-of-design.instructions.md"
+(cd "$W/proj dir" && run uninstall --project)
+same   "project uninstall restores dir (BOM, no final newline)" "$(snap "$W/proj dir")" "$P0"
 
-bash "$ROOT/install.sh" install --dry-run >/dev/null
-check "dry-run writes nothing"          '[ "$(snap "$T/home")" = "$H0" ]'
+run install --project --dir "$W/proj dir" --tool cursor --dry-run
+run install --dry-run
+same   "dry-run writes nothing (home)"   "$(snap "$W/home")" "$H0"
+same   "dry-run writes nothing (project)" "$(snap "$W/proj dir")" "$P0"
+
+if bash "$INSTALLER" install --tool claude,photoshop >/dev/null 2>&1; then bad "unknown tool rejected"; else ok "unknown tool rejected"; fi
+same   "unknown tool touched nothing"     "$(snap "$W/home")" "$H0"
+
+if [ "$(id -u)" != 0 ]; then   # root ignores permissions, so this check is meaningless there
+  mkdir -p "$W/home/.agents/skills"; chmod 555 "$W/home/.agents/skills"
+  H1="$(snap "$W/home")"
+  if bash "$INSTALLER" install >/dev/null 2>&1; then bad "permission error fails the install"; else ok "permission error fails the install"; fi
+  same "failed install is rolled back"    "$(snap "$W/home")" "$H1"
+  chmod 755 "$W/home/.agents/skills"; rmdir "$W/home/.agents/skills" "$W/home/.agents"
+fi
 
 echo "install.sh: $pass passed, $fail failed"
 [ "$fail" = 0 ]

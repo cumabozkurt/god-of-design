@@ -1,6 +1,6 @@
 {
   "name": "god-of-design",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cross-tool design-intelligence pack for AI coding agents: 19 skills, 100+ world design styles, every design area. Claude Code, Codex, OpenCode, Antigravity, Cursor, Gemini CLI, Copilot, Windsurf, Cline.",
   "type": "module",
   "bin": {
@@ -24,7 +24,15 @@
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs",
     "test": "node scripts/build.mjs --check && node scripts/validate.mjs && node --test test/installers.test.mjs",
-    "test:sh": "bash test/install-sh.test.sh"
+    "test:sh": "bash test/install-sh.test.sh",
+    "test:ps1": "pwsh -NoProfile -File test/install-ps1.test.ps1",
+    "lint:md": "npx --yes markdownlint-cli2@0.23.3",
+    "check:render": "node scripts/check-render.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "images": "node scripts/outline-banner.mjs && node scripts/screenshot-example.mjs",
+    "lint:sh": "shellcheck install.sh test/install-sh.test.sh",
+    "lint:ps1": "pwsh -NoProfile -File test/analyze-ps1.ps1",
+    "check:spell": "codespell"
   },
   "engines": {
     "node": ">=18"

@@ -5,38 +5,49 @@ Assume tokens from `god-tokens` (`--color-*`, `--radius-*`, `--shadow-*`). Every
 ## Button
 
 ```html
-<button class="inline-flex items-center justify-center gap-2 h-11 px-5 rounded-[var(--radius-md)]
+<button class="inline-flex items-center justify-center gap-2 h-11 px-5
+  rounded-[var(--radius-md)]
   bg-[var(--color-accent)] text-[var(--color-accent-contrast)] font-medium
   transition-[transform,background-color] duration-150 ease-out
   hover:bg-[color-mix(in_oklch,var(--color-accent)_88%,black)]
   active:scale-[0.98]
-  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)]
+  focus-visible:outline-2 focus-visible:outline-offset-2
+  focus-visible:outline-[var(--color-focus)]
   disabled:opacity-50 disabled:pointer-events-none">
   Start free trial
 </button>
 ```
+
 Hierarchy: **primary** (filled, one per view) → **secondary** (outline or tonal) → **tertiary** (text). Destructive = danger colour plus confirmation. Loading: keep the width, swap the label for a spinner + "Saving…", and set `aria-busy="true"`.
 
 ## Text input
 
 ```html
 <label for="email" class="block text-sm font-medium text-[var(--color-text)]">Email</label>
-<input id="email" type="email" autocomplete="email" required aria-describedby="email-hint email-err"
+<input id="email" type="email" autocomplete="email" required
+  aria-describedby="email-hint email-err"
   class="mt-1.5 block w-full h-11 px-3 rounded-[var(--radius-md)] bg-[var(--color-surface)]
-  border border-[var(--color-border)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)]
+  border border-[var(--color-border)] text-[var(--color-text)]
+  placeholder:text-[var(--color-text-muted)]
   focus:outline-none focus:ring-2 focus:ring-[var(--color-focus)] focus:border-transparent
   aria-[invalid=true]:border-[var(--color-danger)]">
-<p id="email-hint" class="mt-1 text-sm text-[var(--color-text-muted)]">We'll send a confirmation link.</p>
-<p id="email-err" class="mt-1 text-sm text-[var(--color-danger)]" hidden>Enter an email like name@example.com</p>
+<p id="email-hint" class="mt-1 text-sm text-[var(--color-text-muted)]">
+  We'll send a confirmation link.</p>
+<p id="email-err" class="mt-1 text-sm text-[var(--color-danger)]" hidden>
+  Enter an email like name@example.com</p>
 ```
 
 ## Card (only when grouping is needed)
 
 Use cards for *collections of comparable items*. Otherwise use whitespace and type for grouping. Never nest cards in cards.
+
 ```html
-<article class="group relative rounded-[var(--radius-lg)] bg-[var(--color-surface)] p-6 ring-1 ring-[var(--color-border)]
+<article class="group relative rounded-[var(--radius-lg)] bg-[var(--color-surface)] p-6
+  ring-1 ring-[var(--color-border)]
   transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]">
-  <h3 class="text-lg font-semibold"><a href="/x" class="after:absolute after:inset-0">Title</a></h3>
+  <h3 class="text-lg font-semibold">
+    <a href="/x" class="after:absolute after:inset-0">Title</a>
+  </h3>
   <p class="mt-2 text-[var(--color-text-muted)]">One specific sentence of value.</p>
 </article>
 ```

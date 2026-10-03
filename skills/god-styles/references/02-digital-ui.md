@@ -4,7 +4,10 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 
 ---
 
+## The styles
+
 ### Flat Design
+
 - **ID:** `flat`
 - **Origin:** ~2010–2013 (Windows Metro, iOS 7, Google). A reaction against skeuomorphism.
 - **DNA:** No depth cues, solid colours, simple icons, bold type.
@@ -18,6 +21,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `flat design illustration, solid colours, no gradients, simple geometric shapes, clean vector`
 
 ### Material Design 3 (Material You)
+
 - **ID:** `material-3`
 - **Origin:** Google 2014 (M1) → 2021 (M3, dynamic colour) → M3 Expressive (2025).
 - **DNA:** Tonal palettes from a seed colour, elevation via tone, rounded shapes, motion with meaning.
@@ -31,6 +35,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `Material You Android interface, dynamic tonal colour palette, rounded containers, soft pastel surfaces`
 
 ### Skeuomorphism
+
 - **ID:** `skeuomorphism`
 - **Origin:** Apple iOS 1–6 (2007–2012), Mac OS X Aqua.
 - **DNA:** Imitate real materials: leather, wood, glass, stitching, realistic lighting.
@@ -44,6 +49,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `skeuomorphic app interface, realistic leather and brushed metal textures, glossy buttons, stitching, iOS 6 style`
 
 ### Neumorphism (Soft UI)
+
 - **ID:** `neumorphism`
 - **Origin:** ~2019–2020 Dribbble trend.
 - **DNA:** Extruded/inset shapes from the same-colour background via dual light/dark shadows.
@@ -57,6 +63,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `neumorphic soft UI, monochrome light grey surface, extruded rounded buttons with soft shadows`
 
 ### Glassmorphism
+
 - **ID:** `glassmorphism`
 - **Origin:** Windows Vista Aero (2006) → macOS Big Sur / Fluent Acrylic (2020).
 - **DNA:** Frosted translucent panels over vivid backgrounds, subtle borders, blur.
@@ -70,6 +77,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `glassmorphism UI, frosted glass cards with blur over vibrant purple and cyan gradient blobs, subtle white borders`
 
 ### Liquid Glass
+
 - **ID:** `liquid-glass`
 - **Origin:** Apple, WWDC 2025 (iOS 26, macOS 26). A platform material.
 - **DNA:** Dynamic translucent material that refracts content, adapts tint to context, floating controls.
@@ -83,6 +91,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `Apple liquid glass interface, translucent refractive capsule toolbar floating over colourful content`
 
 ### Claymorphism
+
 - **ID:** `claymorphism`
 - **Origin:** ~2021; 3D clay renders and playful product UI.
 - **DNA:** Puffy rounded shapes, inner + outer shadows, pastel, friendly.
@@ -96,6 +105,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `claymorphism 3D illustration, soft puffy clay shapes, pastel colours, friendly rounded characters, studio lighting`
 
 ### Web Brutalism
+
 - **ID:** `brutalism-web`
 - **Origin:** Late 2010s (brutalistwebsites.com), inspired by raw concrete architecture.
 - **DNA:** Raw HTML honesty, default-looking elements, system fonts, visible structure, harsh contrast.
@@ -109,6 +119,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `brutalist website, raw HTML aesthetic, black and white, default blue links, monospace text, visible borders`
 
 ### Neo-Brutalism
+
 - **ID:** `neo-brutalism`
 - **Origin:** ~2021–2023 (Gumroad redesign, Figma community).
 - **DNA:** Thick black outlines, hard offset shadows, flat saturated fills, chunky type.
@@ -122,6 +133,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `neo-brutalism UI, thick black outlines, hard offset drop shadows, flat bright yellow pink cyan, chunky type`
 
 ### Bento Grid
+
 - **ID:** `bento-grid`
 - **Origin:** Apple keynotes & product pages (2022+), Japanese bento boxes.
 - **DNA:** Modular rounded tiles of varied sizes, each a mini story.
@@ -135,6 +147,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `bento grid layout, rounded modular tiles of varying sizes, product features, dark mode, Apple keynote style`
 
 ### Dark Tech / Linear Style
+
 - **ID:** `dark-tech`
 - **Origin:** Linear, Vercel, Raycast (2020+).
 - **DNA:** Near-black surfaces, subtle borders, glow accents, tight type, crisp micro-detail.
@@ -148,6 +161,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `dark mode SaaS landing page, near black background, subtle grid, soft glowing accent, crisp product screenshot`
 
 ### Aurora / Mesh Gradient
+
 - **ID:** `aurora-mesh`
 - **Origin:** Stripe (2019+), iOS wallpapers.
 - **DNA:** Soft multi-colour mesh gradients, grain, organic motion.
@@ -161,6 +175,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `soft aurora mesh gradient background, coral violet aqua blending, fine film grain`
 
 ### Editorial / Magazine Web
+
 - **ID:** `editorial`
 - **Origin:** Print magazines (Vogue, Monocle, The Gentlewoman) translated to web.
 - **DNA:** Big serif headlines, columns, pull quotes, art direction per story, rich photography.
@@ -174,6 +189,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `editorial magazine layout, large serif headline, asymmetric photography, pull quote, refined typography`
 
 ### Corporate Memphis (Alegria)
+
 - **ID:** `corporate-memphis`
 - **Origin:** Facebook "Alegria" (Buck, 2017) → ubiquitous tech illustration.
 - **DNA:** Flat people with big limbs, small heads, no outlines, bright flat colour.
@@ -187,6 +203,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `flat vector illustration of people with oversized limbs, small heads, bright flat colours, corporate tech style`
 
 ### Isometric & 3D
+
 - **ID:** `isometric-3d`
 - **Origin:** Pixel-art isometric games → 2018+ SaaS illustration → Spline/three.js.
 - **DNA:** 30° axonometric projection, consistent lighting, toy-like objects.
@@ -200,6 +217,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `isometric 3D illustration, soft studio lighting, pastel toy-like objects on floating platform, 30 degree axonometric`
 
 ### Organic / Biophilic
+
 - **ID:** `organic-biophilic`
 - **Origin:** Wellness, sustainable brands, 2020s.
 - **DNA:** Natural textures, earthy colours, irregular shapes, soft serif type.
@@ -213,6 +231,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `organic biophilic design, earthy muted greens and clay, natural textures, soft irregular shapes, gentle daylight`
 
 ### Spatial UI
+
 - **ID:** `spatial-ui`
 - **Origin:** Apple visionOS (2023), Meta Horizon OS.
 - **DNA:** Floating glass windows in 3D space, depth, eye/hand targets, ornaments.
@@ -226,6 +245,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `visionOS spatial interface, floating frosted glass windows in a bright living room, depth and soft shadows`
 
 ### Retro OS (Windows 95 / Mac OS 9)
+
 - **ID:** `retro-os`
 - **Origin:** 1990s desktop GUIs.
 - **DNA:** Bevelled grey windows, title bars, pixel icons, system fonts.
@@ -239,6 +259,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `Windows 95 desktop interface, grey bevelled windows, navy title bar, teal desktop, pixel icons`
 
 ### Industrial Monochrome (Nothing-style)
+
 - **ID:** `industrial-mono`
 - **Origin:** Teenage Engineering, Nothing, Braun; 2020s hardware-inspired UI.
 - **DNA:** Monochrome + one signal colour, dot-matrix type, instrument-panel widgets, grids.
@@ -252,6 +273,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `industrial monochrome interface, dot matrix typography, instrument panel widgets, single red accent, Teenage Engineering aesthetic`
 
 ### Terminal / Data-Dense
+
 - **ID:** `terminal-dense`
 - **Origin:** Bloomberg Terminal, CLIs, trading UIs.
 - **DNA:** Monospace, high density, keyboard-first, colour as data.
@@ -265,6 +287,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `dense financial terminal interface, monospace, dark background, green and red data, many panels`
 
 ### Kinetic Typography
+
 - **ID:** `kinetic-type`
 - **Origin:** Saul Bass titles → motion design → variable fonts on the web.
 - **DNA:** Type is the visual; moves, morphs, scales with scroll.
@@ -278,6 +301,7 @@ Interface styles carry *functional* constraints too: contrast, affordance, perfo
 - **Prompt:** `kinetic typography poster, stretched variable font letters, bold black and white with orange accent`
 
 ### AI-Native / Conversational UI
+
 - **ID:** `ai-native`
 - **Origin:** 2023+ chat-first products.
 - **DNA:** Prompt box as hero, streaming text, suggestion chips, artefact panels.

@@ -1,5 +1,15 @@
+# Normalise line endings: shell scripts and PowerShell must stay LF so they run from curl/irm.
 * text=auto eol=lf
+*.sh text eol=lf
 *.ps1 text eol=lf
+*.psd1 text eol=lf
 *.png binary
 *.jpg binary
+*.jpeg binary
+*.gif binary
 *.webp binary
+*.ico binary
+*.ttf binary
+*.woff2 binary
+*.pdf binary
+*.zip binary

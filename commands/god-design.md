@@ -1,6 +1,6 @@
 ---
 description: Design anything with the God of Design workflow (brief → direction → system → build → critique)
-argument-hint: <what to design, e.g. "landing page for an Istanbul ceramics studio">
+argument-hint: '<what to design, e.g. "landing page for an Istanbul ceramics studio">'
 ---
 Use the `god-of-design` skill and run its full five-step workflow for: $ARGUMENTS
 

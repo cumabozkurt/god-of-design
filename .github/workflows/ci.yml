@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 
@@ -11,7 +12,7 @@ permissions:
 
 jobs:
   validate:
-    name: Validate pack (frontmatter, links, styles, build)
+    name: Validate pack (build, frontmatter, lint, rendering)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,8 +21,25 @@ jobs:
           node-version: 20
       - name: Generated files are up to date
         run: node scripts/build.mjs --check
-      - name: Validate skills, commands, style atlas, links, JSON, script syntax
+      - name: Validate skills, commands, styles, anchors, tables, images, JSON, EN/TR parity
         run: node scripts/validate.mjs
+      - name: Relative links and images exist
+        run: node scripts/check-links.mjs --offline
+      - name: ShellCheck
+        run: shellcheck --version && shellcheck install.sh test/install-sh.test.sh
+      - name: PSScriptAnalyzer
+        shell: pwsh
+        run: ./test/analyze-ps1.ps1
+      - name: markdownlint
+        run: npx --yes markdownlint-cli2@0.23.3
+      - name: codespell
+        run: pip install --quiet codespell==2.4.3 && codespell
+      - name: GitHub rendering (no sideways-scrolling tables or code, images load)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          npm i --no-save --no-package-lock playwright-core@1.63.0 marked@14.1.4 github-markdown-css@5.9.0
+          node scripts/check-render.mjs
 
   installers:
     name: Installer round trip (${{ matrix.os }})
@@ -38,9 +56,47 @@ jobs:
           node-version: 20
       - name: Node CLI + cross-installer tests (node:test)
         run: node --test test/installers.test.mjs
-      - name: install.sh round trip
+      - name: install.sh round trip (system bash; 3.2 on macOS)
         if: runner.os != 'Windows'
-        run: bash test/install-sh.test.sh
-      - name: install.ps1 round trip
+        run: bash --version | head -1 && bash test/install-sh.test.sh
+      - name: install.ps1 round trip (PowerShell 7)
         shell: pwsh
         run: ./test/install-ps1.test.ps1
+      - name: install.ps1 round trip (Windows PowerShell 5.1)
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: ./test/install-ps1.test.ps1
+
+  node18:
+    name: Node 18 compatibility (engines >= 18)
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: node --test test/installers.test.mjs
+
+  npx:
+    name: npx / npm exec from GitHub (${{ matrix.os }})
+    needs: validate
+    if: github.event_name != 'pull_request'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: npx github:owner/repo#sha and npm exec print the version
+        shell: bash
+        env:
+          SPEC: github:${{ github.repository }}#${{ github.sha }}
+        run: |
+          want=$(curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/package.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).version))')
+          a=$(npx --yes "$SPEC" --version); echo "npx: $a"
+          b=$(npm exec --yes "$SPEC" -- --version); echo "npm exec: $b"
+          [ "$a" = "$want" ] && [ "$b" = "$want" ]

@@ -15,15 +15,29 @@ Yapay zekânın ürettiği tasarımları daha az sıradan hâle getirmeye yardı
 git clone https://github.com/cumabozkurt/god-of-design
 cd god-of-design
 npm test            # Node ≥ 18, bağımlılık yok
+npm run test:sh     # install.sh testleri
+npm run test:ps1    # install.ps1 testleri (pwsh)
+npm run lint:md     # markdownlint
+npm run lint:sh     # ShellCheck (shellcheck gerekir)
+npm run lint:ps1    # PSScriptAnalyzer (pwsh)
+npm run check:spell # codespell (pip install codespell)
+npm run check:links # dış bağlantılar
 ```
+
+GitHub görünüm denetimi (hiçbir tablo ya da kod bloğu yana kaymamalı) Chrome ve üç paket ister: `npm i --no-save playwright-core marked github-markdown-css`, ardından `npm run check:render`.
 
 Gerçek ayarlarınıza dokunmadan kurulumu deneyin:
 
 ```bash
-export GOD_OF_DESIGN_HOME=/tmp/god-home XDG_CONFIG_HOME=/tmp/god-home/.config CODEX_HOME=/tmp/god-home/.codex
-node bin/god-of-design.mjs install --tool all
-node bin/god-of-design.mjs status
-node bin/god-of-design.mjs uninstall
+# Geçici ev dizini: gerçek yapılandırmanıza dokunulmaz. Alt kabuk ortamınızı
+# temiz tutar (global bir XDG_CONFIG_HOME örneğin gh yapılandırmasını da gizler).
+(
+  export GOD_OF_DESIGN_HOME=/tmp/god-home
+  export XDG_CONFIG_HOME=/tmp/god-home/.config CODEX_HOME=/tmp/god-home/.codex
+  node bin/god-of-design.mjs install --tool all
+  node bin/god-of-design.mjs status
+  node bin/god-of-design.mjs uninstall
+)
 ```
 
 ## Depo nasıl çalışır?

@@ -1,0 +1,23 @@
+name: Links
+
+on:
+  push:
+    branches: [main]
+    paths: ["**.md", "scripts/check-links.mjs", ".github/workflows/links.yml"]
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: External and relative links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/check-links.mjs

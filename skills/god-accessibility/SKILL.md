@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Accessibility
@@ -15,6 +15,7 @@ Accessibility is a quality bar, not an add-on. The European Accessibility Act ha
 ## WCAG 2.2 AA checklist (the high-impact items)
 
 **Perceivable**
+
 - [ ] Text contrast ≥ 4.5:1 (large ≥ 3:1). Non-text UI and focus indicators ≥ 3:1. (1.4.3, 1.4.11)
 - [ ] Information is never conveyed by colour alone. (1.4.1)
 - [ ] Meaningful images have alt text; decorative ones use `alt=""`. Complex charts get a text summary or a data table. (1.1.1)
@@ -24,6 +25,7 @@ Accessibility is a quality bar, not an add-on. The European Accessibility Act ha
 - [ ] Text resizes to 200%. Use rem units, not fixed-height text containers. (1.4.4)
 
 **Operable**
+
 - [ ] Everything works by keyboard; no keyboard traps; logical tab order. (2.1.1, 2.1.2, 2.4.3)
 - [ ] Visible focus indicator (`:focus-visible`, ≥ 2px, ≥ 3:1). Focus is not hidden behind sticky headers. (2.4.7, 2.4.11)
 - [ ] Targets ≥ 24×24 CSS px, or enough spacing (2.5.8). Aim for 44px.
@@ -33,6 +35,7 @@ Accessibility is a quality bar, not an add-on. The European Accessibility Act ha
 - [ ] Skip link to main content. Descriptive page titles, headings and link text. (2.4.1, 2.4.2, 2.4.4, 2.4.6)
 
 **Understandable**
+
 - [ ] `lang` attribute on `<html>` and on passages in another language. (3.1.1, 3.1.2)
 - [ ] Labels and instructions for inputs. Errors identified in text with suggestions. (3.3.1–3.3.3)
 - [ ] Consistent navigation and help location. (3.2.3, 3.2.6)
@@ -41,6 +44,7 @@ Accessibility is a quality bar, not an add-on. The European Accessibility Act ha
 - [ ] Don't ask users to re-enter info they already provided in the same flow. (3.3.7)
 
 **Robust**
+
 - [ ] Semantic HTML first (`button`, `a`, `nav`, `main`, `h1–h6`, `label`, `table`). ARIA only to fill gaps, following the "No ARIA is better than bad ARIA" rule. (4.1.2)
 - [ ] Status messages announced via `role="status"` / `aria-live`. (4.1.3)
 

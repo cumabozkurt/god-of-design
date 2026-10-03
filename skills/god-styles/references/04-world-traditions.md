@@ -16,6 +16,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## East Asia
 
 ### Wabi-sabi & Ma (Japan)
+
 - **ID:** `japanese-wabi-sabi`
 - **Origin:** Japanese aesthetics rooted in Zen and the tea ceremony (Sen no Rikyū, 16th c.). *Wabi-sabi*: beauty in impermanence and imperfection. *Ma*: meaningful empty space or interval.
 - **DNA:** Asymmetry, natural materials, muted earthy tones, generous emptiness, quiet details.
@@ -29,6 +30,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `wabi-sabi aesthetic, imperfect handmade ceramic bowl, vast empty washi paper background, muted earthy tones, single branch, quiet Japanese minimalism`
 
 ### Ukiyo-e Woodblock (Japan)
+
 - **ID:** `ukiyo-e`
 - **Origin:** Edo-period woodblock prints, 17th–19th c. (Hokusai, Hiroshige, Utamaro).
 - **DNA:** Flat colour areas, bold outlines, Prussian blue, dramatic cropping, stylised waves and clouds.
@@ -42,6 +44,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `ukiyo-e woodblock print in the style of Hiroshige, Prussian blue bokashi sky, flat colour areas, bold key-block outlines, aged paper texture`
 
 ### Wagara Patterns (Japan)
+
 - **ID:** `wagara-patterns`
 - **Origin:** Traditional Japanese textile patterns (Heian to Edo periods).
 - **DNA:** Repeating geometric patterns, each with a meaning: *seigaiha* (waves, peace), *asanoha* (hemp leaf, growth), *shippō* (seven treasures, harmony), *ichimatsu* (checker, prosperity), *yagasuri* (arrow feathers).
@@ -55,6 +58,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `traditional Japanese seigaiha wave pattern in indigo and cream, textile print, precise repeat`
 
 ### Japanese Modern Graphic Design
+
 - **ID:** `japanese-modern-graphic`
 - **Origin:** 1950s–80s (Yusaku Kamekura, Ikko Tanaka, Tadanori Yokoo; Tokyo 1964 Olympics).
 - **DNA:** Bold geometric reduction of tradition, flat shapes, the red circle, perfect grids, mixed Japanese and Latin type.
@@ -68,6 +72,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `1960s Japanese modernist poster, Ikko Tanaka style, flat geometric shapes, bold red circle, strict grid, Japanese and Latin typography`
 
 ### Chinese Ink Wash (Shuimo / Shan Shui)
+
 - **ID:** `chinese-ink-wash`
 - **Origin:** Chinese literati painting (Tang and Song dynasties onwards). Mountains and water, calligraphy, seals.
 - **DNA:** Monochrome ink gradations, mist, empty space as atmosphere, calligraphic strokes, red seal stamps.
@@ -81,6 +86,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `traditional Chinese ink wash painting, misty mountains and river, monochrome ink gradations on rice paper, red seal stamp, vast empty space`
 
 ### Chinese Festive & Imperial
+
 - **ID:** `chinese-festive`
 - **Origin:** Imperial palace decoration, New Year (Chunjie) traditions, paper-cut (jianzhi) art.
 - **DNA:** Red and gold abundance, symmetry, auspicious motifs, paper-cut silhouettes.
@@ -94,6 +100,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Chinese New Year paper-cut art, intricate red jianzhi silhouette, gold accents, auspicious clouds and lanterns, symmetrical`
 
 ### Shanghai Deco (1920s–30s China)
+
 - **ID:** `shanghai-deco`
 - **Origin:** Republican-era Shanghai calendar posters (yuefenpai), cigarette ads, Deco architecture on the Bund.
 - **DNA:** Art Deco geometry, glamorous qipao figures, soft airbrushed colour, bilingual type.
@@ -107,6 +114,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `1930s Shanghai calendar poster, Art Deco frame, elegant woman in qipao, soft airbrushed colours, jade and gold`
 
 ### Korean Dancheong & Obangsaek
+
 - **ID:** `korean-dancheong`
 - **Origin:** Decorative painting on Korean wooden temples and palaces. Obangsaek is the five-colour system (blue, red, yellow, white, black) tied to the five elements and directions.
 - **DNA:** Vivid five-colour bands, lotus and geometric medallions, layered borders.
@@ -120,6 +128,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Korean dancheong pattern, obangsaek five colours, lotus medallions, intricate temple eave painting`
 
 ### Korean Minimal (Joseon White, Hanji)
+
 - **ID:** `korean-minimal`
 - **Origin:** Joseon white porcelain (moon jars), hanji paper, hanok architecture.
 - **DNA:** Soft white, natural wood, quiet balance, rounded imperfection.
@@ -137,6 +146,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## The Islamic World, Anatolia & Persia
 
 ### Islamic Geometric
+
 - **ID:** `islamic-geometric`
 - **Origin:** 8th c. onwards across the Islamic world (Alhambra, Isfahan, Samarkand, Cairo). Aniconic art built on compass-and-straightedge geometry.
 - **DNA:** Star-and-polygon tessellations (6-, 8-, 10-, 12-, 16-fold), interlacing strapwork, infinite repetition, symmetry as a sign of unity.
@@ -150,6 +160,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Islamic geometric pattern, intricate 8-pointed star tessellation, lapis blue turquoise and gold, interlacing strapwork, Alhambra tilework, precise symmetry`
 
 ### Arabic Calligraphic
+
 - **ID:** `arabic-calligraphic`
 - **Origin:** Calligraphy is the highest Islamic art form. Scripts: Kufic, Naskh, Thuluth, Diwani, Ruq'ah, Nastaʿlīq.
 - **DNA:** Flowing script as image, rhythmic baseline, contrast of thick and thin, compositions in circles or squares (square Kufic).
@@ -163,6 +174,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Arabic calligraphy artwork, flowing Thuluth script in gold on deep green, illuminated border, parchment texture`
 
 ### Moroccan Zellige
+
 - **ID:** `moroccan-zellige`
 - **Origin:** Morocco (Fes, Marrakech), 10th c. onwards. Hand-cut glazed terracotta mosaic.
 - **DNA:** Hand-cut tessellations, glossy uneven glaze, star patterns, carved stucco, cedar wood.
@@ -176,6 +188,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Moroccan zellige tile mosaic, hand-cut glossy emerald cobalt and saffron tiles, star pattern, horseshoe arch, Marrakech riad`
 
 ### Ottoman İznik Tiles
+
 - **ID:** `ottoman-iznik`
 - **Origin:** İznik (Nicaea), Anatolia, 15th–17th c. Tiles for Topkapı Palace, the Süleymaniye and Rüstem Pasha mosques.
 - **DNA:** Cobalt and turquoise on white, the famous raised "İznik red" (bole red), saz leaves, tulips, carnations, hyacinths, rumi spirals.
@@ -189,6 +202,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ottoman İznik tile panel, cobalt blue and turquoise tulips and carnations on white, raised İznik red accents, saz leaves, 16th century Topkapı palace`
 
 ### Ottoman Tezhip & Hat (Illumination and Calligraphy)
+
 - **ID:** `ottoman-tezhip`
 - **Origin:** Ottoman manuscript illumination (tezhip) and calligraphy (hüsn-i hat), 15th–19th c.; tuğra (sultan's monogram).
 - **DNA:** Gold-leaf rumi and hatayi scrolls, lapis grounds, symmetrical frames (serlevha), calligraphy panels (levha).
@@ -202,6 +216,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ottoman tezhip illumination, gold leaf rumi and hatayi scrolls on lapis blue, ornate manuscript border, calligraphy panel, ahar paper`
 
 ### Turkish Ebru (Marbling)
+
 - **ID:** `turkish-ebru`
 - **Origin:** Ebru paper marbling from Central Asia and Anatolia (UNESCO Intangible Heritage, 2014). Pigments float on thickened water.
 - **DNA:** Fluid organic veins, combed patterns (gelgit, taraklı), tulip and flower ebru, natural pigments.
@@ -215,6 +230,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Turkish ebru marbling art, fluid indigo madder red and ochre pigments, combed wave pattern, tulip motif, paper texture`
 
 ### Anatolian Kilim
+
 - **ID:** `anatolian-kilim`
 - **Origin:** Flat-woven rugs from Anatolia and Central Asia, with regional motifs: elibelinde (hands on hips, fertility), koçboynuzu (ram's horn, strength), göz (eye, protection), bereket (abundance).
 - **DNA:** Stepped diamonds, hooks, zigzag borders, natural dyes, symbolic geometry.
@@ -228,6 +244,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Anatolian kilim pattern, stepped diamonds and ram's horn motifs, madder red saffron and indigo natural dyes, flat-woven wool texture`
 
 ### Persian Miniature & Safavid
+
 - **ID:** `persian-miniature`
 - **Origin:** Persian painting (Herat, Tabriz, Isfahan; Behzad, Reza Abbasi), Safavid carpets and tiles.
 - **DNA:** Jewel tones, flattened perspective, gardens (paradise/pairidaeza), arabesques, Nastaʿlīq calligraphy.
@@ -245,6 +262,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## South & Southeast Asia
 
 ### Mughal
+
 - **ID:** `mughal`
 - **Origin:** Mughal Empire, 16th–19th c. (Taj Mahal pietra dura, miniature paintings).
 - **DNA:** Symmetry, floral inlay (parchin kari), cusped arches, refined miniature painting, white marble with gemstones.
@@ -258,6 +276,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Mughal pietra dura inlay, white marble with ruby and emerald floral motifs, cusped arch, Taj Mahal craftsmanship`
 
 ### Madhubani (Mithila)
+
 - **ID:** `madhubani`
 - **Origin:** Mithila region, Bihar (India) and Nepal. A women-led folk painting tradition.
 - **DNA:** Double-line outlines, every space filled with pattern, nature and mythology, natural pigments.
@@ -271,6 +290,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Madhubani folk painting, double-line outlines, fish and peacock motifs, densely patterned, red turmeric and indigo natural pigments`
 
 ### Indian Block Print
+
 - **ID:** `indian-block-print`
 - **Origin:** Hand block-printed textiles: Sanganer and Bagru (Rajasthan), Ajrakh (Kutch and Sindh).
 - **DNA:** Small repeated florals (buti), slight misprints, indigo and madder, natural cotton.
@@ -284,6 +304,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Indian hand block print textile, small indigo and madder floral buti repeat, slight misregistration, natural cotton`
 
 ### Bollywood Hand-painted Poster
+
 - **ID:** `bollywood-poster`
 - **Origin:** Hand-painted Indian film posters and hoardings, 1950s–90s.
 - **DNA:** Saturated painted portraits, dramatic lighting, stacked bold titles, bilingual lettering.
@@ -297,6 +318,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `vintage hand-painted Bollywood movie poster, dramatic painted portraits, saturated vermilion and marigold, bold extruded Devanagari and English title`
 
 ### South Asian Truck Art
+
 - **ID:** `truck-art`
 - **Origin:** Pakistan (also India and Afghanistan). Decorated trucks: a mobile folk art form.
 - **DNA:** Hyper-ornate, mirrors, reflective tape, florals, birds, calligraphy, poetry, chains.
@@ -310,6 +332,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Pakistani truck art, hyper-ornate colourful panels, peacocks and roses, reflective mirror mosaic, Urdu calligraphy, folk art`
 
 ### Indonesian Batik
+
 - **ID:** `batik`
 - **Origin:** Java, Indonesia (UNESCO Intangible Heritage, 2009). Wax-resist dyeing.
 - **DNA:** Fine wax lines, crackle, sogan browns and indigo, symbolic motifs (parang, kawung, mega mendung).
@@ -323,6 +346,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Javanese batik, parang diagonal pattern, soga brown and indigo, wax-resist crackle texture, fine hand-drawn lines`
 
 ### Thai Traditional (Lai Thai)
+
 - **ID:** `lai-thai`
 - **Origin:** Thai temple decoration, lacquer and gilt (lai rot nam), Kranok flame motif.
 - **DNA:** Flame-like kranok scrolls, gold on black or red, pointed spires, mythical creatures.
@@ -340,6 +364,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## Africa
 
 ### Kente (Ghana)
+
 - **ID:** `kente`
 - **Origin:** Asante and Ewe peoples, Ghana. Strip-woven cloth where each colour and pattern has meaning.
 - **DNA:** Bold geometric strips, block patterns, high-saturation colour with meaning.
@@ -353,6 +378,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ghanaian kente cloth, strip-woven geometric blocks, gold green red and black, intricate woven texture`
 
 ### Adinkra (Ghana)
+
 - **ID:** `adinkra`
 - **Origin:** Akan peoples (Ghana and Côte d'Ivoire). Stamped symbols representing proverbs and concepts.
 - **DNA:** Bold black symbolic glyphs stamped in grids on cloth.
@@ -366,6 +392,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Adinkra symbols stamped in black on natural cloth, grid layout, Sankofa and Dwennimmen, hand-printed texture`
 
 ### Ndebele (South Africa)
+
 - **ID:** `ndebele`
 - **Origin:** Ndebele women's house painting and beadwork (Mpumalanga, South Africa). Esther Mahlangu.
 - **DNA:** Bold black outlines, flat bright colours, symmetrical geometric house facades.
@@ -379,6 +406,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ndebele house painting, bold black outlines, flat bright geometric shapes, symmetrical facade, Esther Mahlangu style`
 
 ### Bògòlanfini (Mali Mudcloth)
+
 - **ID:** `bogolan`
 - **Origin:** Bamana people, Mali. Cotton dyed with fermented mud.
 - **DNA:** Earth-toned grounds with hand-painted off-white symbols, irregular grids.
@@ -392,6 +420,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Malian bogolan mudcloth, hand-painted off-white geometric symbols on deep brown, irregular grid, earthy texture`
 
 ### Ethiopian (Ge'ez Manuscript & Tilet)
+
 - **ID:** `ethiopian`
 - **Origin:** Ethiopian Orthodox illuminated manuscripts, Ge'ez script, tilet woven borders on habesha cloth.
 - **DNA:** Interlace bands, vivid primaries, Ge'ez letterforms, woven borders on white cotton.
@@ -405,6 +434,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ethiopian tilet woven border on white habesha cotton, colourful geometric band, Ge'ez manuscript illumination`
 
 ### Afrofuturism
+
 - **ID:** `afrofuturism`
 - **Origin:** Sun Ra, Octavia Butler, Janelle Monáe, Black Panther production design. African diaspora futures.
 - **DNA:** African patterns plus futurist tech, gold and purple, cosmic imagery, regal portraiture.
@@ -422,6 +452,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## Latin America
 
 ### Otomi / Tenango Embroidery (Mexico)
+
 - **ID:** `otomi-tenango`
 - **Origin:** Otomí (Hñähñu) communities of Tenango de Doria, Hidalgo, Mexico.
 - **DNA:** Symmetric animals and plants in vivid single colours or rainbows on white cloth.
@@ -435,6 +466,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Otomi Tenango embroidery, symmetrical stylised animals and flowers, vivid magenta teal and marigold on white cloth`
 
 ### Papel Picado & Día de Muertos (Mexico)
+
 - **ID:** `papel-picado`
 - **Origin:** Mexican cut tissue-paper banners. Día de Muertos (UNESCO Intangible Heritage, 2008), José Guadalupe Posada's calaveras.
 - **DNA:** Cut-paper banners, marigold orange, calaveras, joyful remembrance.
@@ -448,6 +480,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Mexican papel picado banners in vivid colours over Día de Muertos ofrenda, cempasúchil marigolds, candles, sugar skulls`
 
 ### Mexican Muralism
+
 - **ID:** `mexican-muralism`
 - **Origin:** 1920s–50s (Diego Rivera, José Clemente Orozco, David Alfaro Siqueiros).
 - **DNA:** Monumental figures, social narrative, earth tones, sculptural volumes.
@@ -461,6 +494,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Mexican muralism, Diego Rivera style, monumental figures, earthy adobe and teal palette, narrative scene, fresco texture`
 
 ### Andean Textile
+
 - **ID:** `andean-textile`
 - **Origin:** Quechua and Aymara weaving (Peru, Bolivia, Ecuador); Inca tocapu.
 - **DNA:** Geometric bands, diamonds, tocapu grid squares, alpaca wool, natural dyes (cochineal).
@@ -474,6 +508,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Andean textile, Peruvian woven bands, cochineal red and ochre, diamond and llama motifs, alpaca wool texture`
 
 ### Brazilian Modernism & Tropicália
+
 - **ID:** `brazilian-tropicalia`
 - **Origin:** Brazilian modernism (Burle Marx gardens, Copacabana wave pavement, Oscar Niemeyer) and Tropicália (1967–68).
 - **DNA:** Curving lines, tropical exuberance, bold colour, concrete poetry, psychedelic touches.
@@ -487,6 +522,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Brazilian modernism, Copacabana black and white wave pavement pattern, Burle Marx tropical garden, bold green and yellow, curvy Niemeyer architecture`
 
 ### Cuban Poster (ICAIC)
+
 - **ID:** `cuban-poster`
 - **Origin:** Cuban film posters, 1960s–80s (ICAIC; René Azcuy, Eduardo Muñoz Bachs). Silkscreen.
 - **DNA:** Bold conceptual imagery, flat silkscreen colours, hand lettering, visual puns.
@@ -504,6 +540,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## Europe (beyond the Western canon above)
 
 ### Scandinavian / Nordic Minimal
+
 - **ID:** `scandinavian`
 - **Origin:** Mid-century Scandinavian design (Arne Jacobsen, Alvar Aalto, Kaare Klint), hygge, lagom.
 - **DNA:** Light woods, white space, functional warmth, muted colours, natural light.
@@ -517,6 +554,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Scandinavian minimal interior, light birch wood, soft daylight, muted warm neutrals, functional simplicity, hygge`
 
 ### Finnish Bold Pattern (Marimekko-inspired)
+
 - **ID:** `finnish-pattern`
 - **Origin:** Finnish textile design, 1950s+ (Maija Isola's Unikko, 1964).
 - **DNA:** Oversized flat flowers and shapes, bold colour, joyful repeats.
@@ -530,6 +568,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `bold Finnish textile pattern, oversized flat abstract flowers, poppy red black and white, 1960s screen print`
 
 ### Slavic Folk (Khokhloma, Vyshyvanka, Wycinanki)
+
 - **ID:** `slavic-folk`
 - **Origin:** Khokhloma lacquer (Russia), vyshyvanka embroidery (Ukraine), wycinanki paper-cuts (Poland), Gzhel ceramics.
 - **DNA:** Red/black/gold florals (Khokhloma), cross-stitch geometry (vyshyvanka), symmetric paper-cuts, cobalt on white (Gzhel).
@@ -543,6 +582,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Ukrainian vyshyvanka cross-stitch embroidery pattern, red and black geometric rhombuses on white linen`
 
 ### Polish Poster School
+
 - **ID:** `polish-poster`
 - **Origin:** 1950s–80s (Henryk Tomaszewski, Jan Lenica, Franciszek Starowieyski, Wiktor Górka).
 - **DNA:** Painterly, surreal, hand lettering integrated into illustration, conceptual and dark humour.
@@ -556,6 +596,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Polish Poster School, surreal painterly illustration, hand-drawn lettering integrated into image, dark humour, 1960s`
 
 ### Celtic Knotwork
+
 - **ID:** `celtic`
 - **Origin:** Insular art (Book of Kells, Lindisfarne Gospels, 7th–9th c.).
 - **DNA:** Endless interlace knots, spirals, zoomorphic interlace, illuminated initials.
@@ -569,6 +610,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `Celtic knotwork illuminated manuscript, Book of Kells style, interlaced spirals, green gold and red on vellum`
 
 ### Mediterranean / Greek
+
 - **ID:** `mediterranean`
 - **Origin:** Aegean islands (whitewash and blue), ancient Greek meander, Spanish and Portuguese azulejo.
 - **DNA:** Whitewash, deep blue, sun, terracotta, olive, simple geometry.
@@ -586,6 +628,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 ## Oceania & First Nations (protocol required)
 
 ### Aboriginal Australian Art (protocol)
+
 - **ID:** `aboriginal-australian`
 - **Origin:** One of the world's oldest continuous art traditions. Dot painting (Papunya Tula, 1971), rarrk cross-hatching (Arnhem Land), and more.
 - **DNA:** Varies by nation and region. Dots, concentric circles, cross-hatching, earth pigments.
@@ -599,6 +642,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `(Do not generate. Use a commissioned, licensed artwork from a First Nations artist.)`
 
 ### Māori & Pacific (protocol)
+
 - **ID:** `maori-pacific`
 - **Origin:** Māori (Aotearoa New Zealand) kōwhaiwhai rafter patterns, tukutuku panels, tā moko; Pacific tapa (siapo, ngatu).
 - **DNA:** Koru curves (kōwhaiwhai), lattice weaving (tukutuku), tapa geometric bark-cloth patterns.
@@ -612,6 +656,7 @@ Design is not only a Western story. This atlas covers traditions from East Asia,
 - **Prompt:** `(Prefer commissioned work. If an abstract reference is needed: "abstract koru-inspired curves, red black and white, respectful, non-sacred")`
 
 ### Native American / First Nations of North America (protocol)
+
 - **ID:** `native-north-american`
 - **Origin:** Hundreds of distinct nations. Northwest Coast formline (Haida, Tlingit), Navajo (Diné) weaving, Pueblo pottery, Plains quillwork and beadwork.
 - **DNA:** Varies widely. Formline ovoids and U-forms (Northwest Coast), stepped geometry (Diné weaving), fine-line pottery.

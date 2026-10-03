@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Branding & Logo
@@ -41,7 +41,8 @@ Example monogram scaffold (geometric):
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
   <title id="t">GD monogram</title>
   <rect width="120" height="120" rx="28" fill="#1F3A93"/>
-  <path d="M60 26a34 34 0 1 0 34 34H64" fill="none" stroke="#FAF6EE" stroke-width="12" stroke-linecap="square"/>
+  <path d="M60 26a34 34 0 1 0 34 34H64" fill="none"
+        stroke="#FAF6EE" stroke-width="12" stroke-linecap="square"/>
   <circle cx="60" cy="60" r="6" fill="#C0392B"/>
 </svg>
 ```

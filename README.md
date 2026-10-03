@@ -12,13 +12,13 @@
   &nbsp;·&nbsp;
   <a href="#-installation"><b>Install</b></a>
   &nbsp;·&nbsp;
-  <a href="#-uninstall"><b>Uninstall</b></a>
+  <a href="#️-uninstall"><b>Uninstall</b></a>
   &nbsp;·&nbsp;
   <a href="#-skills"><b>Skills</b></a>
   &nbsp;·&nbsp;
   <a href="#-style-atlas-109-styles"><b>Style atlas</b></a>
   &nbsp;·&nbsp;
-  <a href="#-usage-examples-by-design-area"><b>Examples</b></a>
+  <a href="#️-usage-examples-by-design-area"><b>Examples</b></a>
   &nbsp;·&nbsp;
   <a href="docs/research/benchmark-50-repos.md"><b>Benchmark</b></a>
   &nbsp;·&nbsp;
@@ -27,13 +27,13 @@
 
 <p align="center">
   <a href="https://github.com/cumabozkurt/god-of-design/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/cumabozkurt/god-of-design/ci.yml?branch=main&style=flat-square&label=CI&logo=githubactions&logoColor=white"></a>
-  <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-1.0.0-141414?style=flat-square">
+  <img alt="Version 1.1.0" src="https://img.shields.io/badge/version-1.1.0-141414?style=flat-square">
   <img alt="Skills: 19" src="https://img.shields.io/badge/skills-19-C8102E?style=flat-square">
   <img alt="Styles: 109" src="https://img.shields.io/badge/styles-109-1F4E9C?style=flat-square">
   <img alt="Tools: 9+" src="https://img.shields.io/badge/tools-9%2B-F2B705?style=flat-square">
   <img alt="Zero dependencies" src="https://img.shields.io/badge/dependencies-0-0B7A3B?style=flat-square">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-1F6FEB?style=flat-square"></a>
-  <a href="https://github.com/cumabozkurt/god-of-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/cumabozkurt/god-of-design?style=flat-square&color=22D3EE&logo=github"></a>
+  <a href="https://github.com/cumabozkurt/god-of-design"><img alt="Stars" src="https://img.shields.io/github/stars/cumabozkurt/god-of-design?style=flat-square&color=22D3EE&logo=github"></a>
 </p>
 
 <h3 align="center">Give your AI coding agent the eye of a senior designer, in any style from any culture, for every medium.</h3>
@@ -102,20 +102,59 @@ Before writing a line, we studied the **52 most relevant open-source repos** (de
 
 ## 🧰 Supported tools
 
-| Tool | What gets installed | Global (`--global`, default) | Project (`--project`) | How you use it |
-|---|---|---|---|---|
-| **Claude Code** | 19 skills + 7 slash commands | `~/.claude/skills`, `~/.claude/commands` | `.claude/skills`, `.claude/commands` | Skills auto-activate; `/god-design …`; or the plugin marketplace |
-| **OpenAI Codex CLI** | 19 skills + AGENTS.md block | `~/.agents/skills`, `~/.codex/AGENTS.md` | `.agents/skills`, `AGENTS.md` | `$god-of-design`, `/skills`, or just ask |
-| **OpenCode** | Skills + 7 commands | `~/.config/opencode/skills` (also reads `~/.claude/skills`, `~/.agents/skills`), `~/.config/opencode/commands` | `.opencode/skills`, `.opencode/commands` | Skills auto-load; `/god-design …` |
-| **Google Antigravity** | Skills (+ workspace rule) | `~/.gemini/config/skills` | `.agents/skills`, `.agents/rules/god-of-design.md` | Skills activate from their descriptions |
-| **Gemini CLI** | Skills (+ GEMINI.md block) | `~/.gemini/skills` (also reads `~/.agents/skills`) | `.gemini/skills`, `GEMINI.md` | `/skills`, or just ask |
-| **Cursor** | Skills + rule | `~/.cursor/skills` (also reads `~/.agents/skills`, `~/.claude/skills`) | `.cursor/skills`, `.cursor/rules/god-of-design.mdc` | Agent picks skills up; `@god-of-design` rule |
-| **GitHub Copilot** | Skills + instructions | `~/.copilot/skills` | `.github/skills`, `.github/instructions/god-of-design.instructions.md` | Copilot agent mode / Chat |
-| **Windsurf** | Rule (≤ 6 000 chars) + full reference bundle | block in `~/.codeium/windsurf/memories/global_rules.md` | `.windsurf/rules/god-of-design.md` | Cascade follows the rule and opens the bundle when needed |
-| **Cline** | Rule + full reference bundle | `~/Documents/Cline/Rules/god-of-design.md` | `.clinerules/god-of-design.md` | Always-on rule |
-| **Any LLM** (ChatGPT, Gemini web, Claude.ai, local models) | Paste a single file | [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) (full, ~220 KB) · [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) (~8 KB) · [`llms.txt`](llms.txt) | | Upload as a file or paste as a system prompt |
+| Tool | Installs | How you use it |
+|---|---|---|
+| **Claude Code** | 19 skills, 7 commands | Skills auto-activate; `/god-design …`; or the plugin |
+| **OpenAI Codex CLI** | 19 skills, AGENTS.md block | `$god-of-design`, `/skills`, or just ask |
+| **OpenCode** | Skills, 7 commands | Skills auto-load; `/god-design …` |
+| **Google Antigravity** | Skills (+ workspace rule) | Skills activate from their descriptions |
+| **Gemini CLI** | Skills (+ GEMINI.md block) | `/skills`, or just ask |
+| **Cursor** | Skills + rule | Agent picks skills up; `@god-of-design` rule |
+| **GitHub Copilot** | Skills + instructions | Copilot agent mode / Chat |
+| **Windsurf** | Rule + reference bundle | Cascade follows the rule |
+| **Cline** | Rule + reference bundle | Always-on rule |
+| **Any LLM** | One Markdown file | Upload it or paste it as a system prompt |
 
-> **Default `--tool all`** installs to `~/.claude/skills` (Claude Code), `~/.agents/skills` (Codex, and also read by Cursor, Gemini CLI and OpenCode), `~/.gemini/config/skills` (Antigravity), and adds the slash commands for Claude Code and OpenCode. Three folders cover nine tools without a separate copy per tool. Paths were checked against each tool's official docs on 2026-10-03; run `god-of-design list tools` to see them.
+<details>
+<summary><b>Where each tool's files go</b> (global <code>--global</code>, the default, and per project <code>--project</code>)</summary>
+
+- **Claude Code**
+  - global: `~/.claude/skills`, `~/.claude/commands`
+  - project: `.claude/skills`, `.claude/commands`
+- **OpenAI Codex CLI**
+  - global: `~/.agents/skills`, a block in `~/.codex/AGENTS.md`
+  - project: `.agents/skills`, a block in `AGENTS.md`
+- **OpenCode** (also reads `.claude/skills` and `.agents/skills`)
+  - global: `~/.config/opencode/skills`, `~/.config/opencode/commands`
+  - project: `.opencode/skills`, `.opencode/commands`
+- **Google Antigravity**
+  - global: `~/.gemini/config/skills`
+  - project: `.agents/skills`, `.agents/rules/god-of-design.md`
+- **Gemini CLI** (also reads `.agents/skills`)
+  - global: `~/.gemini/skills`
+  - project: `.gemini/skills`, a block in `GEMINI.md`
+- **Cursor** (also reads `.agents/skills` and `.claude/skills`)
+  - global: `~/.cursor/skills`
+  - project: `.cursor/skills`, `.cursor/rules/god-of-design.mdc`
+- **GitHub Copilot**
+  - global: `~/.copilot/skills`
+  - project: `.github/skills`, `.github/instructions/god-of-design.instructions.md`
+- **Windsurf** (rule ≤ 6,000 characters, full reference in a bundle)
+  - global: a block in `~/.codeium/windsurf/memories/global_rules.md`
+  - project: `.windsurf/rules/god-of-design.md`
+- **Cline**
+  - global: `~/Documents/Cline/Rules/god-of-design.md`
+  - project: `.clinerules/god-of-design.md`
+- **Any LLM** (ChatGPT, Gemini web, Claude.ai, local models)
+  - [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) (full, about 220 KB)
+  - [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) (about 8 KB)
+  - [`llms.txt`](llms.txt)
+
+</details>
+
+> **Default `--tool all`** installs to `~/.claude/skills` (Claude Code), `~/.agents/skills` (Codex, also read by Cursor, Gemini CLI and OpenCode) and `~/.gemini/config/skills` (Antigravity), and adds the slash commands for Claude Code and OpenCode. Three folders cover nine tools. When you pick tools yourself, the installer never writes a second copy into a folder a tool already reads (Gemini CLI warns about every duplicate skill). Paths were checked against each tool's docs on 2026-10-03; `god-of-design list tools` prints them.
+
+**Tested with real CLIs** (2026-10-03, throwaway home folder whose path contains a space): Claude Code 2.1.288 (`claude plugin validate --strict` passes; the plugin loads 19 skills and 7 commands), Codex CLI 0.160.0 (all 19 skills in the prompt), OpenCode 1.18.34 (`opencode debug skill`: 19 skills, no duplicates) and Gemini CLI 0.62.0 (`gemini skills list`: 19 skills, no conflicts). Antigravity, Cursor, Copilot, Windsurf and Cline paths follow their official docs; they have no CLI we could run in CI.
 
 ## 🚀 Quick start
 
@@ -137,6 +176,8 @@ irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
 npx github:cumabozkurt/god-of-design install
 ```
 
+If `npx` exits without output (some distro npm 9 builds do), use `npm exec --yes github:cumabozkurt/god-of-design -- install` instead. See the [FAQ](#-faq).
+
 Then restart your agent and ask:
 
 ```text
@@ -152,21 +193,26 @@ Every installer accepts the same options: pick tools with `--tool` (comma-separa
 
 ```bash
 # Only Cursor and Windsurf, into the current project
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cursor,windsurf --project
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool cursor,windsurf --project
 
-# Every tool's native folder (maximum coverage)
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool every
+# Every tool (skill folders are shared, never duplicated)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool every
 
 # See what would happen without writing anything
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --dry-run
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --dry-run
 
-# Pin a version (tag or branch)
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | GOD_OF_DESIGN_REF=v1.0.0 bash
+# Pin a release tag (or any branch / commit)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | GOD_OF_DESIGN_REF=v1.1.0 bash
 ```
 
 ```powershell
 # PowerShell with options
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1))) install -Tool claude,codex -Project
+$s = irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
+& ([scriptblock]::Create($s)) install -Tool claude,codex -Project
 ```
 
 </details>
@@ -180,7 +226,7 @@ npx github:cumabozkurt/god-of-design list styles
 npx github:cumabozkurt/god-of-design status
 ```
 
-Or install the CLI globally from GitHub: `npm i -g github:cumabozkurt/god-of-design`, then run `god-of-design install`. The CLI has zero dependencies.
+Or install the CLI globally from GitHub: `npm i -g github:cumabozkurt/god-of-design`, then run `god-of-design install`. The CLI has zero dependencies. On npm builds where `npx github:…` prints nothing, `npm exec --yes github:cumabozkurt/god-of-design -- <command>` does the same job.
 </details>
 
 <details>
@@ -209,7 +255,8 @@ Or use the one-line installer, which writes to `~/.agents/skills` and adds a sho
 <summary><b>OpenCode</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool opencode
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool opencode
 ```
 
 This installs skills to `~/.config/opencode/skills` and the `/god-*` commands to `~/.config/opencode/commands`. OpenCode also reads `~/.claude/skills` and `~/.agents/skills`, so the default `all` install already works.
@@ -219,8 +266,13 @@ This installs skills to `~/.config/opencode/skills` and the `/god-*` commands to
 <summary><b>Google Antigravity</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool antigravity            # ~/.gemini/config/skills
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool antigravity --project  # .agents/skills + .agents/rules/
+# Global: ~/.gemini/config/skills
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool antigravity
+
+# Workspace: .agents/skills + .agents/rules/
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool antigravity --project
 ```
 
 Antigravity loads Agent Skills from `~/.gemini/config/skills` (global) and `.agents/skills` (workspace), and reads rules from `.agents/rules/`. Workflows are deprecated in favour of skills, so the pack ships as skills.
@@ -230,14 +282,16 @@ Antigravity loads Agent Skills from `~/.gemini/config/skills` (global) and `.age
 <summary><b>Cursor, Gemini CLI, Copilot, Windsurf, Cline</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cursor --project    # .cursor/skills + .cursor/rules/god-of-design.mdc
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool gemini             # ~/.gemini/skills
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool copilot --project   # .github/skills + .github/instructions/
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool windsurf           # global_rules.md block + ~/.god-of-design/GOD-OF-DESIGN.md
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cline              # ~/Documents/Cline/Rules/god-of-design.md
+URL=https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh
+
+curl -fsSL "$URL" | bash -s -- --tool cursor --project   # .cursor/skills + .cursor/rules/
+curl -fsSL "$URL" | bash -s -- --tool gemini             # ~/.gemini/skills
+curl -fsSL "$URL" | bash -s -- --tool copilot --project  # .github/skills + instructions
+curl -fsSL "$URL" | bash -s -- --tool windsurf           # global_rules.md block + bundle
+curl -fsSL "$URL" | bash -s -- --tool cline              # ~/Documents/Cline/Rules/
 ```
 
-The repo also ships a `gemini-extension.json`, so Gemini CLI can load it as an extension (`gemini extensions install https://github.com/cumabozkurt/god-of-design`). This puts the routing rules from `GEMINI.md` into context. For the full skills, use the installer above.
+The repo also ships a `gemini-extension.json`, so Gemini CLI can install it as an extension: `gemini extensions install https://github.com/cumabozkurt/god-of-design`. That loads all 19 skills plus the routing rules in `GEMINI.md` (checked with Gemini CLI 0.62.0).
 </details>
 
 <details>
@@ -260,22 +314,23 @@ git clone https://github.com/cumabozkurt/god-of-design && cd god-of-design
 ## 🗑️ Uninstall
 
 ```bash
-# macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- uninstall
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- uninstall --project   # project install
+# macOS / Linux (add --project after "uninstall" for a project install)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- uninstall
 ```
 
 ```powershell
-# Windows
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1))) uninstall
+# Windows (add -Project for a project install)
+$s = irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
+& ([scriptblock]::Create($s)) uninstall
 ```
 
 ```bash
-# Node
-npx github:cumabozkurt/god-of-design uninstall            # add --project for a project install
+# Node (add --project for a project install)
+npx github:cumabozkurt/god-of-design uninstall
 ```
 
-**What uninstall does:** it reads the manifest (`~/.god-of-design/manifest.tsv` or `./.god-of-design/manifest.tsv`) and removes only the paths listed there. It skips any skill folder that is not marked `pack: god-of-design`, deletes only the text between `<!-- god-of-design:start -->` and `<!-- god-of-design:end -->` in AGENTS.md / GEMINI.md / global_rules.md (and deletes the file only if the installer created it and it is now empty), and removes only directories it created that are now empty. All three installers share the manifest format, so you can install with `curl | bash` and uninstall with `npx`, or the other way round. Our tests check that HOME is byte-identical after an install → uninstall round trip.
+**What uninstall does:** it reads the manifest (`~/.god-of-design/manifest.tsv` or `./.god-of-design/manifest.tsv`) and removes only the paths listed there. It skips any skill folder that is not marked `pack: god-of-design`, deletes only the text between `<!-- god-of-design:start -->` and `<!-- god-of-design:end -->` in AGENTS.md / GEMINI.md / global_rules.md (and deletes the file only if the installer created it and it is now empty), and removes only directories it created that are now empty. All three installers share the manifest format, so you can install with `curl | bash` and uninstall with `npx`, or the other way round. If an install fails halfway (for example a folder without write permission), it rolls itself back. Our tests check that HOME is byte-identical after an install → uninstall round trip, including files with Windows line endings, a BOM or no final newline.
 
 ## ⚙️ CLI reference
 
@@ -286,14 +341,17 @@ npx github:cumabozkurt/god-of-design uninstall            # add --project for a 
 | `status` | Show global and project installs: version, tools, item count |
 | `list [skills\|styles\|tools]` | Print skills, the 109 styles by family, or every tool's paths (Node CLI) |
 
-| Option | Node CLI / install.sh | install.ps1 | Meaning |
-|---|---|---|---|
-| Tools | `--tool all\|every\|claude,codex,…` | `-Tool` | `all` = recommended dedupe set, `every` = every tool's native folders |
-| Scope | `--global` (default) / `--project` | `-Project` | User folders vs. the current repo |
-| Directory | `--dir PATH` | `-Dir PATH` | Project root (default: current directory) |
-| Preview | `--dry-run` | `-DryRun` | Show actions, write nothing |
-| Overwrite | `--force` | `-Force` | Replace same-named folders that are not ours (off by default) |
-| No instruction edits | `--no-instructions` | `-NoInstructions` | Don't touch AGENTS.md / GEMINI.md / global_rules.md |
+| Node CLI, install.sh | install.ps1 | Meaning |
+|---|---|---|
+| `--tool <list>` | `-Tool` | Tools, comma-separated, or `all` / `every` |
+| `--global` | `-Global` | Your user folders (default) |
+| `--project` | `-Project` | The current repo, to commit for your team |
+| `--dir <path>` | `-Dir` | Project root (default: current folder) |
+| `--dry-run` | `-DryRun` | Show the plan, write nothing |
+| `--force` | `-Force` | Replace same-named folders that are not ours |
+| `--no-instructions` | `-NoInstructions` | Leave AGENTS.md, GEMINI.md and global rules alone |
+
+`all` is the recommended set above; `every` adds Gemini CLI, Cursor, Copilot, Windsurf and Cline. Tools are checked before anything is written, so a typo changes nothing.
 
 Environment variables: `GOD_OF_DESIGN_REF` (git ref to download), `GOD_OF_DESIGN_HOME` (alternate home, used by tests), `CODEX_HOME`, `XDG_CONFIG_HOME`, `NO_COLOR`.
 
@@ -414,25 +472,25 @@ Plain-language prompts work in every tool. The router picks the right skills.
 
 ## 👀 Example output
 
-[`examples/iznik-ceramics-landing/`](examples/iznik-ceramics-landing/index.html) shows the workflow applied to *"landing page for an Istanbul ceramics studio, Ottoman İznik style"*. It uses the atlas palette with contrast checked by `contrast.mjs` (cobalt on white 10.1:1), Cormorant Garamond + Work Sans (both support Turkish characters), an asymmetric 7/5 hero, a real repeating 4-tile SVG module, an editorial numbered list instead of three identical cards, visible focus states and reduced-motion support.
+[`examples/iznik-ceramics-landing/`](examples/iznik-ceramics-landing/index.html) shows the workflow applied to *"landing page for an Istanbul ceramics studio, Ottoman İznik style"*. It uses the atlas palette with contrast checked by `contrast.mjs` (cobalt on white 10.1:1), Cormorant Garamond + Work Sans (both support Turkish characters), an asymmetric 7/5 hero, a panel of 4 × 5 whole tiles drawn from one repeating SVG tile, an editorial numbered list instead of three identical cards, visible focus states and reduced-motion support.
 
 <p align="center"><img src="examples/iznik-ceramics-landing/preview.png" alt="Screenshot of the example landing page: cobalt serif headline 'Tulips in cobalt, fired at 900 °C', a repeating İznik tulip tile panel, and a numbered workshop list" width="85%"></p>
 
 ## 🔄 How it works
 
 ```text
-           your request ("poster", "dashboard", "carousel", "logo"…)
-                                  │
-                         ┌────────▼────────┐
-                         │  god-of-design  │  router + 5-step workflow
-                         └────────┬────────┘
-   1 Brief ─► 2 Direction (1 named, or 2–3 options) ─► 3 System (tokens) ─► 4 Build ─► 5 Gate
-                 │                      │                │               │
-           god-styles            god-color         god-ui-ux/print/  god-anti-slop
-           (109 styles)          god-typography    social/branding/  god-review
-                                 god-layout        slides/motion/    god-accessibility
-                                 god-tokens        dataviz/imagegen
-                                                   god-output (HTML, Tailwind, React, SVG, PNG/PDF)
+your request ("poster", "dashboard", "carousel", "logo" …)
+   │
+   ▼
+god-of-design: router + 5-step workflow
+   │
+   ├─ 1 Brief
+   ├─ 2 Direction  god-styles (109 styles): 1 named direction, or 2–3 options
+   ├─ 3 System     god-color · god-typography · god-layout · god-tokens
+   ├─ 4 Build      god-ui-ux · god-mobile · god-print · god-social-media
+   │               god-branding · god-presentations · god-motion · god-dataviz
+   │               god-imagegen · god-output (HTML, Tailwind, React, SVG, PDF)
+   └─ 5 Gate       god-anti-slop · god-review · god-accessibility
 ```
 
 - **Progressive disclosure.** Each `SKILL.md` is short and loads deep references (`references/*.md`) only when needed, so the context window stays light.
@@ -444,33 +502,32 @@ Plain-language prompts work in every tool. The router picks the right skills.
 - **Anti-slop gate (`god-anti-slop`).** Bans the usual tells: purple→blue gradient heroes, gradient headline text, everything centred, a uniform 16px radius, floating blurred blobs, ✨/🚀 emoji as icons, Corporate Memphis people and 3D glossy blobs, "Unlock / Elevate / Supercharge" headlines and rule-of-three adjective stacks. Each comes with a concrete fix.
 - **Review rubric (`god-review`).** Scores 10 dimensions from 0 to 10 with evidence: concept & direction, hierarchy, layout & spacing, typography, colour, imagery & iconography, consistency & system, usability & UX, accessibility, craft & polish. It then lists fixes as P0/P1/P2 with exact changes and re-scores after fixing.
 - **Accessibility (`god-accessibility`).** WCAG 2.2 AA by default, with contrast numbers computed rather than guessed.
-- **Repository CI.** On every push: frontmatter schema, `name` = folder, description ≤ 500 chars, internal links, style-entry completeness (11 fields, valid hex, unique IDs), JSON manifests, version consistency, script syntax, generated files up to date, and **installer round trips on Ubuntu, macOS and Windows** (Node CLI, install.sh, install.ps1 and every cross-installer pair).
+- **Repository CI.** On every push: frontmatter schema and YAML safety, `name` = folder, description ≤ 500 chars, internal links and heading anchors, style-entry completeness (11 fields, valid hex, unique IDs), JSON manifests, version consistency, generated files up to date, ShellCheck, PSScriptAnalyzer, markdownlint, codespell, a rendered-page check that no table or code block scrolls sideways on GitHub, and **installer round trips on Ubuntu, macOS and Windows** (Node CLI, install.sh, install.ps1 on PowerShell 7 and Windows PowerShell 5.1, and every cross-installer pair), a Node 18 run, and an `npx` / `npm exec` smoke test from GitHub on all three systems. A weekly job checks every external link.
 
 ## 📁 Repository structure
 
 ```text
 god-of-design/
-├── skills/                     # 19 Agent Skills (single source of truth)
-│   ├── god-of-design/SKILL.md  # router + workflow
-│   ├── god-styles/references/  # 109-style atlas (4 files + generated index)
-│   ├── god-color/              # + references/, scripts/contrast.mjs
-│   ├── god-typography/         # + references/font-pairings.md (60), multiscript.md
-│   └── …                       # ui-ux, mobile, tokens, social-media, print, branding, …
-├── commands/                   # 7 slash commands (Claude Code, OpenCode)
-├── adapters/                   # generated rule files per tool + _core.md source
-├── dist/                       # GOD-OF-DESIGN.md (full) + GOD-OF-DESIGN-LITE.md
-├── bin/god-of-design.mjs       # zero-dependency Node CLI
-├── install.sh · install.ps1    # one-line installers (shared manifest format)
-├── scripts/build.mjs           # generates index, adapters, dist, llms.txt, catalog.json
-├── scripts/validate.mjs        # CI validator
-├── test/                       # node:test + bash + pwsh round-trip tests
-├── examples/                   # example output (İznik landing page)
-├── docs/research/              # 52-repo benchmark (EN + TR)
-├── .claude-plugin/             # Claude Code plugin + marketplace
-├── .codex-plugin/ · .agents/   # Codex plugin manifest + marketplace
-├── gemini-extension.json       # Gemini CLI extension
-├── llms.txt · catalog.json
-└── AGENTS.md · CLAUDE.md · GEMINI.md
+├── skills/                  # 19 Agent Skills (single source of truth)
+│   ├── god-of-design/       # router + workflow
+│   ├── god-styles/          # 109-style atlas in references/
+│   ├── god-color/           # + scripts/contrast.mjs
+│   ├── god-typography/      # + 60 font pairings, multi-script
+│   └── …                    # ui-ux, mobile, tokens, social-media, print, …
+├── commands/                # 7 slash commands (Claude Code, OpenCode)
+├── adapters/                # generated rule files per tool
+├── dist/                    # single-file bundles (full + lite)
+├── bin/god-of-design.mjs    # zero-dependency Node CLI
+├── install.sh, install.ps1  # one-line installers (shared manifest)
+├── scripts/                 # build, validate, render and link checks
+├── test/                    # node:test, bash and PowerShell tests
+├── examples/                # example output (İznik landing page)
+├── docs/                    # banner, 52-repo benchmark (EN + TR)
+├── .claude-plugin/          # Claude Code plugin + marketplace
+├── .codex-plugin/, .agents/ # Codex plugin + marketplace
+├── .claude/CLAUDE.md        # Claude Code memory (imports AGENTS.md)
+├── gemini-extension.json    # Gemini CLI extension
+└── AGENTS.md, GEMINI.md, llms.txt, catalog.json
 ```
 
 ## 📊 Benchmark: 52 repos studied
@@ -496,13 +553,13 @@ Leave the default (`all`). It covers Claude Code, Codex, Antigravity, OpenCode, 
 <details>
 <summary><b>Will it overwrite my existing skills, AGENTS.md or rules?</b></summary>
 
-No. The installer skips any same-named folder that is not marked `pack: god-of-design` (unless you pass `--force`). In AGENTS.md / GEMINI.md / Windsurf global rules it only appends a block between `god-of-design:start/end` markers, and uninstall removes only that block. The tests check that your files are byte-identical after install → uninstall. One normalisation can happen: if your file lacked a trailing newline, it ends with exactly one afterwards.
+No. The installer skips any same-named folder that is not marked `pack: god-of-design` (unless you pass `--force`). In AGENTS.md / GEMINI.md / Windsurf global rules it only appends a block between `god-of-design:start/end` markers, in the file's own line-ending style, and uninstall removes only that block. The tests check that your files are byte-identical after install → uninstall, including CRLF files, a UTF-8 BOM and a missing final newline.
 </details>
 
 <details>
 <summary><b>Do I see the skills twice in OpenCode or Cursor?</b></summary>
 
-Those tools read several folders (`~/.claude/skills` and `~/.agents/skills`), so with the default install they find two identical copies of each skill name. They resolve skills by name, so behaviour is the same. If you prefer a single copy, install only the folder your tool reads, e.g. `--tool codex` (which writes `~/.agents/skills`) or `--tool opencode`.
+OpenCode: no. It reads both `~/.claude/skills` and `~/.agents/skills` but lists each skill once (checked with OpenCode 1.18.34: 19 skills). Gemini CLI does warn about duplicates, so the installer never writes a second copy into a folder a tool already reads: with `--tool every`, Gemini CLI, Cursor and OpenCode use the shared `~/.agents/skills` (Gemini CLI 0.62.0: 19 skills, 0 conflicts). Cursor also reads `~/.claude/skills`, so it may show the default install's two copies. We could not test that without a Cursor CLI. If it bothers you, install with `--tool codex,antigravity` and skip Claude Code's folder.
 </details>
 
 <details>
@@ -514,13 +571,19 @@ Run the install command again. It uninstalls the previous manifest and installs 
 <details>
 <summary><b>Does it need internet, API keys, or Node?</b></summary>
 
-No API keys and no runtime dependencies. `install.sh` needs bash + curl/wget + tar. `install.ps1` needs PowerShell 5.1+. The Node CLI needs Node ≥ 18. After installation everything is local Markdown. The optional `render.mjs` uses Playwright if you have it, and the Google Fonts links in generated pages load fonts from Google.
+No API keys and no runtime dependencies. `install.sh` needs bash 3.2+ (the macOS default works) and curl or wget plus tar; it does not need git or Node. `install.ps1` needs PowerShell 5.1+ and leaves nothing behind in your session when run through `irm | iex`. The Node CLI needs Node ≥ 18. After installation everything is local Markdown. The optional `render.mjs` uses Playwright if you have it, and the Google Fonts links in generated pages load fonts from Google.
 </details>
 
 <details>
 <summary><b><code>npx github:…</code> exits silently without installing anything</b></summary>
 
-Some very old or distro-packaged npm builds (we reproduced this with Debian's npm 9.2.0) fail silently on `github:` package specs. Update npm (`npm i -g npm`; npm 10+ works), or point npx at the tarball instead, which works on any npm:
+Some distro-packaged npm builds (we reproduced it with Debian's npm 9.2.0) have an `npx` that exits silently on `github:` specs. `npm exec` from the same npm works, so use it instead:
+
+```bash
+npm exec --yes github:cumabozkurt/god-of-design -- install
+```
+
+Updating npm (`npm i -g npm`, npm 10 or newer) also fixes `npx`. The tarball form works on any npm:
 
 ```bash
 npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main install

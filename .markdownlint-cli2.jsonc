@@ -1,0 +1,17 @@
+{
+  // Pure style rules are off (long prose lines, inline HTML header, aligned table pipes,
+  // ordered lists that continue after a table, bold lead-ins); the rest is rendering hygiene.
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD033": false,
+    "MD041": false,
+    "MD060": false,
+    "MD029": false,
+    "MD036": false,
+    "MD024": { "siblings_only": true }
+  },
+  "globs": ["**/*.md"],
+  // .agents/skills is a symlink to skills/; dist/ is generated from skills/.
+  "ignores": ["node_modules/**", "dist/**", ".agents/**"]
+}

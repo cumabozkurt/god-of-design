@@ -8,80 +8,80 @@ Use the ID with the `god-style` command or say "in the style of <name>". Open th
 
 | ID | Style | Origin |
 |---|---|---|
-| `arts-and-crafts` | Arts and Crafts | Britain, 1860–1910 (William Morris, Kelmscott Press) |
-| `art-nouveau` | Art Nouveau | Europe, 1890–1910 (Mucha, Horta, Guimard, Klimt adjacent) |
-| `vienna-secession` | Vienna Secession | Vienna, 1897–1915 (Klimt, Moser, Hoffmann, Wiener Werkstätte) |
-| `art-deco` | Art Deco | France then worldwide, 1920–1940 (Cassandre, Chrysler Building, ocean liners) |
-| `streamline-moderne` | Streamline Moderne | USA, 1930s–40s |
-| `bauhaus` | Bauhaus | Germany, 1919–1933 (Gropius, Moholy-Nagy, Bayer, Albers) |
-| `de-stijl` | De Stijl | Netherlands, 1917–1931 (Mondrian, van Doesburg, Rietveld) |
-| `constructivism` | Russian Constructivism | Soviet Union, 1917–1930s (Rodchenko, El Lissitzky, Stepanova) |
-| `futurism` | Italian Futurism | Italy, 1909–1940s (Marinetti, Balla, Depero) |
-| `dada-collage` | Dada & Collage | Zurich/Berlin, 1916–1924 (Höch, Schwitters, Hausmann) |
-| `surrealism` | Surrealism | Paris, 1924–1960s (Dalí, Magritte, Ernst) |
-| `swiss-international` | Swiss / International Typographic Style | Switzerland, 1950s–70s (Müller-Brockmann, Hofmann, Ruder, Vignelli in the US) |
-| `mid-century-modern` | Mid-Century Modern | USA/Europe, 1945–1969 (Saul Bass, Paul Rand, Alvin Lustig, Charley Harper, Eames) |
-| `pop-art` | Pop Art | UK/USA, 1955–1970 (Warhol, Lichtenstein, Hamilton) |
-| `op-art` | Op Art | 1960s (Bridget Riley, Victor Vasarely) |
-| `psychedelic-60s` | Psychedelic 60s | San Francisco, 1965–1972 (Wes Wilson, Victor Moscoso, Peter Max) |
-| `seventies-retro` | Seventies Retro | 1970s graphics, supergraphics, Cooper Black era |
-| `memphis` | Memphis Design | Milan, 1981–1987 (Ettore Sottsass, Memphis Group) |
-| `postmodern-new-wave` | Postmodern / New Wave Typography | 1970s–80s (Wolfgang Weingart, April Greiman, Cranbrook) |
-| `punk-zine` | Punk / DIY Zine | UK/US, 1976–1985 (Jamie Reid, Raymond Pettibon) |
-| `grunge-90s` | Grunge / Ray Gun Era | 1990s (David Carson, Ray Gun magazine, Emigre) |
-| `minimalism` | Minimalism | 1960s art (Judd, Agnes Martin) → Dieter Rams "less but better" → Apple/MUJI |
-| `maximalism` | Maximalism | Counter to minimalism |
-| `victorian-letterpress` | Victorian / Letterpress | 1840–1900 wood-type posters, playbills, apothecary labels |
+| `arts-and-crafts` | Arts and Crafts · _The movements_ | Britain, 1860–1910 (William Morris, Kelmscott Press) |
+| `art-nouveau` | Art Nouveau · _The movements_ | Europe, 1890–1910 (Mucha, Horta, Guimard, Klimt adjacent) |
+| `vienna-secession` | Vienna Secession · _The movements_ | Vienna, 1897–1915 (Klimt, Moser, Hoffmann, Wiener Werkstätte) |
+| `art-deco` | Art Deco · _The movements_ | France then worldwide, 1920–1940 (Cassandre, Chrysler Building, ocean liners) |
+| `streamline-moderne` | Streamline Moderne · _The movements_ | USA, 1930s–40s |
+| `bauhaus` | Bauhaus · _The movements_ | Germany, 1919–1933 (Gropius, Moholy-Nagy, Bayer, Albers) |
+| `de-stijl` | De Stijl · _The movements_ | Netherlands, 1917–1931 (Mondrian, van Doesburg, Rietveld) |
+| `constructivism` | Russian Constructivism · _The movements_ | Soviet Union, 1917–1930s (Rodchenko, El Lissitzky, Stepanova) |
+| `futurism` | Italian Futurism · _The movements_ | Italy, 1909–1940s (Marinetti, Balla, Depero) |
+| `dada-collage` | Dada & Collage · _The movements_ | Zurich/Berlin, 1916–1924 (Höch, Schwitters, Hausmann) |
+| `surrealism` | Surrealism · _The movements_ | Paris, 1924–1960s (Dalí, Magritte, Ernst) |
+| `swiss-international` | Swiss / International Typographic Style · _The movements_ | Switzerland, 1950s–70s (Müller-Brockmann, Hofmann, Ruder, Vignelli in the US) |
+| `mid-century-modern` | Mid-Century Modern · _The movements_ | USA/Europe, 1945–1969 (Saul Bass, Paul Rand, Alvin Lustig, Charley Harper, Eames) |
+| `pop-art` | Pop Art · _The movements_ | UK/USA, 1955–1970 (Warhol, Lichtenstein, Hamilton) |
+| `op-art` | Op Art · _The movements_ | 1960s (Bridget Riley, Victor Vasarely) |
+| `psychedelic-60s` | Psychedelic 60s · _The movements_ | San Francisco, 1965–1972 (Wes Wilson, Victor Moscoso, Peter Max) |
+| `seventies-retro` | Seventies Retro · _The movements_ | 1970s graphics, supergraphics, Cooper Black era |
+| `memphis` | Memphis Design · _The movements_ | Milan, 1981–1987 (Ettore Sottsass, Memphis Group) |
+| `postmodern-new-wave` | Postmodern / New Wave Typography · _The movements_ | 1970s–80s (Wolfgang Weingart, April Greiman, Cranbrook) |
+| `punk-zine` | Punk / DIY Zine · _The movements_ | UK/US, 1976–1985 (Jamie Reid, Raymond Pettibon) |
+| `grunge-90s` | Grunge / Ray Gun Era · _The movements_ | 1990s (David Carson, Ray Gun magazine, Emigre) |
+| `minimalism` | Minimalism · _The movements_ | 1960s art (Judd, Agnes Martin) → Dieter Rams "less but better" → Apple/MUJI |
+| `maximalism` | Maximalism · _The movements_ | Counter to minimalism |
+| `victorian-letterpress` | Victorian / Letterpress · _The movements_ | 1840–1900 wood-type posters, playbills, apothecary labels |
 
 ## Digital & UI styles (22) · [02-digital-ui.md](02-digital-ui.md)
 
 | ID | Style | Origin |
 |---|---|---|
-| `flat` | Flat Design | ~2010–2013 (Windows Metro, iOS 7, Google) |
-| `material-3` | Material Design 3 (Material You) | Google 2014 (M1) → 2021 (M3, dynamic colour) → M3 Expressive (2025) |
-| `skeuomorphism` | Skeuomorphism | Apple iOS 1–6 (2007–2012), Mac OS X Aqua |
-| `neumorphism` | Neumorphism (Soft UI) | ~2019–2020 Dribbble trend |
-| `glassmorphism` | Glassmorphism | Windows Vista Aero (2006) → macOS Big Sur / Fluent Acrylic (2020) |
-| `liquid-glass` | Liquid Glass | Apple, WWDC 2025 (iOS 26, macOS 26) |
-| `claymorphism` | Claymorphism | ~2021 |
-| `brutalism-web` | Web Brutalism | Late 2010s (brutalistwebsites |
-| `neo-brutalism` | Neo-Brutalism | ~2021–2023 (Gumroad redesign, Figma community) |
-| `bento-grid` | Bento Grid | Apple keynotes & product pages (2022+), Japanese bento boxes |
-| `dark-tech` | Dark Tech / Linear Style | Linear, Vercel, Raycast (2020+) |
-| `aurora-mesh` | Aurora / Mesh Gradient | Stripe (2019+), iOS wallpapers |
-| `editorial` | Editorial / Magazine Web | Print magazines (Vogue, Monocle, The Gentlewoman) translated to web |
-| `corporate-memphis` | Corporate Memphis (Alegria) | Facebook "Alegria" (Buck, 2017) → ubiquitous tech illustration |
-| `isometric-3d` | Isometric & 3D | Pixel-art isometric games → 2018+ SaaS illustration → Spline/three |
-| `organic-biophilic` | Organic / Biophilic | Wellness, sustainable brands, 2020s |
-| `spatial-ui` | Spatial UI | Apple visionOS (2023), Meta Horizon OS |
-| `retro-os` | Retro OS (Windows 95 / Mac OS 9) | 1990s desktop GUIs |
-| `industrial-mono` | Industrial Monochrome (Nothing-style) | Teenage Engineering, Nothing, Braun |
-| `terminal-dense` | Terminal / Data-Dense | Bloomberg Terminal, CLIs, trading UIs |
-| `kinetic-type` | Kinetic Typography | Saul Bass titles → motion design → variable fonts on the web |
-| `ai-native` | AI-Native / Conversational UI | 2023+ chat-first products |
+| `flat` | Flat Design · _The styles_ | ~2010–2013 (Windows Metro, iOS 7, Google) |
+| `material-3` | Material Design 3 (Material You) · _The styles_ | Google 2014 (M1) → 2021 (M3, dynamic colour) → M3 Expressive (2025) |
+| `skeuomorphism` | Skeuomorphism · _The styles_ | Apple iOS 1–6 (2007–2012), Mac OS X Aqua |
+| `neumorphism` | Neumorphism (Soft UI) · _The styles_ | ~2019–2020 Dribbble trend |
+| `glassmorphism` | Glassmorphism · _The styles_ | Windows Vista Aero (2006) → macOS Big Sur / Fluent Acrylic (2020) |
+| `liquid-glass` | Liquid Glass · _The styles_ | Apple, WWDC 2025 (iOS 26, macOS 26) |
+| `claymorphism` | Claymorphism · _The styles_ | ~2021 |
+| `brutalism-web` | Web Brutalism · _The styles_ | Late 2010s (brutalistwebsites |
+| `neo-brutalism` | Neo-Brutalism · _The styles_ | ~2021–2023 (Gumroad redesign, Figma community) |
+| `bento-grid` | Bento Grid · _The styles_ | Apple keynotes & product pages (2022+), Japanese bento boxes |
+| `dark-tech` | Dark Tech / Linear Style · _The styles_ | Linear, Vercel, Raycast (2020+) |
+| `aurora-mesh` | Aurora / Mesh Gradient · _The styles_ | Stripe (2019+), iOS wallpapers |
+| `editorial` | Editorial / Magazine Web · _The styles_ | Print magazines (Vogue, Monocle, The Gentlewoman) translated to web |
+| `corporate-memphis` | Corporate Memphis (Alegria) · _The styles_ | Facebook "Alegria" (Buck, 2017) → ubiquitous tech illustration |
+| `isometric-3d` | Isometric & 3D · _The styles_ | Pixel-art isometric games → 2018+ SaaS illustration → Spline/three |
+| `organic-biophilic` | Organic / Biophilic · _The styles_ | Wellness, sustainable brands, 2020s |
+| `spatial-ui` | Spatial UI · _The styles_ | Apple visionOS (2023), Meta Horizon OS |
+| `retro-os` | Retro OS (Windows 95 / Mac OS 9) · _The styles_ | 1990s desktop GUIs |
+| `industrial-mono` | Industrial Monochrome (Nothing-style) · _The styles_ | Teenage Engineering, Nothing, Braun |
+| `terminal-dense` | Terminal / Data-Dense · _The styles_ | Bloomberg Terminal, CLIs, trading UIs |
+| `kinetic-type` | Kinetic Typography · _The styles_ | Saul Bass titles → motion design → variable fonts on the web |
+| `ai-native` | AI-Native / Conversational UI · _The styles_ | 2023+ chat-first products |
 
 ## Retro, internet & subculture (18) · [03-retro-subcultures.md](03-retro-subcultures.md)
 
 | ID | Style | Origin |
 |---|---|---|
-| `y2k` | Y2K | 1997–2004 (millennium optimism, iMac G3, early web, pop music videos) |
-| `frutiger-aero` | Frutiger Aero | 2004–2013 (Windows Vista/7, Wii, early smartphones) |
-| `vaporwave` | Vaporwave | 2010–2015 internet music/art scene |
-| `synthwave` | Synthwave / Outrun | 2010s revival of 80s sci-fi/arcade/Miami Vice |
-| `cyberpunk` | Cyberpunk | Blade Runner (1982), Neuromancer, Akira, Ghost in the Shell, Cyberpunk 2077 |
-| `solarpunk` | Solarpunk | 2010s optimistic eco-futurism |
-| `steampunk` | Steampunk | Victorian sci-fi (Verne, Wells), 1980s+ subculture |
-| `pixel-art` | Pixel Art / 8-bit | 1980s–90s consoles (NES, SNES, Game Boy) |
-| `risograph` | Risograph / Lo-fi Print | Riso duplicators |
-| `acid-rave` | Rave / Acid Graphics | 1988–1999 rave flyers |
-| `dark-academia` | Dark Academia | 2010s internet aesthetic (Oxford libraries, classics) |
-| `cottagecore` | Cottagecore | 2018+ romanticised rural life |
-| `kawaii` | Kawaii | Japan, 1970s+ (Sanrio, Harajuku, Yume kawaii) |
-| `anime-manga` | Anime / Manga | Japan |
-| `gothic-blackletter` | Blackletter / Gothic | Medieval manuscripts → heavy metal, streetwear, tattoo |
-| `tactile-grain` | Grain & Tactile Texture | 2020s backlash to sterile digital |
-| `vintage-americana` | Vintage Americana / Diner | 1940s–60s US signage, diners, road trips, sign painting |
-| `tiki-tropical` | Tiki / Mid-century Tropical | 1950s–60s American Polynesian pop (an outsider fantasy, be careful) |
+| `y2k` | Y2K · _The aesthetics_ | 1997–2004 (millennium optimism, iMac G3, early web, pop music videos) |
+| `frutiger-aero` | Frutiger Aero · _The aesthetics_ | 2004–2013 (Windows Vista/7, Wii, early smartphones) |
+| `vaporwave` | Vaporwave · _The aesthetics_ | 2010–2015 internet music/art scene |
+| `synthwave` | Synthwave / Outrun · _The aesthetics_ | 2010s revival of 80s sci-fi/arcade/Miami Vice |
+| `cyberpunk` | Cyberpunk · _The aesthetics_ | Blade Runner (1982), Neuromancer, Akira, Ghost in the Shell, Cyberpunk 2077 |
+| `solarpunk` | Solarpunk · _The aesthetics_ | 2010s optimistic eco-futurism |
+| `steampunk` | Steampunk · _The aesthetics_ | Victorian sci-fi (Verne, Wells), 1980s+ subculture |
+| `pixel-art` | Pixel Art / 8-bit · _The aesthetics_ | 1980s–90s consoles (NES, SNES, Game Boy) |
+| `risograph` | Risograph / Lo-fi Print · _The aesthetics_ | Riso duplicators |
+| `acid-rave` | Rave / Acid Graphics · _The aesthetics_ | 1988–1999 rave flyers |
+| `dark-academia` | Dark Academia · _The aesthetics_ | 2010s internet aesthetic (Oxford libraries, classics) |
+| `cottagecore` | Cottagecore · _The aesthetics_ | 2018+ romanticised rural life |
+| `kawaii` | Kawaii · _The aesthetics_ | Japan, 1970s+ (Sanrio, Harajuku, Yume kawaii) |
+| `anime-manga` | Anime / Manga · _The aesthetics_ | Japan |
+| `gothic-blackletter` | Blackletter / Gothic · _The aesthetics_ | Medieval manuscripts → heavy metal, streetwear, tattoo |
+| `tactile-grain` | Grain & Tactile Texture · _The aesthetics_ | 2020s backlash to sterile digital |
+| `vintage-americana` | Vintage Americana / Diner · _The aesthetics_ | 1940s–60s US signage, diners, road trips, sign painting |
+| `tiki-tropical` | Tiki / Mid-century Tropical · _The aesthetics_ | 1950s–60s American Polynesian pop (an outsider fantasy, be careful) |
 
 ## World traditions (45) · [04-world-traditions.md](04-world-traditions.md)
 

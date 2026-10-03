@@ -1,6 +1,6 @@
 {
   "name": "god-of-design",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/cumabozkurt/god-of-design",
   "counts": {
     "skills": 19,
@@ -90,322 +90,386 @@
     {
       "id": "arts-and-crafts",
       "name": "Arts and Crafts",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "art-nouveau",
       "name": "Art Nouveau",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "vienna-secession",
       "name": "Vienna Secession",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "art-deco",
       "name": "Art Deco",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "streamline-moderne",
       "name": "Streamline Moderne",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "bauhaus",
       "name": "Bauhaus",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "de-stijl",
       "name": "De Stijl",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "constructivism",
       "name": "Russian Constructivism",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "futurism",
       "name": "Italian Futurism",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "dada-collage",
       "name": "Dada & Collage",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "surrealism",
       "name": "Surrealism",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "swiss-international",
       "name": "Swiss / International Typographic Style",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "mid-century-modern",
       "name": "Mid-Century Modern",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "pop-art",
       "name": "Pop Art",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "op-art",
       "name": "Op Art",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "psychedelic-60s",
       "name": "Psychedelic 60s",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "seventies-retro",
       "name": "Seventies Retro",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "memphis",
       "name": "Memphis Design",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "postmodern-new-wave",
       "name": "Postmodern / New Wave Typography",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "punk-zine",
       "name": "Punk / DIY Zine",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "grunge-90s",
       "name": "Grunge / Ray Gun Era",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "minimalism",
       "name": "Minimalism",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "maximalism",
       "name": "Maximalism",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "victorian-letterpress",
       "name": "Victorian / Letterpress",
-      "family": "Art & design movements"
+      "family": "Art & design movements",
+      "region": "The movements"
     },
     {
       "id": "flat",
       "name": "Flat Design",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "material-3",
       "name": "Material Design 3 (Material You)",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "skeuomorphism",
       "name": "Skeuomorphism",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "neumorphism",
       "name": "Neumorphism (Soft UI)",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "glassmorphism",
       "name": "Glassmorphism",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "liquid-glass",
       "name": "Liquid Glass",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "claymorphism",
       "name": "Claymorphism",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "brutalism-web",
       "name": "Web Brutalism",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "neo-brutalism",
       "name": "Neo-Brutalism",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "bento-grid",
       "name": "Bento Grid",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "dark-tech",
       "name": "Dark Tech / Linear Style",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "aurora-mesh",
       "name": "Aurora / Mesh Gradient",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "editorial",
       "name": "Editorial / Magazine Web",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "corporate-memphis",
       "name": "Corporate Memphis (Alegria)",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "isometric-3d",
       "name": "Isometric & 3D",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "organic-biophilic",
       "name": "Organic / Biophilic",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "spatial-ui",
       "name": "Spatial UI",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "retro-os",
       "name": "Retro OS (Windows 95 / Mac OS 9)",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "industrial-mono",
       "name": "Industrial Monochrome (Nothing-style)",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "terminal-dense",
       "name": "Terminal / Data-Dense",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "kinetic-type",
       "name": "Kinetic Typography",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "ai-native",
       "name": "AI-Native / Conversational UI",
-      "family": "Digital & UI styles"
+      "family": "Digital & UI styles",
+      "region": "The styles"
     },
     {
       "id": "y2k",
       "name": "Y2K",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "frutiger-aero",
       "name": "Frutiger Aero",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "vaporwave",
       "name": "Vaporwave",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "synthwave",
       "name": "Synthwave / Outrun",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "cyberpunk",
       "name": "Cyberpunk",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "solarpunk",
       "name": "Solarpunk",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "steampunk",
       "name": "Steampunk",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "pixel-art",
       "name": "Pixel Art / 8-bit",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "risograph",
       "name": "Risograph / Lo-fi Print",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "acid-rave",
       "name": "Rave / Acid Graphics",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "dark-academia",
       "name": "Dark Academia",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "cottagecore",
       "name": "Cottagecore",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "kawaii",
       "name": "Kawaii",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "anime-manga",
       "name": "Anime / Manga",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "gothic-blackletter",
       "name": "Blackletter / Gothic",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "tactile-grain",
       "name": "Grain & Tactile Texture",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "vintage-americana",
       "name": "Vintage Americana / Diner",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "tiki-tropical",
       "name": "Tiki / Mid-century Tropical",
-      "family": "Retro, internet & subculture"
+      "family": "Retro, internet & subculture",
+      "region": "The aesthetics"
     },
     {
       "id": "japanese-wabi-sabi",

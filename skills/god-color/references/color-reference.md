@@ -16,6 +16,7 @@ Contrast ratio = `(L1 + 0.05) / (L2 + 0.05)` where L1 is the lighter colour.
 APCA (proposed for WCAG 3) gives a perceptual Lc value. For body text aim for |Lc| ≥ 75, for large headings ≥ 60. Use it as a second opinion. Legal conformance today is still WCAG 2.x.
 
 Handy reference pairs on white `#FFFFFF`:
+
 - `#767676` is the lightest neutral grey that passes 4.5:1 (≈4.54:1).
 - `#595959` ≈ 7:1 (AAA).
 - Tailwind `slate-500 #64748B` ≈ 4.76:1 passes; `slate-400 #94A3B8` ≈ 2.56:1 fails for text.
@@ -23,6 +24,7 @@ Handy reference pairs on white `#FFFFFF`:
 ## OKLCH quick guide
 
 `oklch(L C H)`: L = lightness 0–1, C = chroma 0–~0.37, H = hue angle.
+
 - Even lightness ramp for 11 steps: L ≈ 0.98, 0.95, 0.90, 0.82, 0.72, 0.62, 0.53, 0.45, 0.38, 0.30, 0.22
 - Peak chroma around the 500–600 steps; reduce C by 30–60% at 50 and 950.
 - Hue anchors (approx.): red 25, orange 55, amber 75, yellow 95, lime 125, green 145, teal 180, cyan 210, blue 255, indigo 275, violet 295, magenta 330.
@@ -45,16 +47,31 @@ Handy reference pairs on white `#FFFFFF`:
 
 ## Cultural colour meanings (check your audience)
 
-| Colour | West (EU/US) | Türkiye / Middle East | East Asia | South Asia | Africa (varies widely) | Latin America |
-|---|---|---|---|---|---|---|
-| Red | Passion, danger, sale | Nation, power, celebration (Turkish flag); bridal henna | Luck, joy, prosperity (China); stocks *up* in China, *down* in the West | Marriage, purity (bridal saris) | Life, sacrifice, mourning (some) | Passion, religion |
-| White | Purity, weddings, clean | Purity; also mourning shrouds | **Mourning, death** (China, Japan, Korea) | Mourning, widowhood | Peace, spirituality | Purity |
-| Black | Elegance, mourning | Mourning, authority | Formal; can be negative | Evil, inauspicious (some) | Maturity, spirituality | Mourning |
-| Green | Nature, go, money | **Islam**, paradise, prosperity | Health; green hats = infidelity (China) | Islam (Pakistan), harvest | Fertility, land | Independence, nature (Mexico) |
-| Yellow / Gold | Optimism, caution | Wealth, sun | **Imperial** (China), courage (Japan) | Sacred, knowledge (saffron) | Wealth, status (gold) | Mourning (some), sun |
-| Blue | Trust, corporate | Protection (nazar boncuğu, evil eye), heaven | Healing, calm; also cold | Divine (Krishna) | Peace, love | Trust, religion |
-| Purple | Royalty, creativity | Luxury | Wealth; mourning (Thailand for widows) | Sorrow (some) | Royalty | Mourning (Brazil) |
-| Orange | Energy, discount | Warmth | Happiness | **Sacred** (Hinduism, Buddhism) | – | Día de Muertos marigold |
+**West, Middle East and East Asia**
+
+| Colour | West (EU/US) | Türkiye / Middle East | East Asia |
+|---|---|---|---|
+| Red | Passion, danger, sale | Nation, power, celebration (Turkish flag); bridal henna | Luck, joy, prosperity (China); stocks *up* in China, *down* in the West |
+| White | Purity, weddings, clean | Purity; also mourning shrouds | **Mourning, death** (China, Japan, Korea) |
+| Black | Elegance, mourning | Mourning, authority | Formal; can be negative |
+| Green | Nature, go, money | **Islam**, paradise, prosperity | Health; green hats = infidelity (China) |
+| Yellow / Gold | Optimism, caution | Wealth, sun | **Imperial** (China), courage (Japan) |
+| Blue | Trust, corporate | Protection (nazar boncuğu, evil eye), heaven | Healing, calm; also cold |
+| Purple | Royalty, creativity | Luxury | Wealth; mourning (Thailand for widows) |
+| Orange | Energy, discount | Warmth | Happiness |
+
+**South Asia, Africa and Latin America** (Africa varies widely)
+
+| Colour | South Asia | Africa | Latin America |
+|---|---|---|---|
+| Red | Marriage, purity (bridal saris) | Life, sacrifice, mourning (some) | Passion, religion |
+| White | Mourning, widowhood | Peace, spirituality | Purity |
+| Black | Evil, inauspicious (some) | Maturity, spirituality | Mourning |
+| Green | Islam (Pakistan), harvest | Fertility, land | Independence, nature (Mexico) |
+| Yellow / Gold | Sacred, knowledge (saffron) | Wealth, status (gold) | Mourning (some), sun |
+| Blue | Divine (Krishna) | Peace, love | Trust, religion |
+| Purple | Sorrow (some) | Royalty | Mourning (Brazil) |
+| Orange | **Sacred** (Hinduism, Buddhism) | – | Día de Muertos marigold |
 
 ## Colour-blind-safe sets
 

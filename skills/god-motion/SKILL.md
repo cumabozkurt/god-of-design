@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Motion
@@ -47,7 +47,8 @@ Squash and stretch (buttons on press, slight) · Anticipation (a small pull-back
 }
 /* Scroll-driven (Chromium; progressive enhancement) */
 @supports (animation-timeline: view()) {
-  .on-scroll { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+  .on-scroll { animation: rise linear both;
+               animation-timeline: view(); animation-range: entry 0% cover 30%; }
 }
 /* View Transitions between pages (same-document or cross-document MPA) */
 @view-transition { navigation: auto; }
@@ -58,8 +59,13 @@ Squash and stretch (buttons on press, slight) · Anticipation (a small pull-back
 // Motion (formerly Framer Motion) – staggered list
 import { motion } from "motion/react";
 const list = { show: { transition: { staggerChildren: 0.04 } } };
-const item = { hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 400, damping: 30 } } };
-<motion.ul variants={list} initial="hidden" animate="show">{items.map(i => <motion.li key={i.id} variants={item}>{i.label}</motion.li>)}</motion.ul>
+const item = {
+  hidden: { opacity: 0, y: 8 },
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 400, damping: 30 } },
+};
+<motion.ul variants={list} initial="hidden" animate="show">
+  {items.map((i) => <motion.li key={i.id} variants={item}>{i.label}</motion.li>)}
+</motion.ul>
 ```
 
 GSAP: use for complex timelines and scroll storytelling (`gsap.timeline()`, ScrollTrigger). Since the 2025 Webflow acquisition GSAP and its plugins are free, but its licence excludes tools that compete with Webflow. Check the current licence. Lottie/Rive: use for illustrative, designer-made animation (Rive supports interactive state machines). Keep files small (< 100KB Lottie JSON for UI).

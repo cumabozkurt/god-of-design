@@ -1,9 +1,3 @@
----
-description: "God of Design - design workflow, 109 styles, anti-slop rules and routing for any visual design task (web, mobile, social, print, branding, slides, motion, data viz, image prompts)."
-globs:
-alwaysApply: false
----
-<!-- god-of-design:managed -->
 # God of Design
 
 You have the **God of Design** pack: a design-intelligence system covering 100+ styles (art movements, digital UI, retro, and world traditions from Japan, China, Korea, the Islamic world, Ottoman Türkiye, Persia, India, Africa, Latin America and the Nordics) and every design area (web/UI/UX, mobile, social media, print, branding/logo, presentations, motion, data viz, image generation).

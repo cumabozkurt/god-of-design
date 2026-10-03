@@ -1,7 +1,7 @@
 {
   "name": "god-of-design",
   "displayName": "God of Design",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design-intelligence pack for AI agents: 19 skills and 109 world design styles covering UI/UX, web, mobile, social media, branding, print, presentations, motion, data viz and image prompts, with anti-slop gates, WCAG checks and Tailwind/React/SVG output.",
   "author": { "name": "Cuma Bozkurt", "url": "https://github.com/cumabozkurt" },
   "homepage": "https://github.com/cumabozkurt/god-of-design",

@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Output
@@ -35,16 +35,21 @@ metadata:
 <meta name="description" content="One specific sentence.">
 <meta property="og:image" content="/og.png"><!-- 1200×630 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=...&display=swap" rel="stylesheet">
 <style>
   :root { color-scheme: light dark; /* tokens from god-tokens */ }
   *, *::before, *::after { box-sizing: border-box; }
-  body { margin: 0; font-family: var(--font-body); color: var(--color-text); background: var(--color-bg);
+  body { margin: 0; font-family: var(--font-body);
+         color: var(--color-text); background: var(--color-bg);
          -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
   img, svg, video { display: block; max-width: 100%; height: auto; }
   :focus-visible { outline: 2px solid var(--color-focus, currentColor); outline-offset: 2px; }
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important;
+      transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  }
 </style>
 </head>
 <body>
@@ -64,10 +69,13 @@ Tailwind prototypes: `<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/bro
 ## Render HTML/SVG → PNG/PDF
 
 ```bash
-npx -y playwright@latest install chromium            # once
-node skills/god-output/scripts/render.mjs poster.html poster.png 1080 1350     # PNG at exact size (2x scale default)
-node skills/god-output/scripts/render.mjs deck.html deck.pdf 1920 1080         # PDF, one page per slide/section
+npx -y playwright@latest install chromium                    # once
+# PNG at an exact size (2x scale by default)
+node skills/god-output/scripts/render.mjs poster.html poster.png 1080 1350
+# PDF, one page per slide/section
+node skills/god-output/scripts/render.mjs deck.html deck.pdf 1920 1080
 ```
+
 (The script uses Playwright if installed and otherwise prints the manual command.)
 
 ## Export settings

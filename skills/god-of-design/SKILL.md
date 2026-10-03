@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God of Design: Design Director
@@ -57,6 +57,7 @@ If skills can't be loaded on your platform, the same content lives in `dist/GOD-
 ## Quick commands (natural-language shortcuts)
 
 Users may say these. Treat them as intents:
+
 - `design <thing>`: full five-step workflow.
 - `style <name>` or `in the style of <tradition>`: apply that atlas entry.
 - `directions <thing>`: give 3 named directions, then wait.

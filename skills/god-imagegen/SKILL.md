@@ -5,16 +5,19 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Image Generation & Illustration
 
 ## Prompt anatomy (works across models)
 
+```text
+[Subject + action] , [setting/context] , [style/medium] , [composition/camera] ,
+[lighting] , [colour palette] , [mood] , [details/materials] ,
+[technical: aspect ratio, quality]
 ```
-[Subject + action] , [setting/context] , [style/medium] , [composition/camera] , [lighting] , [colour palette] , [mood] , [details/materials] , [technical: aspect ratio, quality]
-```
+
 Example: `An elderly ceramicist glazing an İznik-style tulip plate, sunlit workshop in Kütahya, documentary photography, 50mm lens at eye level, shallow depth of field, soft window light from the left, cobalt and turquoise with warm wood tones, calm and focused, visible glaze drips and brush texture, 4:5`
 
 ## Model notes (late 2026; check current docs because they change fast)

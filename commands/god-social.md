@@ -1,6 +1,6 @@
 ---
 description: Create a social media graphic or carousel at exact platform specs
-argument-hint: <platform> <format> <topic>, e.g. "instagram carousel 5 tips for brand colors"
+argument-hint: '<platform> <format> <topic>, e.g. "instagram carousel 5 tips for brand colors"'
 ---
 Use `god-social-media` (exact sizes and safe zones from `references/platform-specs.md`) together with `god-of-design` to create: $ARGUMENTS
 

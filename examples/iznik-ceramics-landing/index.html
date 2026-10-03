@@ -57,7 +57,9 @@
   .actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
   .btn { display: inline-block; padding: 0.85rem 1.4rem; background: var(--cobalt); color: var(--frit); text-decoration: none; font-weight: 600; border-radius: 2px; transition: background-color .2s; }
   .btn:hover { background: #172C70; }
-  .tile-panel { aspect-ratio: 4 / 5; border: 10px solid var(--frit); outline: 2px solid var(--cobalt); background: var(--frit) url("tile.svg") 0 0 / 50% auto repeat; box-shadow: 0 1px 0 var(--cobalt); }
+  /* Exactly 4 x 5 whole tiles (viewBox 480 x 600, tile 120): never a cut-off half row at any size */
+  .tile-panel { display: block; margin: 0; padding: 10px; background: var(--frit); outline: 2px solid var(--cobalt); outline-offset: -2px; }
+  .tile-panel svg { display: block; width: 100%; height: auto; }
 
   /* Workshops: editorial numbered list, not three identical cards */
   .band { background: var(--frit); border-block: 6px double var(--cobalt); }
@@ -81,8 +83,9 @@
 
   @media (max-width: 760px) {
     .hero, .band .wrap { grid-template-columns: 1fr; }
-    .tile-panel { aspect-ratio: 16 / 10; }
-    nav ul { gap: 1rem; font-size: var(--step--1); }
+    .tile-panel { width: min(100%, 22rem); margin-inline: auto; }
+    header .wrap { flex-wrap: wrap; row-gap: 0.5rem; }
+    nav ul { gap: 1rem; font-size: var(--step--1); flex-wrap: wrap; }
     ol.offers li { grid-template-columns: 2.5rem 1fr; } .price { grid-column: 2; }
   }
 </style>
@@ -102,7 +105,20 @@
       <p class="lead">We paint İznik tiles by hand, one quartz-frit body at a time: saz leaves, carnations and that stubborn raised red. On weekends we teach you to do the same.</p>
       <div class="actions"><a class="btn" href="#workshops">Book a Saturday workshop</a><a href="#visit">See the studio →</a></div>
     </div>
-    <div class="tile-panel" role="img" aria-label="Repeating İznik-style tile panel with red tulips and turquoise saz leaves"></div>
+    <figure class="tile-panel">
+      <svg viewBox="0 0 480 600" role="img" aria-label="Panel of 20 İznik-style tiles with red tulips and turquoise saz leaves">
+        <defs><pattern id="tile" width="120" height="120" patternUnits="userSpaceOnUse">
+          <rect width="120" height="120" fill="#FFFFFF"/>
+          <g fill="none" stroke="#1F3A93" stroke-width="1.6"><path d="M0 0H120V120H0Z"/><path d="M0 18A18 18 0 0 0 18 0M102 0A18 18 0 0 0 120 18M120 102A18 18 0 0 0 102 120M18 120A18 18 0 0 0 0 102"/></g>
+          <g fill="#2BB3B1" stroke="#1F3A93" stroke-width="1.2"><path d="M60 96C44 92 34 80 30 64C46 68 56 80 60 96Z"/><path d="M60 96C76 92 86 80 90 64C74 68 64 80 60 96Z"/></g>
+          <path d="M60 100V58" stroke="#2E7D32" stroke-width="3"/>
+          <g fill="#C0392B" stroke="#1F3A93" stroke-width="1.2"><path d="M60 60C48 56 43 42 46 24C51 33 55 38 60 40C65 38 69 33 74 24C77 42 72 56 60 60Z"/><path d="M60 40C57 31 58 22 60 14C62 22 63 31 60 40Z"/></g>
+          <g fill="#1F3A93"><circle cx="8" cy="60" r="3"/><circle cx="112" cy="60" r="3"/><circle cx="60" cy="112" r="2.5"/></g>
+          <g fill="#C0392B"><circle cx="4" cy="4" r="5"/><circle cx="116" cy="4" r="5"/><circle cx="116" cy="116" r="5"/><circle cx="4" cy="116" r="5"/></g>
+        </pattern></defs>
+        <rect width="480" height="600" fill="url(#tile)"/>
+      </svg>
+    </figure>
   </section>
 
   <section class="band" id="workshops" aria-labelledby="ws-title">

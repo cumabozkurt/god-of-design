@@ -27,13 +27,13 @@
 
 <p align="center">
   <a href="https://github.com/cumabozkurt/god-of-design/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/cumabozkurt/god-of-design/ci.yml?branch=main&style=flat-square&label=CI&logo=githubactions&logoColor=white"></a>
-  <img alt="Sürüm 1.0.0" src="https://img.shields.io/badge/s%C3%BCr%C3%BCm-1.0.0-141414?style=flat-square">
+  <img alt="Sürüm 1.1.0" src="https://img.shields.io/badge/s%C3%BCr%C3%BCm-1.1.0-141414?style=flat-square">
   <img alt="Beceri: 19" src="https://img.shields.io/badge/beceri-19-C8102E?style=flat-square">
   <img alt="Stil: 109" src="https://img.shields.io/badge/stil-109-1F4E9C?style=flat-square">
   <img alt="Araç: 9+" src="https://img.shields.io/badge/ara%C3%A7-9%2B-F2B705?style=flat-square">
   <img alt="Bağımlılık yok" src="https://img.shields.io/badge/ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k-0-0B7A3B?style=flat-square">
   <a href="LICENSE"><img alt="Lisans: MIT" src="https://img.shields.io/badge/lisans-MIT-1F6FEB?style=flat-square"></a>
-  <a href="https://github.com/cumabozkurt/god-of-design/stargazers"><img alt="Yıldız" src="https://img.shields.io/github/stars/cumabozkurt/god-of-design?style=flat-square&label=y%C4%B1ld%C4%B1z&color=22D3EE&logo=github"></a>
+  <a href="https://github.com/cumabozkurt/god-of-design"><img alt="Yıldız" src="https://img.shields.io/github/stars/cumabozkurt/god-of-design?style=flat-square&label=y%C4%B1ld%C4%B1z&color=22D3EE&logo=github"></a>
 </p>
 
 <h3 align="center">Yapay zekâ kodlama ajanınıza kıdemli bir tasarımcının gözünü kazandırın: her kültürden, her stilde, her mecra için.</h3>
@@ -102,20 +102,59 @@ Tek satır yazmadan önce bu alandaki **en ilgili 52 açık kaynak depoyu** ince
 
 ## 🧰 Desteklenen araçlar
 
-| Araç | Kurulan | Global (`--global`, varsayılan) | Proje (`--project`) | Nasıl kullanılır? |
-|---|---|---|---|---|
-| **Claude Code** | 19 beceri + 7 eğik çizgi komutu | `~/.claude/skills`, `~/.claude/commands` | `.claude/skills`, `.claude/commands` | Beceriler kendiliğinden devreye girer; `/god-design …`; ya da eklenti pazar yeri |
-| **OpenAI Codex CLI** | 19 beceri + AGENTS.md bloğu | `~/.agents/skills`, `~/.codex/AGENTS.md` | `.agents/skills`, `AGENTS.md` | `$god-of-design`, `/skills` ya da doğrudan isteyin |
-| **OpenCode** | Beceriler + 7 komut | `~/.config/opencode/skills` (`~/.claude/skills` ve `~/.agents/skills` klasörlerini de okur), `~/.config/opencode/commands` | `.opencode/skills`, `.opencode/commands` | Beceriler kendiliğinden yüklenir; `/god-design …` |
-| **Google Antigravity** | Beceriler (+ çalışma alanı kuralı) | `~/.gemini/config/skills` | `.agents/skills`, `.agents/rules/god-of-design.md` | Beceriler açıklamalarına göre devreye girer |
-| **Gemini CLI** | Beceriler (+ GEMINI.md bloğu) | `~/.gemini/skills` (`~/.agents/skills` klasörünü de okur) | `.gemini/skills`, `GEMINI.md` | `/skills` ya da doğrudan isteyin |
-| **Cursor** | Beceriler + kural | `~/.cursor/skills` (`~/.agents/skills` ve `~/.claude/skills` klasörlerini de okur) | `.cursor/skills`, `.cursor/rules/god-of-design.mdc` | Ajan becerileri bulur; `@god-of-design` kuralı |
-| **GitHub Copilot** | Beceriler + talimatlar | `~/.copilot/skills` | `.github/skills`, `.github/instructions/god-of-design.instructions.md` | Copilot ajan modu / Chat |
-| **Windsurf** | Kural (≤ 6000 karakter) + tam başvuru paketi | `~/.codeium/windsurf/memories/global_rules.md` içinde blok | `.windsurf/rules/god-of-design.md` | Cascade kurala uyar, gerektiğinde paketi açar |
-| **Cline** | Kural + tam başvuru paketi | `~/Documents/Cline/Rules/god-of-design.md` | `.clinerules/god-of-design.md` | Her zaman etkin kural |
-| **Herhangi bir LLM** (ChatGPT, Gemini web, Claude.ai, yerel modeller) | Tek dosya yapıştırın | [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) (tam, ~220 KB) · [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) (~8 KB) · [`llms.txt`](llms.txt) | | Dosya olarak yükleyin ya da sistem istemi olarak yapıştırın |
+| Araç | Kurulan | Nasıl kullanılır? |
+|---|---|---|
+| **Claude Code** | 19 beceri, 7 komut | Beceriler kendiliğinden devreye girer; `/god-design …`; ya da eklenti |
+| **OpenAI Codex CLI** | 19 beceri, AGENTS.md bloğu | `$god-of-design`, `/skills` ya da doğrudan isteyin |
+| **OpenCode** | Beceriler, 7 komut | Beceriler kendiliğinden yüklenir; `/god-design …` |
+| **Google Antigravity** | Beceriler (+ çalışma alanı kuralı) | Beceriler açıklamalarına göre devreye girer |
+| **Gemini CLI** | Beceriler (+ GEMINI.md bloğu) | `/skills` ya da doğrudan isteyin |
+| **Cursor** | Beceriler + kural | Ajan becerileri bulur; `@god-of-design` kuralı |
+| **GitHub Copilot** | Beceriler + talimatlar | Copilot ajan modu / Chat |
+| **Windsurf** | Kural + başvuru paketi | Cascade kurala uyar |
+| **Cline** | Kural + başvuru paketi | Her zaman etkin kural |
+| **Herhangi bir LLM** | Tek Markdown dosyası | Dosya olarak yükleyin ya da sistem istemi olarak yapıştırın |
 
-> **Varsayılan `--tool all`** şu klasörlere kurar: `~/.claude/skills` (Claude Code), `~/.agents/skills` (Codex; Cursor, Gemini CLI ve OpenCode da okur) ve `~/.gemini/config/skills` (Antigravity). Claude Code ve OpenCode için eğik çizgi komutlarını da ekler. Üç klasör, araç başına ayrı kopya gerektirmeden dokuz aracı kapsar. Yollar 3 Ekim 2026'da her aracın resmî belgeleriyle karşılaştırıldı. Görmek için `god-of-design list tools` komutunu çalıştırın.
+<details>
+<summary><b>Her aracın dosyaları nereye gider?</b> (global <code>--global</code>, varsayılan; proje <code>--project</code>)</summary>
+
+- **Claude Code**
+  - global: `~/.claude/skills`, `~/.claude/commands`
+  - proje: `.claude/skills`, `.claude/commands`
+- **OpenAI Codex CLI**
+  - global: `~/.agents/skills`, `~/.codex/AGENTS.md` içinde blok
+  - proje: `.agents/skills`, `AGENTS.md` içinde blok
+- **OpenCode** (`.claude/skills` ve `.agents/skills` klasörlerini de okur)
+  - global: `~/.config/opencode/skills`, `~/.config/opencode/commands`
+  - proje: `.opencode/skills`, `.opencode/commands`
+- **Google Antigravity**
+  - global: `~/.gemini/config/skills`
+  - proje: `.agents/skills`, `.agents/rules/god-of-design.md`
+- **Gemini CLI** (`.agents/skills` klasörünü de okur)
+  - global: `~/.gemini/skills`
+  - proje: `.gemini/skills`, `GEMINI.md` içinde blok
+- **Cursor** (`.agents/skills` ve `.claude/skills` klasörlerini de okur)
+  - global: `~/.cursor/skills`
+  - proje: `.cursor/skills`, `.cursor/rules/god-of-design.mdc`
+- **GitHub Copilot**
+  - global: `~/.copilot/skills`
+  - proje: `.github/skills`, `.github/instructions/god-of-design.instructions.md`
+- **Windsurf** (kural en fazla 6.000 karakter, tam başvuru ayrı pakette)
+  - global: `~/.codeium/windsurf/memories/global_rules.md` içinde blok
+  - proje: `.windsurf/rules/god-of-design.md`
+- **Cline**
+  - global: `~/Documents/Cline/Rules/god-of-design.md`
+  - proje: `.clinerules/god-of-design.md`
+- **Herhangi bir LLM** (ChatGPT, Gemini web, Claude.ai, yerel modeller)
+  - [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) (tam, yaklaşık 220 KB)
+  - [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) (yaklaşık 8 KB)
+  - [`llms.txt`](llms.txt)
+
+</details>
+
+> **Varsayılan `--tool all`** şu klasörlere kurar: `~/.claude/skills` (Claude Code), `~/.agents/skills` (Codex; Cursor, Gemini CLI ve OpenCode da okur) ve `~/.gemini/config/skills` (Antigravity). Claude Code ve OpenCode için eğik çizgi komutlarını da ekler. Üç klasör dokuz aracı kapsar. Araçları kendiniz seçtiğinizde kurulum aracı, bir aracın zaten okuduğu klasörün ikinci kopyasını asla yazmaz (Gemini CLI her yinelenen beceri için uyarı verir). Yollar 3 Ekim 2026'da her aracın belgeleriyle karşılaştırıldı; `god-of-design list tools` hepsini yazdırır.
+
+**Gerçek CLI'larla test edildi** (3 Ekim 2026, yolunda boşluk olan geçici bir ev klasöründe): Claude Code 2.1.288 (`claude plugin validate --strict` geçer; eklenti 19 beceri ve 7 komut yükler), Codex CLI 0.160.0 (19 becerinin tamamı istemde), OpenCode 1.18.34 (`opencode debug skill`: 19 beceri, yineleme yok) ve Gemini CLI 0.62.0 (`gemini skills list`: 19 beceri, çakışma yok). Antigravity, Cursor, Copilot, Windsurf ve Cline yolları resmî belgelerine dayanır; bu araçların CI'da çalıştırabileceğimiz bir CLI'ı yok.
 
 ## 🚀 Hızlı başlangıç
 
@@ -137,6 +176,8 @@ irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
 npx github:cumabozkurt/god-of-design install
 ```
 
+`npx` hiçbir çıktı vermeden kapanırsa (bazı dağıtım paketli npm 9 sürümleri böyle yapar) bunun yerine `npm exec --yes github:cumabozkurt/god-of-design -- install` kullanın. Ayrıntılar [SSS](#-sık-sorulanlar) bölümünde.
+
 Ardından ajanınızı yeniden başlatın ve şunu isteyin:
 
 ```text
@@ -152,21 +193,26 @@ Tüm kurulum araçları aynı seçenekleri alır: araçları `--tool` ile seçin
 
 ```bash
 # Yalnızca Cursor ve Windsurf, bulunduğunuz projeye
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cursor,windsurf --project
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool cursor,windsurf --project
 
-# Her aracın kendi klasörü (en geniş kapsam)
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool every
+# Tüm araçlar (beceri klasörleri paylaşılır, asla kopyalanmaz)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool every
 
 # Hiçbir şey yazmadan ne olacağını görün
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --dry-run
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --dry-run
 
-# Belirli bir sürümü sabitleyin (etiket ya da dal)
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | GOD_OF_DESIGN_REF=v1.0.0 bash
+# Bir sürüm etiketini sabitleyin (ya da herhangi bir dal / commit)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | GOD_OF_DESIGN_REF=v1.1.0 bash
 ```
 
 ```powershell
 # Seçenekli PowerShell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1))) install -Tool claude,codex -Project
+$s = irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
+& ([scriptblock]::Create($s)) install -Tool claude,codex -Project
 ```
 
 </details>
@@ -180,7 +226,7 @@ npx github:cumabozkurt/god-of-design list styles
 npx github:cumabozkurt/god-of-design status
 ```
 
-CLI'yi GitHub'dan global olarak da kurabilirsiniz: `npm i -g github:cumabozkurt/god-of-design`, ardından `god-of-design install`. CLI'nin hiçbir bağımlılığı yoktur.
+CLI'yi GitHub'dan global olarak da kurabilirsiniz: `npm i -g github:cumabozkurt/god-of-design`, ardından `god-of-design install`. CLI'nin hiçbir bağımlılığı yoktur. `npx github:…` komutunun hiçbir şey yazdırmadığı npm sürümlerinde `npm exec --yes github:cumabozkurt/god-of-design -- <komut>` aynı işi görür.
 </details>
 
 <details>
@@ -209,7 +255,8 @@ Ya da tek satırlık kurulumu kullanın: becerileri `~/.agents/skills` klasörü
 <summary><b>OpenCode</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool opencode
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool opencode
 ```
 
 Becerileri `~/.config/opencode/skills`, `/god-*` komutlarını `~/.config/opencode/commands` klasörüne kurar. OpenCode `~/.claude/skills` ve `~/.agents/skills` klasörlerini de okuduğu için varsayılan `all` kurulumu zaten çalışır.
@@ -219,8 +266,13 @@ Becerileri `~/.config/opencode/skills`, `/god-*` komutlarını `~/.config/openco
 <summary><b>Google Antigravity</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool antigravity            # ~/.gemini/config/skills
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool antigravity --project  # .agents/skills + .agents/rules/
+# Global: ~/.gemini/config/skills
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool antigravity
+
+# Çalışma alanı: .agents/skills + .agents/rules/
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- --tool antigravity --project
 ```
 
 Antigravity, Agent Skills'i `~/.gemini/config/skills` (global) ve `.agents/skills` (çalışma alanı) klasörlerinden yükler, kuralları `.agents/rules/` altından okur. Workflow'lar becerilerin lehine kullanımdan kaldırıldığı için paket beceri olarak gelir.
@@ -230,14 +282,16 @@ Antigravity, Agent Skills'i `~/.gemini/config/skills` (global) ve `.agents/skill
 <summary><b>Cursor, Gemini CLI, Copilot, Windsurf, Cline</b></summary>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cursor --project    # .cursor/skills + .cursor/rules/god-of-design.mdc
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool gemini             # ~/.gemini/skills
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool copilot --project   # .github/skills + .github/instructions/
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool windsurf           # global_rules.md bloğu + ~/.god-of-design/GOD-OF-DESIGN.md
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- --tool cline              # ~/Documents/Cline/Rules/god-of-design.md
+URL=https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh
+
+curl -fsSL "$URL" | bash -s -- --tool cursor --project   # .cursor/skills + .cursor/rules/
+curl -fsSL "$URL" | bash -s -- --tool gemini             # ~/.gemini/skills
+curl -fsSL "$URL" | bash -s -- --tool copilot --project  # .github/skills + instructions
+curl -fsSL "$URL" | bash -s -- --tool windsurf           # global_rules.md bloğu + paket
+curl -fsSL "$URL" | bash -s -- --tool cline              # ~/Documents/Cline/Rules/
 ```
 
-Depoda bir `gemini-extension.json` de bulunur. Gemini CLI depoyu eklenti olarak yükleyebilir (`gemini extensions install https://github.com/cumabozkurt/god-of-design`); bu, `GEMINI.md` içindeki yönlendirme kurallarını bağlama ekler. Becerilerin tamamı için yukarıdaki kurulum aracını kullanın.
+Depoda bir `gemini-extension.json` de bulunur, yani Gemini CLI depoyu eklenti olarak kurabilir: `gemini extensions install https://github.com/cumabozkurt/god-of-design`. Bu, 19 becerinin tamamını ve `GEMINI.md` içindeki yönlendirme kurallarını yükler (Gemini CLI 0.62.0 ile doğrulandı).
 </details>
 
 <details>
@@ -260,22 +314,23 @@ git clone https://github.com/cumabozkurt/god-of-design && cd god-of-design
 ## 🗑️ Kaldırma
 
 ```bash
-# macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- uninstall
-curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh | bash -s -- uninstall --project   # proje kurulumu
+# macOS / Linux (proje kurulumu için "uninstall" sonrasına --project ekleyin)
+curl -fsSL https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.sh \
+  | bash -s -- uninstall
 ```
 
 ```powershell
-# Windows
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1))) uninstall
+# Windows (proje kurulumu için -Project ekleyin)
+$s = irm https://raw.githubusercontent.com/cumabozkurt/god-of-design/main/install.ps1
+& ([scriptblock]::Create($s)) uninstall
 ```
 
 ```bash
-# Node
-npx github:cumabozkurt/god-of-design uninstall            # proje kurulumu için --project ekleyin
+# Node (proje kurulumu için --project ekleyin)
+npx github:cumabozkurt/god-of-design uninstall
 ```
 
-**Kaldırma ne yapar?** Manifesti (`~/.god-of-design/manifest.tsv` ya da `./.god-of-design/manifest.tsv`) okur ve yalnızca orada listelenen yolları siler. `pack: god-of-design` işareti taşımayan beceri klasörlerine dokunmaz. AGENTS.md / GEMINI.md / global_rules.md dosyalarında yalnızca `<!-- god-of-design:start -->` ile `<!-- god-of-design:end -->` arasındaki metni siler; dosyanın kendisini yalnızca kurulum aracı oluşturmuşsa ve artık boşsa siler. Klasörlerden de yalnızca kendi oluşturduğu ve boş kalanları kaldırır. Üç kurulum aracı aynı manifest biçimini kullanır: `curl | bash` ile kurup `npx` ile kaldırabilirsiniz, tersi de olur. Testlerimiz kur → kaldır turundan sonra ev dizininin bayt bayt aynı kaldığını doğrular.
+**Kaldırma ne yapar?** Manifesti (`~/.god-of-design/manifest.tsv` ya da `./.god-of-design/manifest.tsv`) okur ve yalnızca orada listelenen yolları siler. `pack: god-of-design` işareti taşımayan beceri klasörlerine dokunmaz. AGENTS.md / GEMINI.md / global_rules.md dosyalarında yalnızca `<!-- god-of-design:start -->` ile `<!-- god-of-design:end -->` arasındaki metni siler; dosyanın kendisini yalnızca kurulum aracı oluşturmuşsa ve artık boşsa siler. Klasörlerden de yalnızca kendi oluşturduğu ve boş kalanları kaldırır. Üç kurulum aracı aynı manifest biçimini kullanır: `curl | bash` ile kurup `npx` ile kaldırabilirsiniz, tersi de olur. Kurulum yarıda kalırsa (örneğin yazma izni olmayan bir klasör yüzünden) yaptığı her şeyi geri alır. Testlerimiz kur → kaldır turundan sonra ev dizininin bayt bayt aynı kaldığını doğrular; Windows satır sonlu, BOM'lu ya da son satır sonu olmayan dosyalar da buna dahildir.
 
 ## ⚙️ Komut satırı başvurusu
 
@@ -286,14 +341,17 @@ npx github:cumabozkurt/god-of-design uninstall            # proje kurulumu için
 | `status` | Global ve proje kurulumlarını gösterir: sürüm, araçlar, öğe sayısı |
 | `list [skills\|styles\|tools]` | Becerileri, aileye göre 109 stili ya da her aracın yollarını yazdırır (Node CLI) |
 
-| Seçenek | Node CLI / install.sh | install.ps1 | Anlamı |
-|---|---|---|---|
-| Araçlar | `--tool all\|every\|claude,codex,…` | `-Tool` | `all` = önerilen tekilleştirilmiş küme, `every` = her aracın kendi klasörleri |
-| Kapsam | `--global` (varsayılan) / `--project` | `-Project` | Kullanıcı klasörleri ya da bulunduğunuz depo |
-| Dizin | `--dir YOL` | `-Dir YOL` | Proje kökü (varsayılan: bulunduğunuz dizin) |
-| Önizleme | `--dry-run` | `-DryRun` | Yapılacakları gösterir, hiçbir şey yazmaz |
-| Üzerine yazma | `--force` | `-Force` | Bize ait olmayan aynı adlı klasörleri değiştirir (varsayılan kapalı) |
-| Talimat dosyalarına dokunma | `--no-instructions` | `-NoInstructions` | AGENTS.md / GEMINI.md / global_rules.md dosyalarını değiştirmez |
+| Node CLI, install.sh | install.ps1 | Anlamı |
+|---|---|---|
+| `--tool <liste>` | `-Tool` | Virgülle ayrılmış araçlar ya da `all` / `every` |
+| `--global` | `-Global` | Kullanıcı klasörleriniz (varsayılan) |
+| `--project` | `-Project` | Ekibinizle commit etmek için bulunduğunuz depo |
+| `--dir <yol>` | `-Dir` | Proje kökü (varsayılan: bulunduğunuz klasör) |
+| `--dry-run` | `-DryRun` | Planı gösterir, hiçbir şey yazmaz |
+| `--force` | `-Force` | Bize ait olmayan aynı adlı klasörleri değiştirir |
+| `--no-instructions` | `-NoInstructions` | AGENTS.md, GEMINI.md ve global kurallara dokunmaz |
+
+`all` yukarıdaki önerilen kümedir; `every` buna Gemini CLI, Cursor, Copilot, Windsurf ve Cline'ı ekler. Araç adları hiçbir şey yazılmadan önce denetlenir, yani bir yazım hatası hiçbir şeyi değiştirmez.
 
 Ortam değişkenleri: `GOD_OF_DESIGN_REF` (indirilecek git ref'i), `GOD_OF_DESIGN_HOME` (alternatif ev dizini; testler kullanır), `CODEX_HOME`, `XDG_CONFIG_HOME`, `NO_COLOR`.
 
@@ -416,25 +474,25 @@ Düz cümleyle yazılmış istemler her araçta çalışır. Yönlendirici doğr
 
 ## 👀 Örnek çıktı
 
-[`examples/iznik-ceramics-landing/`](examples/iznik-ceramics-landing/index.html), *"İstanbul'daki bir seramik atölyesi için Osmanlı İznik stilinde açılış sayfası"* isteğine uygulanan iş akışını gösterir. Atlas paletini kullanır ve kontrastı `contrast.mjs` ile doğrular (beyaz üzerine kobalt 10,1:1). Fontlar Cormorant Garamond + Work Sans (ikisi de Türkçe karakterleri destekler). Asimetrik 7/5 kahraman alanı, gerçekten tekrarlanan 4 karolu bir SVG modülü, birbirinin kopyası üç kart yerine editoryal numaralı bir liste, görünür odak durumları ve azaltılmış hareket desteği var.
+[`examples/iznik-ceramics-landing/`](examples/iznik-ceramics-landing/index.html), *"İstanbul'daki bir seramik atölyesi için Osmanlı İznik stilinde açılış sayfası"* isteğine uygulanan iş akışını gösterir. Atlas paletini kullanır ve kontrastı `contrast.mjs` ile doğrular (beyaz üzerine kobalt 10,1:1). Fontlar Cormorant Garamond + Work Sans (ikisi de Türkçe karakterleri destekler). Asimetrik 7/5 kahraman alanı, tek bir SVG karonun tekrarıyla çizilmiş 4 × 5 tam karoluk bir panel, birbirinin kopyası üç kart yerine editoryal numaralı bir liste, görünür odak durumları ve azaltılmış hareket desteği var.
 
 <p align="center"><img src="examples/iznik-ceramics-landing/preview.png" alt="Örnek açılış sayfasının ekran görüntüsü: kobalt serif başlık, tekrarlanan İznik lale çini paneli ve numaralı atölye listesi" width="85%"></p>
 
 ## 🔄 Nasıl çalışır?
 
 ```text
-           isteğiniz ("afiş", "panel", "carousel", "logo"…)
-                                  │
-                         ┌────────▼────────┐
-                         │  god-of-design  │  yönlendirici + 5 adımlı iş akışı
-                         └────────┬────────┘
-   1 Brif ─► 2 Yön (1 adlandırılmış ya da 2–3 seçenek) ─► 3 Sistem (token) ─► 4 Üretim ─► 5 Kapı
-                 │                      │                 │                │
-           god-styles            god-color          god-ui-ux/print/   god-anti-slop
-           (109 stil)            god-typography     social/branding/   god-review
-                                 god-layout         slides/motion/     god-accessibility
-                                 god-tokens         dataviz/imagegen
-                                                    god-output (HTML, Tailwind, React, SVG, PNG/PDF)
+isteğiniz ("afiş", "panel", "carousel", "logo" …)
+   │
+   ▼
+god-of-design: yönlendirici + 5 adımlı iş akışı
+   │
+   ├─ 1 Brif
+   ├─ 2 Yön      god-styles (109 stil): 1 adlandırılmış yön ya da 2–3 seçenek
+   ├─ 3 Sistem   god-color · god-typography · god-layout · god-tokens
+   ├─ 4 Üretim   god-ui-ux · god-mobile · god-print · god-social-media
+   │             god-branding · god-presentations · god-motion · god-dataviz
+   │             god-imagegen · god-output (HTML, Tailwind, React, SVG, PDF)
+   └─ 5 Kapı     god-anti-slop · god-review · god-accessibility
 ```
 
 - **Aşamalı açılma.** Her `SKILL.md` kısadır ve derin başvuruları (`references/*.md`) yalnızca gerektiğinde yükler, böylece bağlam penceresi hafif kalır.
@@ -446,33 +504,32 @@ Düz cümleyle yazılmış istemler her araçta çalışır. Yönlendirici doğr
 - **Anti-slop kapısı (`god-anti-slop`).** Bilinen izleri yasaklar: mor→mavi degrade kahraman alanları, degrade başlık metni, her şeyin ortalanması, her öğede aynı 16px köşe yarıçapı, yüzen bulanık lekeler, simge yerine ✨/🚀 emojileri, Corporate Memphis insanları ve parlak 3B lekeler, "Unlock / Elevate / Supercharge" başlıkları ve üçlü sıfat yığınları. Her birinin somut bir düzeltmesi vardır.
 - **İnceleme rubriği (`god-review`).** 10 boyutu kanıtla birlikte 0–10 arasında puanlar: kavram ve yön, hiyerarşi, yerleşim ve boşluk, tipografi, renk, görsel ve ikonografi, tutarlılık ve sistem, kullanılabilirlik ve UX, erişilebilirlik, işçilik ve cila. Ardından düzeltmeleri kesin değişikliklerle P0/P1/P2 olarak sıralar ve düzeltme sonrası yeniden puanlar.
 - **Erişilebilirlik (`god-accessibility`).** Varsayılan hedef WCAG 2.2 AA. Kontrast değerleri tahmin edilmez, hesaplanır.
-- **Depo CI'ı.** Her push'ta şunlar denetlenir: frontmatter şeması, `name` = klasör, en fazla 500 karakterlik açıklama, iç bağlantılar, stil girdilerinin eksiksizliği (11 alan, geçerli hex, benzersiz ID), JSON manifestleri, sürüm tutarlılığı, betik sözdizimi ve üretilen dosyaların güncelliği. Ayrıca **Ubuntu, macOS ve Windows'ta kurulum gidiş-dönüş testleri** çalışır (Node CLI, install.sh, install.ps1 ve tüm çapraz kurulum eşleşmeleri).
+- **Depo CI'ı.** Her push'ta şunlar denetlenir: frontmatter şeması ve YAML güvenliği, `name` = klasör, en fazla 500 karakterlik açıklama, iç bağlantılar ve başlık çapaları, stil girdilerinin eksiksizliği (11 alan, geçerli hex, benzersiz ID), JSON manifestleri, sürüm tutarlılığı, üretilen dosyaların güncelliği, ShellCheck, PSScriptAnalyzer, markdownlint, codespell ve GitHub'da hiçbir tablonun ya da kod bloğunun yana kaymadığını doğrulayan bir görüntüleme testi. Ayrıca **Ubuntu, macOS ve Windows'ta kurulum gidiş-dönüş testleri** çalışır (Node CLI, install.sh, PowerShell 7 ve Windows PowerShell 5.1'de install.ps1 ve tüm çapraz kurulum eşleşmeleri), ayrıca Node 18 testi ve üç sistemde GitHub'dan `npx` / `npm exec` duman testi. Haftalık bir iş tüm dış bağlantıları denetler.
 
 ## 📁 Depo yapısı
 
 ```text
 god-of-design/
-├── skills/                     # 19 Agent Skill (tek doğruluk kaynağı)
-│   ├── god-of-design/SKILL.md  # yönlendirici + iş akışı
-│   ├── god-styles/references/  # 109 stillik atlas (4 dosya + üretilmiş dizin)
-│   ├── god-color/              # + references/, scripts/contrast.mjs
-│   ├── god-typography/         # + references/font-pairings.md (60), multiscript.md
-│   └── …                       # ui-ux, mobile, tokens, social-media, print, branding, …
-├── commands/                   # 7 eğik çizgi komutu (Claude Code, OpenCode)
-├── adapters/                   # araç başına üretilmiş kural dosyaları + _core.md kaynağı
-├── dist/                       # GOD-OF-DESIGN.md (tam) + GOD-OF-DESIGN-LITE.md
-├── bin/god-of-design.mjs       # bağımlılıksız Node CLI
-├── install.sh · install.ps1    # tek satırlık kurulum araçları (ortak manifest biçimi)
-├── scripts/build.mjs           # dizin, adaptörler, dist, llms.txt, catalog.json üretir
-├── scripts/validate.mjs        # CI doğrulayıcısı
-├── test/                       # node:test + bash + pwsh gidiş-dönüş testleri
-├── examples/                   # örnek çıktı (İznik açılış sayfası)
-├── docs/research/              # 52 depoluk kıyaslama (EN + TR)
-├── .claude-plugin/             # Claude Code eklentisi + pazar yeri
-├── .codex-plugin/ · .agents/   # Codex eklenti manifesti + pazar yeri
-├── gemini-extension.json       # Gemini CLI eklentisi
-├── llms.txt · catalog.json
-└── AGENTS.md · CLAUDE.md · GEMINI.md
+├── skills/                  # 19 Agent Skill (tek doğruluk kaynağı)
+│   ├── god-of-design/       # yönlendirici + iş akışı
+│   ├── god-styles/          # references/ içinde 109 stillik atlas
+│   ├── god-color/           # + scripts/contrast.mjs
+│   ├── god-typography/      # + 60 font eşleşmesi, çok yazı sistemi
+│   └── …                    # ui-ux, mobile, tokens, social-media, print, …
+├── commands/                # 7 eğik çizgi komutu (Claude Code, OpenCode)
+├── adapters/                # araç başına üretilmiş kural dosyaları
+├── dist/                    # tek dosyalık paketler (tam + lite)
+├── bin/god-of-design.mjs    # bağımlılıksız Node CLI
+├── install.sh, install.ps1  # tek satırlık kurulum araçları (ortak manifest)
+├── scripts/                 # derleme, doğrulama, görüntü ve bağlantı denetimi
+├── test/                    # node:test, bash ve PowerShell testleri
+├── examples/                # örnek çıktı (İznik açılış sayfası)
+├── docs/                    # afiş görseli, 52 depoluk kıyaslama (EN + TR)
+├── .claude-plugin/          # Claude Code eklentisi + pazar yeri
+├── .codex-plugin/, .agents/ # Codex eklentisi + pazar yeri
+├── .claude/CLAUDE.md        # Claude Code belleği (AGENTS.md'yi içe aktarır)
+├── gemini-extension.json    # Gemini CLI eklentisi
+└── AGENTS.md, GEMINI.md, llms.txt, catalog.json
 ```
 
 ## 📊 Kıyaslama: incelenen 52 depo
@@ -498,13 +555,13 @@ Varsayılanı (`all`) bırakın. Üç ortak klasör üzerinden Claude Code, Code
 <details>
 <summary><b>Mevcut becerilerimin, AGENTS.md dosyamın ya da kurallarımın üzerine yazar mı?</b></summary>
 
-Hayır. `pack: god-of-design` işareti taşımayan aynı adlı klasörleri atlar (`--force` vermediğiniz sürece). AGENTS.md / GEMINI.md / Windsurf global kurallarına yalnızca `god-of-design:start/end` işaretleri arasında bir blok ekler; kaldırma da yalnızca o bloğu siler. Testler, kur → kaldır sonrasında dosyalarınızın bayt bayt aynı olduğunu doğrular. Tek bir normalleştirme olabilir: dosyanızın sonunda satır sonu yoksa, işlemden sonra tam olarak bir satır sonuyla biter.
+Hayır. `pack: god-of-design` işareti taşımayan aynı adlı klasörleri atlar (`--force` vermediğiniz sürece). AGENTS.md / GEMINI.md / Windsurf global kurallarına yalnızca `god-of-design:start/end` işaretleri arasında bir blok ekler; kaldırma da yalnızca o bloğu siler. Blok, dosyanızın kendi satır sonu biçimiyle eklenir. Testler, kur → kaldır sonrasında dosyalarınızın bayt bayt aynı olduğunu doğrular; CRLF dosyalar, UTF-8 BOM ve son satır sonu olmayan dosyalar da buna dahildir.
 </details>
 
 <details>
 <summary><b>OpenCode ya da Cursor'da becerileri iki kez mi görürüm?</b></summary>
 
-Bu araçlar birden fazla klasörü (`~/.claude/skills` ve `~/.agents/skills`) okuduğu için varsayılan kurulumda her beceri adının iki özdeş kopyasını bulur. Becerileri ada göre çözdükleri için davranış değişmez. Tek kopya isterseniz yalnızca aracınızın okuduğu klasöre kurun, örneğin `--tool codex` (`~/.agents/skills` klasörüne yazar) ya da `--tool opencode`.
+OpenCode'da hayır. Hem `~/.claude/skills` hem `~/.agents/skills` klasörünü okur ama her beceriyi bir kez listeler (OpenCode 1.18.34 ile doğrulandı: 19 beceri). Gemini CLI ise yinelenen beceriler için uyarı verir. Bu yüzden kurulum aracı, bir aracın zaten okuduğu klasöre asla ikinci bir kopya yazmaz: `--tool every` ile Gemini CLI, Cursor ve OpenCode ortak `~/.agents/skills` klasörünü kullanır (Gemini CLI 0.62.0: 19 beceri, 0 çakışma). Cursor `~/.claude/skills` klasörünü de okuduğu için varsayılan kurulumun iki kopyasını gösterebilir. Bir Cursor CLI'ı olmadan bunu test edemedik. Sizi rahatsız ederse `--tool codex,antigravity` ile kurup Claude Code klasörünü atlayın.
 </details>
 
 <details>
@@ -516,13 +573,19 @@ Kurulum komutunu yeniden çalıştırın. Önceki manifesti kaldırıp en son s�
 <details>
 <summary><b>İnternet, API anahtarı ya da Node gerekiyor mu?</b></summary>
 
-API anahtarı ve çalışma zamanı bağımlılığı yoktur. `install.sh` için bash + curl/wget + tar, `install.ps1` için PowerShell 5.1+, Node CLI için Node ≥ 18 yeterlidir. Kurulumdan sonra her şey yerel Markdown'dır. İsteğe bağlı `render.mjs` sizde varsa Playwright'ı kullanır. Üretilen sayfalardaki Google Fonts bağlantıları fontları Google'dan yükler.
+API anahtarı ve çalışma zamanı bağımlılığı yoktur. `install.sh` için bash 3.2+ (macOS'taki varsayılan sürüm yeterli) ile curl ya da wget ve tar gerekir; git ya da Node gerekmez. `install.ps1` için PowerShell 5.1+ yeterlidir ve `irm | iex` ile çalıştırıldığında oturumunuzda hiçbir iz bırakmaz. Node CLI için Node ≥ 18 gerekir. Kurulumdan sonra her şey yerel Markdown'dır. İsteğe bağlı `render.mjs` sizde varsa Playwright'ı kullanır. Üretilen sayfalardaki Google Fonts bağlantıları fontları Google'dan yükler.
 </details>
 
 <details>
 <summary><b><code>npx github:…</code> hiçbir şey kurmadan sessizce çıkıyor</b></summary>
 
-Çok eski ya da dağıtım paketli bazı npm sürümleri (Debian'ın npm 9.2.0 sürümüyle yeniden ürettik) `github:` paket tanımlarında sessizce başarısız olur. npm'i güncelleyin (`npm i -g npm`; npm 10+ çalışır) ya da npx'e doğrudan arşiv adresini verin; bu her npm sürümünde çalışır:
+Dağıtım paketli bazı npm sürümlerindeki (Debian'ın npm 9.2.0 sürümüyle yeniden ürettik) `npx`, `github:` tanımlarında hiçbir şey yazmadan çıkar. Aynı npm'deki `npm exec` çalışır, onu kullanın:
+
+```bash
+npm exec --yes github:cumabozkurt/god-of-design -- install
+```
+
+npm'i güncellemek de (`npm i -g npm`, npm 10 ya da üstü) `npx` sorununu çözer. Arşiv adresi her npm sürümünde çalışır:
 
 ```bash
 npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main install

@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Social Media
@@ -25,6 +25,7 @@ metadata:
 1. **Hook frame:** a bold promise or question, plus a visual cue to swipe (→, a cut-off element crossing the edge).
 2. **Frames 2…n-1:** one point each, consistent position for headline and number (2/8).
 3. **Last frame:** summary + CTA ("Save this", "Follow for part 2").
+
 - Design continuous panoramas by building one wide canvas (e.g. 5400×1350 for 5 frames) and slicing it into 1080px-wide frames.
 - LinkedIn carousels are uploaded as PDF documents (each page = one slide). Use 1080×1350 or 1080×1080 pages.
 

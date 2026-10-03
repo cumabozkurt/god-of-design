@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Styles: The Style Atlas
@@ -39,6 +39,7 @@ Derive it from the subject's world, not from trends:
 ## Mixing styles
 
 You may fuse at most **two**: one *structural* style (grid and type) plus one *ornamental* style (colour, motif). Examples:
+
 - Swiss grid + İznik palette and tulip line icons → a modern Turkish ceramics e-shop.
 - Editorial serif layout + wabi-sabi emptiness → a tea brand.
 - Neo-brutalist components + kente colour meanings → a Ghanaian fintech, with credit and local designers.
@@ -48,6 +49,7 @@ State the fusion explicitly in your direction sentence.
 ## Output for a style request
 
 Return:
+
 1. A **direction sentence**.
 2. A **token block** (CSS variables) derived from the entry.
 3. **Font import** (Google Fonts `<link>` or `@import`).

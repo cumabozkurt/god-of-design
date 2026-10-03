@@ -15,15 +15,29 @@ Thanks for helping make AI-made design less generic. The most valuable contribut
 git clone https://github.com/cumabozkurt/god-of-design
 cd god-of-design
 npm test            # Node ≥ 18, no dependencies
+npm run test:sh     # install.sh tests
+npm run test:ps1    # install.ps1 tests (pwsh)
+npm run lint:md     # markdownlint
+npm run lint:sh     # ShellCheck (needs shellcheck)
+npm run lint:ps1    # PSScriptAnalyzer (pwsh)
+npm run check:spell # codespell (pip install codespell)
+npm run check:links # external links
 ```
+
+The GitHub rendering check (no table or code block may scroll sideways) needs Chrome and three packages: `npm i --no-save playwright-core marked github-markdown-css`, then `npm run check:render`.
 
 Test an install without touching your real config:
 
 ```bash
-export GOD_OF_DESIGN_HOME=/tmp/god-home XDG_CONFIG_HOME=/tmp/god-home/.config CODEX_HOME=/tmp/god-home/.codex
-node bin/god-of-design.mjs install --tool all
-node bin/god-of-design.mjs status
-node bin/god-of-design.mjs uninstall
+# Throwaway home: nothing touches your real config. The subshell keeps your
+# environment clean (a global XDG_CONFIG_HOME would also hide e.g. gh config).
+(
+  export GOD_OF_DESIGN_HOME=/tmp/god-home
+  export XDG_CONFIG_HOME=/tmp/god-home/.config CODEX_HOME=/tmp/god-home/.codex
+  node bin/god-of-design.mjs install --tool all
+  node bin/god-of-design.mjs status
+  node bin/god-of-design.mjs uninstall
+)
 ```
 
 ## How the repo works

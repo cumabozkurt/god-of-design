@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Review: Design Critique
@@ -50,7 +50,8 @@ Bands: 90+ exceptional · 75–89 strong, ship with tweaks · 60–74 decent but
 ### P0: must fix
 1. Body text #9CA3AF on #FFFFFF = 2.5:1 → use #4B5563 (7.6:1).
 ### P1: high impact
-1. Replace the 3 identical feature cards with a split layout: image left, 3 numbered steps right (real sequence).
+1. Replace the 3 identical feature cards with a split layout:
+   image left, 3 numbered steps right (real sequence).
 ### P2: polish
 1. Inner radius 16px inside a 16px card with 16px padding → inner radius 0–4px (concentric).
 ```

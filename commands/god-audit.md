@@ -1,6 +1,6 @@
 ---
 description: Score and critique a design (file, screenshot, URL or code) with prioritized fixes
-argument-hint: <file path, URL or "current page">
+argument-hint: '<file path, URL or "current page">'
 ---
 Run the `god-review` skill on: $ARGUMENTS
 

@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Anti-Slop
@@ -15,6 +15,7 @@ AI output drifts toward the average of its training data. The average is generic
 ## The tells and the fixes
 
 ### Colour
+
 | Tell | Fix |
 |---|---|
 | Purple→blue (or purple→pink) gradient hero | Derive the accent from the subject's world; use a single hue, or a gradient with close hues |
@@ -25,6 +26,7 @@ AI output drifts toward the average of its training data. The average is generic
 | Random rainbow of accent colours | One accent + semantic colours only |
 
 ### Typography
+
 | Tell | Fix |
 |---|---|
 | Inter/Roboto/Poppins by default for everything | Pick fonts for the voice (see `god-typography` pairings) |
@@ -34,6 +36,7 @@ AI output drifts toward the average of its training data. The average is generic
 | Headline clichés: "Unlock", "Elevate", "Supercharge", "Revolutionize", "Seamless", "Next-gen", "Your all-in-one…" | Concrete outcome + audience + proof ("Close your books in 2 days, not 10") |
 
 ### Layout
+
 | Tell | Fix |
 |---|---|
 | Hero → 3 identical icon cards → 3 identical cards → CTA | Vary section structure: split, bento, list, big quote, data, image-led |
@@ -45,6 +48,7 @@ AI output drifts toward the average of its training data. The average is generic
 | Floating blurred blobs behind every section | One background idea, used deliberately |
 
 ### Iconography & imagery
+
 | Tell | Fix |
 |---|---|
 | ✨ sparkle icon as "AI" identity; 🚀 rocket for "launch" | Custom or meaningful iconography; drop emoji from UI |
@@ -55,6 +59,7 @@ AI output drifts toward the average of its training data. The average is generic
 | AI images with garbled text, extra fingers, plastic skin | Add text in code; fix or regenerate; prefer real assets |
 
 ### Interaction & motion
+
 | Tell | Fix |
 |---|---|
 | Everything fades up on scroll with the same delay | Animate only what needs attention; vary choreography; respect reduced motion |
@@ -62,6 +67,7 @@ AI output drifts toward the average of its training data. The average is generic
 | Missing states (focus, error, empty, loading) | Design every state (see `god-ui-ux`) |
 
 ### Copy
+
 | Tell | Fix |
 |---|---|
 | "In today's fast-paced world…", "Whether you're a X or a Y…" | Start with the point |

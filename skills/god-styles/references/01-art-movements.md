@@ -4,7 +4,10 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 
 ---
 
+## The movements
+
 ### Arts and Crafts
+
 - **ID:** `arts-and-crafts`
 - **Origin:** Britain, 1860–1910 (William Morris, Kelmscott Press). A reaction against industrial ugliness; honest materials, hand craft.
 - **DNA:** Dense botanical repeat patterns, woodcut borders, medieval-inspired book typography, warm natural dyes.
@@ -18,6 +21,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `William Morris Arts and Crafts style, dense botanical repeat pattern, woodblock print texture, muted natural dyes, ornamental border`
 
 ### Art Nouveau
+
 - **ID:** `art-nouveau`
 - **Origin:** Europe, 1890–1910 (Mucha, Horta, Guimard, Klimt adjacent). "New Art": organic, flowing, nature as structure.
 - **DNA:** Whiplash curves, elongated female figures, halos and arches, botanical frames, flat colour with outline.
@@ -31,6 +35,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Alphonse Mucha Art Nouveau poster, whiplash curves, ornate circular halo, flat muted colours with fine outline, botanical frame, lithograph`
 
 ### Vienna Secession
+
 - **ID:** `vienna-secession`
 - **Origin:** Vienna, 1897–1915 (Klimt, Moser, Hoffmann, Wiener Werkstätte).
 - **DNA:** Geometric take on Nouveau: squares, grids, gold leaf, black-white checkers, strong rectangles.
@@ -44,6 +49,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Vienna Secession poster, Gustav Klimt gold leaf mosaic, black and white checker border, square grid ornament`
 
 ### Art Deco
+
 - **ID:** `art-deco`
 - **Origin:** France then worldwide, 1920–1940 (Cassandre, Chrysler Building, ocean liners).
 - **DNA:** Symmetry, stepped forms, sunbursts, chevrons, metallic gold on black, streamlined luxury.
@@ -57,6 +63,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Art Deco poster, Cassandre style, symmetrical stepped architecture, gold sunburst on black, streamlined geometric shapes, 1930s travel poster`
 
 ### Streamline Moderne
+
 - **ID:** `streamline-moderne`
 - **Origin:** USA, 1930s–40s. Late Deco shaped by aerodynamics.
 - **DNA:** Horizontal speed lines, rounded corners, chrome, porthole windows.
@@ -70,6 +77,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Streamline Moderne illustration, aerodynamic rounded forms, horizontal chrome speed lines, 1930s American industrial design`
 
 ### Bauhaus
+
 - **ID:** `bauhaus`
 - **Origin:** Germany, 1919–1933 (Gropius, Moholy-Nagy, Bayer, Albers). Form follows function; art and industry unified.
 - **DNA:** Primary colours, circle/square/triangle, asymmetric balance, sans-serif lowercase, photomontage, grid.
@@ -83,6 +91,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Bauhaus poster, primary red blue yellow geometric shapes, circle square triangle, asymmetric composition, sans serif lowercase typography, off-white paper`
 
 ### De Stijl
+
 - **ID:** `de-stijl`
 - **Origin:** Netherlands, 1917–1931 (Mondrian, van Doesburg, Rietveld).
 - **DNA:** Pure abstraction: black orthogonal lines, rectangles of primaries + white/grey.
@@ -96,6 +105,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `De Stijl composition, Piet Mondrian, thick black grid lines, rectangles of primary red blue yellow, white space`
 
 ### Russian Constructivism
+
 - **ID:** `constructivism`
 - **Origin:** Soviet Union, 1917–1930s (Rodchenko, El Lissitzky, Stepanova).
 - **DNA:** Diagonal dynamism, red/black/cream, photomontage, bold sans type as architecture, megaphone shouting.
@@ -109,6 +119,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Russian Constructivist poster, El Lissitzky, diagonal composition, red and black wedges, photomontage, bold sans serif type`
 
 ### Italian Futurism
+
 - **ID:** `futurism`
 - **Origin:** Italy, 1909–1940s (Marinetti, Balla, Depero). Speed, machines, noise.
 - **DNA:** Explosive typography ("parole in libertà"), motion blur repetition, fragmented forms.
@@ -122,6 +133,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Italian Futurism poster, Depero style, explosive typography of different sizes, speed lines, dynamic fragmented machine forms`
 
 ### Dada & Collage
+
 - **ID:** `dada-collage`
 - **Origin:** Zurich/Berlin, 1916–1924 (Höch, Schwitters, Hausmann).
 - **DNA:** Anti-art collage, ransom-note type, cut-up photos, absurd juxtaposition.
@@ -135,6 +147,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Dada photomontage collage, Hannah Höch, torn newspaper, mismatched cut-out typography, halftone photos, absurd juxtaposition`
 
 ### Surrealism
+
 - **ID:** `surrealism`
 - **Origin:** Paris, 1924–1960s (Dalí, Magritte, Ernst).
 - **DNA:** Dream logic, impossible scenes rendered realistically, uncanny calm.
@@ -148,6 +161,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Surrealist painting in the style of René Magritte, impossible scene rendered realistically, floating object in calm blue sky, long shadows`
 
 ### Swiss / International Typographic Style
+
 - **ID:** `swiss-international`
 - **Origin:** Switzerland, 1950s–70s (Müller-Brockmann, Hofmann, Ruder, Vignelli in the US).
 - **DNA:** Objective clarity, mathematical grids, flush-left ragged-right sans type, asymmetric layouts, photography over illustration.
@@ -161,6 +175,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Swiss International Typographic Style poster, Josef Müller-Brockmann, strict modular grid, flush left Helvetica-like typography, red accent, objective design`
 
 ### Mid-Century Modern
+
 - **ID:** `mid-century-modern`
 - **Origin:** USA/Europe, 1945–1969 (Saul Bass, Paul Rand, Alvin Lustig, Charley Harper, Eames).
 - **DNA:** Playful geometry, cut-paper shapes, limited warm palettes, hand-drawn type, optimism.
@@ -174,6 +189,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Mid-century modern illustration, Saul Bass and Charley Harper style, flat cut paper shapes, limited palette teal mustard tangerine, off-register print, grain`
 
 ### Pop Art
+
 - **ID:** `pop-art`
 - **Origin:** UK/USA, 1955–1970 (Warhol, Lichtenstein, Hamilton).
 - **DNA:** Mass-culture imagery, Ben-Day dots, thick outlines, saturated flat colour, repetition.
@@ -187,6 +203,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Roy Lichtenstein pop art, Ben-Day halftone dots, thick black outlines, saturated primary colours, comic speech bubble`
 
 ### Op Art
+
 - **ID:** `op-art`
 - **Origin:** 1960s (Bridget Riley, Victor Vasarely).
 - **DNA:** Optical illusions, high-contrast patterns that vibrate, moiré, perceived motion.
@@ -200,6 +217,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Op art, Bridget Riley, black and white wavy stripes creating optical illusion of motion, Vasarely warped checkerboard sphere`
 
 ### Psychedelic 60s
+
 - **ID:** `psychedelic-60s`
 - **Origin:** San Francisco, 1965–1972 (Wes Wilson, Victor Moscoso, Peter Max).
 - **DNA:** Melting, filling lettering, vibrating complementary colours, Art Nouveau revival.
@@ -213,6 +231,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `1960s psychedelic concert poster, Fillmore style, melting lettering filling the space, vibrating complementary colours, swirls and paisley`
 
 ### Seventies Retro
+
 - **ID:** `seventies-retro`
 - **Origin:** 1970s graphics, supergraphics, Cooper Black era.
 - **DNA:** Warm earthy palette, rainbow stripes, rounded chunky type, sunsets.
@@ -226,6 +245,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `1970s retro graphic, rainbow stripes in burnt orange mustard and brown, chunky rounded Cooper Black lettering, sunset, film grain`
 
 ### Memphis Design
+
 - **ID:** `memphis`
 - **Origin:** Milan, 1981–1987 (Ettore Sottsass, Memphis Group).
 - **DNA:** Clashing pastels and brights, squiggles, terrazzo, geometric primitives, playful anti-taste.
@@ -239,6 +259,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Memphis Group 1980s design, squiggles, confetti triangles, terrazzo pattern, pastel pink mint yellow with black, playful geometric shapes`
 
 ### Postmodern / New Wave Typography
+
 - **ID:** `postmodern-new-wave`
 - **Origin:** 1970s–80s (Wolfgang Weingart, April Greiman, Cranbrook).
 - **DNA:** Breaking the Swiss grid, layered type, texture, early digital artefacts.
@@ -252,6 +273,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `Wolfgang Weingart new wave typography poster, layered overlapping type, broken grid, halftone textures`
 
 ### Punk / DIY Zine
+
 - **ID:** `punk-zine`
 - **Origin:** UK/US, 1976–1985 (Jamie Reid, Raymond Pettibon).
 - **DNA:** Photocopy, ransom letters, tape, hand-scrawled type, cheap 1-colour print.
@@ -265,6 +287,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `1970s punk zine, photocopied xerox texture, ransom note cut-out letters, tape, hot pink and acid yellow, Jamie Reid style`
 
 ### Grunge / Ray Gun Era
+
 - **ID:** `grunge-90s`
 - **Origin:** 1990s (David Carson, Ray Gun magazine, Emigre).
 - **DNA:** Illegible-on-purpose, distressed type, layered photos, chaotic editorial.
@@ -278,6 +301,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `1990s grunge editorial layout, David Carson Ray Gun magazine, distressed overlapping typography, gritty textures`
 
 ### Minimalism
+
 - **ID:** `minimalism`
 - **Origin:** 1960s art (Judd, Agnes Martin) → Dieter Rams "less but better" → Apple/MUJI.
 - **DNA:** Reduction to essentials, generous negative space, restrained palette, precise detail.
@@ -291,6 +315,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `minimalist composition, single object, vast negative space, soft natural light, muted neutral palette, Dieter Rams aesthetic`
 
 ### Maximalism
+
 - **ID:** `maximalism`
 - **Origin:** Counter to minimalism; Victorian interiors, Gucci under Michele, contemporary Gen-Z editorial.
 - **DNA:** More is more: layered patterns, saturated colour, mixed type, density with curation.
@@ -304,6 +329,7 @@ Each entry gives you enough to *commit* to the style: where it comes from, its v
 - **Prompt:** `maximalist editorial design, layered florals and stripes, saturated jewel tones, eclectic mixed typography, dense but curated`
 
 ### Victorian / Letterpress
+
 - **ID:** `victorian-letterpress`
 - **Origin:** 1840–1900 wood-type posters, playbills, apothecary labels.
 - **DNA:** Many typefaces per poster, centered stacks, ornament rules, engraved illustrations.

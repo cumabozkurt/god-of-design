@@ -2,7 +2,10 @@
 
 ---
 
+## The aesthetics
+
 ### Y2K
+
 - **ID:** `y2k`
 - **Origin:** 1997–2004 (millennium optimism, iMac G3, early web, pop music videos).
 - **DNA:** Chrome, translucent plastics, bubble shapes, iridescence, futurist sans type, lens flares.
@@ -16,6 +19,7 @@
 - **Prompt:** `Y2K aesthetic, liquid chrome 3D blob, iridescent translucent plastic, pastel gradient, sparkles, early 2000s futurism`
 
 ### Frutiger Aero
+
 - **ID:** `frutiger-aero`
 - **Origin:** 2004–2013 (Windows Vista/7, Wii, early smartphones).
 - **DNA:** Glossy, sky-blue, green nature, water bubbles, glass, optimism about tech + nature.
@@ -29,6 +33,7 @@
 - **Prompt:** `Frutiger Aero aesthetic, glossy aqua bubbles, green grass and blue sky, glass reflections, Windows Vista era`
 
 ### Vaporwave
+
 - **ID:** `vaporwave`
 - **Origin:** 2010–2015 internet music/art scene.
 - **DNA:** Ironic 80s/90s consumer nostalgia, Greek statues, Windows 95, Japanese text, pink-cyan.
@@ -42,6 +47,7 @@
 - **Prompt:** `vaporwave aesthetic, marble Greek bust, palm trees, pink and cyan gradient, perspective grid, retro computer windows`
 
 ### Synthwave / Outrun
+
 - **ID:** `synthwave`
 - **Origin:** 2010s revival of 80s sci-fi/arcade/Miami Vice.
 - **DNA:** Neon on deep purple night, chrome text, sunset with horizontal stripes, grid floor.
@@ -55,6 +61,7 @@
 - **Prompt:** `synthwave outrun, neon pink and cyan, striped retro sunset over wireframe grid, chrome lettering, 1980s`
 
 ### Cyberpunk
+
 - **ID:** `cyberpunk`
 - **Origin:** Blade Runner (1982), Neuromancer, Akira, Ghost in the Shell, Cyberpunk 2077.
 - **DNA:** High tech / low life, neon in rain, dense signage, glitch, HUD overlays.
@@ -68,6 +75,7 @@
 - **Prompt:** `cyberpunk city at night, neon signs in rain, holographic HUD, cyan and magenta with hazard yellow, cinematic`
 
 ### Solarpunk
+
 - **ID:** `solarpunk`
 - **Origin:** 2010s optimistic eco-futurism.
 - **DNA:** Green cities, Art Nouveau curves + solar tech, warm daylight, community.
@@ -81,6 +89,7 @@
 - **Prompt:** `solarpunk city, lush vertical gardens, solar panels with Art Nouveau curves, warm golden daylight, optimistic`
 
 ### Steampunk
+
 - **ID:** `steampunk`
 - **Origin:** Victorian sci-fi (Verne, Wells), 1980s+ subculture.
 - **DNA:** Brass, gears, leather, engraved type, sepia.
@@ -94,6 +103,7 @@
 - **Prompt:** `steampunk illustration, brass gears and rivets, Victorian engraving style, sepia parchment, airship`
 
 ### Pixel Art / 8-bit
+
 - **ID:** `pixel-art`
 - **Origin:** 1980s–90s consoles (NES, SNES, Game Boy).
 - **DNA:** Visible pixels, limited palettes, dithering, chunky sprites.
@@ -107,6 +117,7 @@
 - **Prompt:** `16-bit pixel art, limited palette, dithering, retro video game scene, crisp pixels`
 
 ### Risograph / Lo-fi Print
+
 - **ID:** `risograph`
 - **Origin:** Riso duplicators; indie zines and posters 2010s.
 - **DNA:** Spot-colour layers, misregistration, grain, overprint mixing.
@@ -120,6 +131,7 @@
 - **Prompt:** `risograph print, two-colour fluorescent pink and blue overprint, misregistration, grainy texture, halftone`
 
 ### Rave / Acid Graphics
+
 - **ID:** `acid-rave`
 - **Origin:** 1988–1999 rave flyers; 2010s–20s "acid graphics" revival.
 - **DNA:** Chrome + liquid type, warped 3D, smileys, rave flyers, Designers Republic.
@@ -133,6 +145,7 @@
 - **Prompt:** `acid graphics rave flyer, warped chrome typography, acid green and black, technical labels, 1990s`
 
 ### Dark Academia
+
 - **ID:** `dark-academia`
 - **Origin:** 2010s internet aesthetic (Oxford libraries, classics).
 - **DNA:** Old books, tweed, candlelight, serif type, muted browns/greens.
@@ -146,6 +159,7 @@
 - **Prompt:** `dark academia, candlelit old library, leather-bound books, muted brown and green, classical marble bust`
 
 ### Cottagecore
+
 - **ID:** `cottagecore`
 - **Origin:** 2018+ romanticised rural life.
 - **DNA:** Florals, gingham, handwriting, soft light, pastoral.
@@ -159,6 +173,7 @@
 - **Prompt:** `cottagecore illustration, wildflowers and gingham, soft golden light, watercolour, pastoral`
 
 ### Kawaii
+
 - **ID:** `kawaii`
 - **Origin:** Japan, 1970s+ (Sanrio, Harajuku, Yume kawaii).
 - **DNA:** Cute characters with small faces, pastel, rounded everything, stickers.
@@ -172,6 +187,7 @@
 - **Prompt:** `kawaii illustration, pastel colours, cute objects with tiny faces, rounded shapes, stickers, Harajuku`
 
 ### Anime / Manga
+
 - **ID:** `anime-manga`
 - **Origin:** Japan; manga screentones, anime cel shading.
 - **DNA:** Screentone dots, speed lines, panel layouts, cel-shaded colour.
@@ -185,6 +201,7 @@
 - **Prompt:** `anime cel-shaded illustration, vibrant colours, dynamic speed lines, manga screentone accents`
 
 ### Blackletter / Gothic
+
 - **ID:** `gothic-blackletter`
 - **Origin:** Medieval manuscripts → heavy metal, streetwear, tattoo.
 - **DNA:** Fraktur/Textura lettering, dark palette, ornament, symmetry.
@@ -198,6 +215,7 @@
 - **Prompt:** `gothic blackletter lettering, ornate dark poster, bone white on black, thorny ornament`
 
 ### Grain & Tactile Texture
+
 - **ID:** `tactile-grain`
 - **Origin:** 2020s backlash to sterile digital; print nostalgia.
 - **DNA:** Film grain, paper texture, imperfect edges, warm muted colours.
@@ -211,6 +229,7 @@
 - **Prompt:** `tactile print aesthetic, subtle film grain, uncoated paper texture, warm muted palette, imperfect edges`
 
 ### Vintage Americana / Diner
+
 - **ID:** `vintage-americana`
 - **Origin:** 1940s–60s US signage, diners, road trips, sign painting.
 - **DNA:** Script logotypes, badges, stars, cream/red/teal, sign-painter lettering.
@@ -224,6 +243,7 @@
 - **Prompt:** `vintage americana diner sign, red and cream, script lettering, chrome and neon, 1950s roadside`
 
 ### Tiki / Mid-century Tropical
+
 - **ID:** `tiki-tropical`
 - **Origin:** 1950s–60s American Polynesian pop (an outsider fantasy, be careful).
 - **DNA:** Tropical leaves, bamboo, warm sunsets, hand-lettered type.

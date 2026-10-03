@@ -5,7 +5,7 @@ license: MIT
 compatibility: Agent Skills standard (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Antigravity, Copilot)
 metadata:
   pack: god-of-design
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # God Typography
@@ -35,7 +35,8 @@ metadata:
   --step-4:  clamp(2.44rem, 2.12rem + 1.60vw, 2.75rem);
   --step-5:  clamp(3.05rem, 2.55rem + 2.50vw, 3.43rem);
 }
-h1 { font-size: var(--step-5); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; }
+h1 { font-size: var(--step-5); line-height: 1.05;
+     letter-spacing: -0.02em; text-wrap: balance; }
 p  { font-size: var(--step-0); line-height: 1.6; max-width: 65ch; text-wrap: pretty; }
 ```
 

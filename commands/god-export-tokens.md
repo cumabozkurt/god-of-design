@@ -1,6 +1,6 @@
 ---
 description: Export the current design system as DTCG tokens, CSS variables, Tailwind v4 theme and DESIGN.md
-argument-hint: [path to existing styles or brand description]
+argument-hint: '[path to existing styles or brand description]'
 ---
 Use `god-tokens` to extract or define the design system from: $ARGUMENTS
 
