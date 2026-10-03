@@ -592,6 +592,8 @@ npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main
 ```
 
 Ya da Node gerektirmeyen `curl | bash` / PowerShell tek satırlıklarını kullanın.
+
+`npx` ile bir sürüm sabitlemek için etiket, dal ya da kısa bir commit karması kullanın (`github:cumabozkurt/god-of-design#v1.1.0`). npm 10, 40 karakterlik tam karmada "GitFetcher requires an Arborist constructor" hatasıyla durur.
 </details>
 
 <details>

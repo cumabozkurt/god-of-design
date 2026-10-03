@@ -590,6 +590,8 @@ npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main
 ```
 
 Or use the `curl | bash` / PowerShell one-liners, which don't need Node.
+
+To pin a version with `npx`, use a tag, a branch or a short commit hash (`github:cumabozkurt/god-of-design#v1.1.0`). npm 10 stops on a full 40-character hash with "GitFetcher requires an Arborist constructor".
 </details>
 
 <details>

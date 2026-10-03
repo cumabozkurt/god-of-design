@@ -15,8 +15,8 @@ jobs:
     name: Validate pack (build, frontmatter, lint, rendering)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Generated files are up to date
@@ -50,8 +50,8 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Node CLI + cross-installer tests (node:test)
@@ -72,8 +72,8 @@ jobs:
     needs: validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 18
       - run: node --test test/installers.test.mjs
@@ -88,14 +88,17 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
-      - name: npx github:owner/repo#sha and npm exec print the version
+      # A short commit: npm 10 cannot run a github: spec pinned to a full 40-character hash
+      # ("GitFetcher requires an Arborist constructor"); tags, branches and short hashes work.
+      - name: npx github:owner/repo#commit and npm exec print the version
         shell: bash
         env:
-          SPEC: github:${{ github.repository }}#${{ github.sha }}
+          SHA: ${{ github.sha }}
         run: |
+          SPEC="github:${{ github.repository }}#${SHA:0:12}"
           want=$(curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/package.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).version))')
           a=$(npx --yes "$SPEC" --version); echo "npx: $a"
           b=$(npm exec --yes "$SPEC" -- --version); echo "npm exec: $b"
