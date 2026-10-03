@@ -518,6 +518,18 @@ No API keys and no runtime dependencies. `install.sh` needs bash + curl/wget + t
 </details>
 
 <details>
+<summary><b><code>npx github:…</code> exits silently without installing anything</b></summary>
+
+Some very old or distro-packaged npm builds (we reproduced this with Debian's npm 9.2.0) fail silently on `github:` package specs. Update npm (`npm i -g npm`; npm 10+ works), or point npx at the tarball instead, which works on any npm:
+
+```bash
+npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main install
+```
+
+Or use the `curl | bash` / PowerShell one-liners, which don't need Node.
+</details>
+
+<details>
 <summary><b>Can I use it with ChatGPT, Gemini web, or a local model?</b></summary>
 
 Yes. Upload [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) as a file, or paste [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) as the system prompt for smaller context windows.

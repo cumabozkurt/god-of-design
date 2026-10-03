@@ -520,6 +520,18 @@ API anahtarı ve çalışma zamanı bağımlılığı yoktur. `install.sh` için
 </details>
 
 <details>
+<summary><b><code>npx github:…</code> hiçbir şey kurmadan sessizce çıkıyor</b></summary>
+
+Çok eski ya da dağıtım paketli bazı npm sürümleri (Debian'ın npm 9.2.0 sürümüyle yeniden ürettik) `github:` paket tanımlarında sessizce başarısız olur. npm'i güncelleyin (`npm i -g npm`; npm 10+ çalışır) ya da npx'e doğrudan arşiv adresini verin; bu her npm sürümünde çalışır:
+
+```bash
+npx https://codeload.github.com/cumabozkurt/god-of-design/tar.gz/refs/heads/main install
+```
+
+Ya da Node gerektirmeyen `curl | bash` / PowerShell tek satırlıklarını kullanın.
+</details>
+
+<details>
 <summary><b>ChatGPT, Gemini web ya da yerel bir modelle kullanabilir miyim?</b></summary>
 
 Evet. [`dist/GOD-OF-DESIGN.md`](dist/GOD-OF-DESIGN.md) dosyasını yükleyin. Küçük bağlam pencereleri için [`dist/GOD-OF-DESIGN-LITE.md`](dist/GOD-OF-DESIGN-LITE.md) dosyasını sistem istemi olarak yapıştırın.
