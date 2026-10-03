@@ -1,6 +1,6 @@
 // Renders every Markdown file the way GitHub does and measures it in headless Chrome:
 //   - no table may scroll sideways in GitHub's narrowest desktop column (570 px, 1012 px window),
-//   - no code block may scroll sideways in the regular column (838 px, window >= 1280 px),
+//   - no code block may scroll sideways at 1280 px (817 px: the file view, narrower than the 838 px home page),
 //   - every local image must load.
 // HTML comes from GitHub's own Markdown API when GITHUB_TOKEN / GH_TOKEN is set (exactly what
 // github.com shows), otherwise from `marked` (GFM). Styling: github-markdown-css.
@@ -17,7 +17,7 @@ import { marked } from "marked";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
 const css = fs.readFileSync(require.resolve("github-markdown-css/github-markdown-light.css"), "utf8");
-const TABLE_WIDTH = 570, CODE_WIDTH = 838;
+const TABLE_WIDTH = 570, CODE_WIDTH = 817;
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 const repo = process.env.GITHUB_REPOSITORY || "cumabozkurt/god-of-design";
 

@@ -77,11 +77,13 @@ All families below are on Google Fonts (free, OFL/Apache). Check Turkish (Latin 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- One stylesheet per family (or join them with &family=… in one URL) -->
+<!-- Literary pairing. One stylesheet per family, or join them with &family=… in one URL.
+     Fraunces keeps its optical-size axis (opsz) for display sizes; for Newsreader with
+     automatic optical sizing too, request family=Newsreader:opsz,wght@6..72,400..600 -->
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap">
 <link rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&display=swap">
+  href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&display=swap">
 ```
 
 For privacy-sensitive or GDPR-strict sites, self-host (e.g. with `@fontsource/*` packages) instead of calling Google's CDN.
