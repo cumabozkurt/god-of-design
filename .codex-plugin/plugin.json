@@ -1,0 +1,26 @@
+{
+  "name": "god-of-design",
+  "version": "1.0.0",
+  "description": "Design-intelligence pack for AI agents: 19 skills and 109 world design styles covering UI/UX, web, mobile, social media, branding, print, presentations, motion, data viz and image prompts, with anti-slop gates, WCAG checks and Tailwind/React/SVG output.",
+  "author": { "name": "Cuma Bozkurt", "url": "https://github.com/cumabozkurt" },
+  "homepage": "https://github.com/cumabozkurt/god-of-design",
+  "repository": "https://github.com/cumabozkurt/god-of-design",
+  "license": "MIT",
+  "keywords": ["design","ui-ux","design-system","typography","color-theory","social-media","branding","graphic-design","anti-slop","tailwind","agent-skills","claude-code","codex","opencode","antigravity","cursor","gemini-cli"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "God of Design",
+    "shortDescription": "Advanced design abilities for coding agents: 109 world styles, every design area, anti-slop gates.",
+    "longDescription": "19 skills that turn an agent into a senior designer: a brief → direction → system → build → critique workflow; 109 styles from Swiss, Bauhaus and Art Deco to Ottoman İznik, Islamic geometry, Kente, Madhubani, wabi-sabi, Y2K and liquid glass; color theory with WCAG math; 60 Google Fonts pairings; grids and composition; UI/UX components and design tokens; social media specs for every platform; logos, branding and print; presentations, motion, data viz and image-generation prompts; plus HTML/CSS, Tailwind, React, SVG and Figma/Canva handoff.",
+    "developerName": "Cuma Bozkurt",
+    "category": "Design",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/cumabozkurt/god-of-design",
+    "defaultPrompt": [
+      "Design a landing page for an Istanbul ceramics studio in Ottoman İznik style.",
+      "Give me three distinct visual directions for my fintech app.",
+      "Audit this page for AI slop and accessibility, then fix it."
+    ],
+    "brandColor": "#C8102E"
+  }
+}

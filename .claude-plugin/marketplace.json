@@ -1,0 +1,17 @@
+{
+  "name": "god-of-design",
+  "owner": { "name": "Cuma Bozkurt", "url": "https://github.com/cumabozkurt" },
+  "metadata": { "description": "God of Design: Design-intelligence pack for AI agents: 19 skills and 109 world design styles covering UI/UX, web, mobile, social media, branding, print, presentations, motion, data viz and image prompts, with anti-slop gates, WCAG checks and Tailwind/React/SVG output.", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "god-of-design",
+      "source": "./",
+      "description": "Design-intelligence pack for AI agents: 19 skills and 109 world design styles covering UI/UX, web, mobile, social media, branding, print, presentations, motion, data viz and image prompts, with anti-slop gates, WCAG checks and Tailwind/React/SVG output.",
+      "version": "1.0.0",
+      "category": "design",
+      "keywords": ["design","ui-ux","design-system","typography","color-theory","social-media","branding","graphic-design","anti-slop","tailwind","agent-skills","claude-code","codex","opencode","antigravity","cursor","gemini-cli"],
+      "homepage": "https://github.com/cumabozkurt/god-of-design",
+      "license": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "god-of-design",
+  "interface": {
+    "displayName": "God of Design"
+  },
+  "plugins": [
+    {
+      "name": "god-of-design",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

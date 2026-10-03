@@ -1,0 +1,59 @@
+{
+  "name": "god-of-design",
+  "version": "1.0.0",
+  "description": "Cross-tool design-intelligence pack for AI coding agents: 19 skills, 100+ world design styles, every design area. Claude Code, Codex, OpenCode, Antigravity, Cursor, Gemini CLI, Copilot, Windsurf, Cline.",
+  "type": "module",
+  "bin": {
+    "god-of-design": "bin/god-of-design.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "commands/",
+    "adapters/",
+    "dist/",
+    "catalog.json",
+    "llms.txt",
+    "install.sh",
+    "install.ps1",
+    "README.md",
+    "README.tr.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node scripts/build.mjs --check && node scripts/validate.mjs && node --test test/installers.test.mjs",
+    "test:sh": "bash test/install-sh.test.sh"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "opencode",
+    "antigravity",
+    "cursor",
+    "gemini-cli",
+    "design",
+    "ui-ux",
+    "design-system",
+    "typography",
+    "color-theory",
+    "social-media",
+    "branding",
+    "anti-slop"
+  ],
+  "author": "Cuma Bozkurt (https://github.com/cumabozkurt)",
+  "license": "MIT",
+  "homepage": "https://github.com/cumabozkurt/god-of-design#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cumabozkurt/god-of-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cumabozkurt/god-of-design/issues"
+  }
+}

@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate pack (frontmatter, links, styles, build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generated files are up to date
+        run: node scripts/build.mjs --check
+      - name: Validate skills, commands, style atlas, links, JSON, script syntax
+        run: node scripts/validate.mjs
+
+  installers:
+    name: Installer round trip (${{ matrix.os }})
+    needs: validate
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Node CLI + cross-installer tests (node:test)
+        run: node --test test/installers.test.mjs
+      - name: install.sh round trip
+        if: runner.os != 'Windows'
+        run: bash test/install-sh.test.sh
+      - name: install.ps1 round trip
+        shell: pwsh
+        run: ./test/install-ps1.test.ps1

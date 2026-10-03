@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+/out/
+/renders/
+.god-of-design/
+*.god-tmp

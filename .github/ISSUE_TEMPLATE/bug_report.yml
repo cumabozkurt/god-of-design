@@ -1,0 +1,27 @@
+name: 🐞 Bug report / Hata bildirimi
+description: Something is broken (installer, skill content, adapter) · Bir şey bozuk
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / Alan
+      options: [Installer (install.sh), Installer (install.ps1), Node CLI, Skill content, Style atlas, Adapter / tool integration, Docs, Other]
+    validations: { required: true }
+  - type: dropdown
+    id: tool
+    attributes:
+      label: AI tool / Araç
+      multiple: true
+      options: [Claude Code, Codex CLI, OpenCode, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf, Cline, Other / web LLM]
+  - type: input
+    id: version
+    attributes:
+      label: Version & OS / Sürüm ve işletim sistemi
+      placeholder: "god-of-design 1.0.0 · macOS 15 · Node 22"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? What did you expect? / Ne oldu, ne bekliyordunuz?
+      description: Include the exact command, output, and if relevant the prompt you gave the agent.
+    validations: { required: true }

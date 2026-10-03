@@ -1,0 +1,743 @@
+{
+  "name": "god-of-design",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cumabozkurt/god-of-design",
+  "counts": {
+    "skills": 19,
+    "styles": 109,
+    "commands": 7,
+    "tools": 9
+  },
+  "skills": [
+    {
+      "name": "god-of-design",
+      "description": "Master design director and router for the God of Design pack. Use for any visual design task (web/UI/UX, app screens, landing pages, dashboards, social media posts, posters, logos, branding, print, presentations, motion, illustration or image-generation prompts) or when the user asks to make something look better, pick a style, or critique a design. Runs the brief → direction → system → build → critique workflow and routes to the right god-* skill."
+    },
+    {
+      "name": "god-styles",
+      "description": "Atlas of 100+ design styles with exact palettes, Google Fonts, layout rules, motifs, do/don't, CSS hints and image prompts. Covers art movements (Bauhaus, Swiss, Art Nouveau, Art Deco, Memphis), digital UI (glassmorphism, neumorphism, neo-brutalism, bento), retro (Y2K, vaporwave, cyberpunk) and world traditions (Japanese, Chinese, Korean, Islamic, Ottoman/Turkish, Persian, Indian, African, Latin American, Nordic). Use when the user names a style or needs a direction."
+    },
+    {
+      "name": "god-color",
+      "description": "Color theory and palette engineering - harmony schemes, 60-30-10, OKLCH scales, semantic color roles, dark mode, WCAG contrast math, color-blind safety, cultural color meanings, gradients and print vs screen color. Use when choosing, fixing or explaining colors, building a palette from a brand color, or checking contrast."
+    },
+    {
+      "name": "god-typography",
+      "description": "Typography system design - type scales, font pairing with Google Fonts, measure/leading/tracking rules, hierarchy, variable fonts, OpenType features, web font loading, and multi-script typesetting (Turkish, Arabic/Persian RTL, CJK, Devanagari, Thai, Cyrillic, Greek). Use when choosing fonts, fixing text that looks off, building a type scale, or designing for non-Latin languages."
+    },
+    {
+      "name": "god-layout",
+      "description": "Layout, grids and composition - column/modular/baseline grids, spacing scales, visual hierarchy, Gestalt principles, rule of thirds, golden ratio, Z/F reading patterns, whitespace, alignment, rhythm, focal points and responsive layout patterns (CSS Grid/Flexbox). Use when arranging elements on a page, poster, slide or screen, or when a design feels cluttered, unbalanced or flat."
+    },
+    {
+      "name": "god-ui-ux",
+      "description": "Web and product UI/UX design and implementation - landing pages, marketing sites, SaaS apps, dashboards, e-commerce, forms, navigation, component states, UX laws, information architecture, microcopy, responsive behavior and production HTML/CSS/Tailwind/React output. Use when designing or building any website or web app interface, improving UX, or turning a design into front-end code."
+    },
+    {
+      "name": "god-mobile",
+      "description": "Mobile app design for iOS (Human Interface Guidelines, SF Symbols, Liquid Glass era), Android (Material 3 / Expressive) and cross-platform (React Native, Flutter, SwiftUI, Jetpack Compose) - screen sizes, safe areas, navigation patterns, touch targets, gestures, platform conventions, app icons and store screenshots. Use when designing or coding mobile app screens, app icons or App Store / Play Store assets."
+    },
+    {
+      "name": "god-tokens",
+      "description": "Design tokens and design-system plumbing - W3C DTCG token JSON, primitive vs semantic vs component tokens, CSS custom properties, Tailwind v4 @theme, dark/brand theming, DESIGN.md files for coding agents, Style Dictionary and Figma variables mapping. Use when creating a design system, theming an app, exporting tokens, writing DESIGN.md, or syncing design and code."
+    },
+    {
+      "name": "god-accessibility",
+      "description": "Accessibility and inclusive design to WCAG 2.2 AA - contrast, keyboard and focus, semantic HTML and ARIA, screen readers, forms, motion and seizure safety, touch targets, reflow/zoom, alt text, captions, cognitive accessibility, RTL and localisation, plus an audit checklist. Use when building or reviewing any interface, document, slide or social graphic for accessibility or legal compliance (EAA, ADA, Section 508)."
+    },
+    {
+      "name": "god-social-media",
+      "description": "Social media design at exact platform specs - Instagram (feed 4:5, square, Stories/Reels 9:16, carousel), TikTok, YouTube (thumbnails, banners, Shorts), Facebook, LinkedIn, X/Twitter, Pinterest, Threads, Bluesky, Snapchat, WhatsApp, Telegram - with safe zones, carousel storytelling, thumbnail psychology, templates and HTML/SVG export recipes. Use for any social post, story, ad creative, cover, banner, avatar or thumbnail."
+    },
+    {
+      "name": "god-print",
+      "description": "Graphic and print design - posters, flyers, brochures, magazines, book covers, business cards, menus, packaging, labels, signage, stationery and certificates - with print production (bleed, trim, safe area, CMYK, Pantone, rich black, DPI, paper sizes ISO A/B and US, folds, PDF/X export) and composition rules for persuasive graphics. Use when creating anything to be printed or any poster/flyer-style graphic."
+    },
+    {
+      "name": "god-branding",
+      "description": "Logo design and brand identity systems - brand strategy (positioning, personality, voice), logo types (wordmark, lettermark, symbol, combination, emblem, mascot), geometric construction, SVG logo production, responsive logo suites, color/type systems, brand applications, trademark hygiene and complete brand guidelines documents. Use when creating or refreshing a logo, visual identity, brand kit or brand book."
+    },
+    {
+      "name": "god-presentations",
+      "description": "Presentation and pitch deck design - narrative structures (pitch, sales, keynote, report, training, conference talk), slide layouts and grids, one-idea-per-slide rules, data slides, typography and color for projection, speaker notes, and output as HTML decks (reveal.js, plain HTML/CSS), PowerPoint/Keynote/Google Slides specs or Canva handoff. Use when creating or redesigning slides, decks, keynotes or webinar visuals."
+    },
+    {
+      "name": "god-motion",
+      "description": "Motion design for interfaces and media - UI micro-interactions, page transitions, scroll-driven effects, easing curves and duration tables, choreography and staggering, Disney's 12 principles for UI, reduced-motion accessibility, and implementation in CSS, View Transitions, Framer Motion/Motion, GSAP, Lottie/Rive, plus social video and kinetic typography. Use when adding animation, transitions, hover effects, loaders or motion graphics."
+    },
+    {
+      "name": "god-dataviz",
+      "description": "Data visualization and information design - choosing the right chart, dashboards, infographics, color for data (sequential, diverging, categorical, color-blind safe), labeling and annotation, chart decluttering, tables, maps, and implementation with SVG, D3, Chart.js, Recharts, Vega-Lite or ECharts. Use when presenting numbers, building charts or dashboards, or designing infographics and reports."
+    },
+    {
+      "name": "god-imagegen",
+      "description": "Illustration and image-generation prompting for Midjourney, GPT Image, Gemini/Imagen, FLUX, Stable Diffusion, Ideogram, Recraft and Firefly - prompt anatomy, style vocabulary (techniques, photography, lighting, camera, materials), aspect ratios, consistency, negative prompts, text-in-image, editing and ethics. Use when the user needs illustrations, photos, mockups, textures or reference boards generated by AI."
+    },
+    {
+      "name": "god-anti-slop",
+      "description": "Detect and eliminate generic \"AI slop\" in design and copy - the visual, typographic, layout, color, iconography, imagery, motion and copywriting tells that make output look machine-made and templated - with a concrete fix for each and a pre-delivery slop gate. Use on every design before handing it over, or when the user says the result looks generic, boring, templated or AI-generated."
+    },
+    {
+      "name": "god-review",
+      "description": "Structured design critique and quality audit - a 10-dimension scored rubric (concept, hierarchy, layout, typography, color, imagery, consistency, usability, accessibility, craft/polish), screenshot or code review workflow, prioritized fix lists, and medium-specific checklists for web, mobile, social, print, branding and slides. Use when asked to review, critique, audit, grade or improve an existing design, mockup, screenshot, URL or front-end code."
+    },
+    {
+      "name": "god-output",
+      "description": "Output recipes and handoff - production HTML/CSS, Tailwind, React/Next.js with shadcn/ui, Vue/Svelte notes, SVG graphics, email HTML, rendering HTML/SVG to PNG/PDF (Playwright), image export settings, favicon/OG sets, file naming, and handoff to Figma (variables, auto layout, specs) and Canva (sizes, brand kit, autofill, MCP). Use when turning a design decision into files, choosing an export format, or preparing a design for developers, Figma or Canva."
+    }
+  ],
+  "styles": [
+    {
+      "id": "arts-and-crafts",
+      "name": "Arts and Crafts",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "art-nouveau",
+      "name": "Art Nouveau",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "vienna-secession",
+      "name": "Vienna Secession",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "art-deco",
+      "name": "Art Deco",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "streamline-moderne",
+      "name": "Streamline Moderne",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "bauhaus",
+      "name": "Bauhaus",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "de-stijl",
+      "name": "De Stijl",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "constructivism",
+      "name": "Russian Constructivism",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "futurism",
+      "name": "Italian Futurism",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "dada-collage",
+      "name": "Dada & Collage",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "surrealism",
+      "name": "Surrealism",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "swiss-international",
+      "name": "Swiss / International Typographic Style",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "mid-century-modern",
+      "name": "Mid-Century Modern",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "pop-art",
+      "name": "Pop Art",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "op-art",
+      "name": "Op Art",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "psychedelic-60s",
+      "name": "Psychedelic 60s",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "seventies-retro",
+      "name": "Seventies Retro",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "memphis",
+      "name": "Memphis Design",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "postmodern-new-wave",
+      "name": "Postmodern / New Wave Typography",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "punk-zine",
+      "name": "Punk / DIY Zine",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "grunge-90s",
+      "name": "Grunge / Ray Gun Era",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "minimalism",
+      "name": "Minimalism",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "maximalism",
+      "name": "Maximalism",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "victorian-letterpress",
+      "name": "Victorian / Letterpress",
+      "family": "Art & design movements"
+    },
+    {
+      "id": "flat",
+      "name": "Flat Design",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "material-3",
+      "name": "Material Design 3 (Material You)",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "skeuomorphism",
+      "name": "Skeuomorphism",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "neumorphism",
+      "name": "Neumorphism (Soft UI)",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "liquid-glass",
+      "name": "Liquid Glass",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "claymorphism",
+      "name": "Claymorphism",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "brutalism-web",
+      "name": "Web Brutalism",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "bento-grid",
+      "name": "Bento Grid",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "dark-tech",
+      "name": "Dark Tech / Linear Style",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "aurora-mesh",
+      "name": "Aurora / Mesh Gradient",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial / Magazine Web",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "corporate-memphis",
+      "name": "Corporate Memphis (Alegria)",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "isometric-3d",
+      "name": "Isometric & 3D",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "organic-biophilic",
+      "name": "Organic / Biophilic",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "spatial-ui",
+      "name": "Spatial UI",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "retro-os",
+      "name": "Retro OS (Windows 95 / Mac OS 9)",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "industrial-mono",
+      "name": "Industrial Monochrome (Nothing-style)",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "terminal-dense",
+      "name": "Terminal / Data-Dense",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "kinetic-type",
+      "name": "Kinetic Typography",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "ai-native",
+      "name": "AI-Native / Conversational UI",
+      "family": "Digital & UI styles"
+    },
+    {
+      "id": "y2k",
+      "name": "Y2K",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "frutiger-aero",
+      "name": "Frutiger Aero",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "vaporwave",
+      "name": "Vaporwave",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "synthwave",
+      "name": "Synthwave / Outrun",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "cyberpunk",
+      "name": "Cyberpunk",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "solarpunk",
+      "name": "Solarpunk",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "steampunk",
+      "name": "Steampunk",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "pixel-art",
+      "name": "Pixel Art / 8-bit",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "risograph",
+      "name": "Risograph / Lo-fi Print",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "acid-rave",
+      "name": "Rave / Acid Graphics",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "dark-academia",
+      "name": "Dark Academia",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "cottagecore",
+      "name": "Cottagecore",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "kawaii",
+      "name": "Kawaii",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "anime-manga",
+      "name": "Anime / Manga",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "gothic-blackletter",
+      "name": "Blackletter / Gothic",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "tactile-grain",
+      "name": "Grain & Tactile Texture",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "vintage-americana",
+      "name": "Vintage Americana / Diner",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "tiki-tropical",
+      "name": "Tiki / Mid-century Tropical",
+      "family": "Retro, internet & subculture"
+    },
+    {
+      "id": "japanese-wabi-sabi",
+      "name": "Wabi-sabi & Ma (Japan)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "ukiyo-e",
+      "name": "Ukiyo-e Woodblock (Japan)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "wagara-patterns",
+      "name": "Wagara Patterns (Japan)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "japanese-modern-graphic",
+      "name": "Japanese Modern Graphic Design",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "chinese-ink-wash",
+      "name": "Chinese Ink Wash (Shuimo / Shan Shui)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "chinese-festive",
+      "name": "Chinese Festive & Imperial",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "shanghai-deco",
+      "name": "Shanghai Deco (1920s–30s China)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "korean-dancheong",
+      "name": "Korean Dancheong & Obangsaek",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "korean-minimal",
+      "name": "Korean Minimal (Joseon White, Hanji)",
+      "family": "World traditions",
+      "region": "East Asia"
+    },
+    {
+      "id": "islamic-geometric",
+      "name": "Islamic Geometric",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "arabic-calligraphic",
+      "name": "Arabic Calligraphic",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "moroccan-zellige",
+      "name": "Moroccan Zellige",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "ottoman-iznik",
+      "name": "Ottoman İznik Tiles",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "ottoman-tezhip",
+      "name": "Ottoman Tezhip & Hat (Illumination and Calligraphy)",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "turkish-ebru",
+      "name": "Turkish Ebru (Marbling)",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "anatolian-kilim",
+      "name": "Anatolian Kilim",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "persian-miniature",
+      "name": "Persian Miniature & Safavid",
+      "family": "World traditions",
+      "region": "The Islamic World, Anatolia & Persia"
+    },
+    {
+      "id": "mughal",
+      "name": "Mughal",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "madhubani",
+      "name": "Madhubani (Mithila)",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "indian-block-print",
+      "name": "Indian Block Print",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "bollywood-poster",
+      "name": "Bollywood Hand-painted Poster",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "truck-art",
+      "name": "South Asian Truck Art",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "batik",
+      "name": "Indonesian Batik",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "lai-thai",
+      "name": "Thai Traditional (Lai Thai)",
+      "family": "World traditions",
+      "region": "South & Southeast Asia"
+    },
+    {
+      "id": "kente",
+      "name": "Kente (Ghana)",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "adinkra",
+      "name": "Adinkra (Ghana)",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "ndebele",
+      "name": "Ndebele (South Africa)",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "bogolan",
+      "name": "Bògòlanfini (Mali Mudcloth)",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "ethiopian",
+      "name": "Ethiopian (Ge'ez Manuscript & Tilet)",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "afrofuturism",
+      "name": "Afrofuturism",
+      "family": "World traditions",
+      "region": "Africa"
+    },
+    {
+      "id": "otomi-tenango",
+      "name": "Otomi / Tenango Embroidery (Mexico)",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "papel-picado",
+      "name": "Papel Picado & Día de Muertos (Mexico)",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "mexican-muralism",
+      "name": "Mexican Muralism",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "andean-textile",
+      "name": "Andean Textile",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "brazilian-tropicalia",
+      "name": "Brazilian Modernism & Tropicália",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "cuban-poster",
+      "name": "Cuban Poster (ICAIC)",
+      "family": "World traditions",
+      "region": "Latin America"
+    },
+    {
+      "id": "scandinavian",
+      "name": "Scandinavian / Nordic Minimal",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "finnish-pattern",
+      "name": "Finnish Bold Pattern (Marimekko-inspired)",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "slavic-folk",
+      "name": "Slavic Folk (Khokhloma, Vyshyvanka, Wycinanki)",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "polish-poster",
+      "name": "Polish Poster School",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "celtic",
+      "name": "Celtic Knotwork",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean / Greek",
+      "family": "World traditions",
+      "region": "Europe (beyond the Western canon above)"
+    },
+    {
+      "id": "aboriginal-australian",
+      "name": "Aboriginal Australian Art (protocol)",
+      "family": "World traditions"
+    },
+    {
+      "id": "maori-pacific",
+      "name": "Māori & Pacific (protocol)",
+      "family": "World traditions"
+    },
+    {
+      "id": "native-north-american",
+      "name": "Native American / First Nations of North America (protocol)",
+      "family": "World traditions"
+    }
+  ],
+  "tools": [
+    {
+      "id": "claude",
+      "name": "Claude Code",
+      "global": "~/.claude/skills + ~/.claude/commands",
+      "project": ".claude/skills + .claude/commands",
+      "native": "Skills, slash commands, plugin marketplace"
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex CLI",
+      "global": "~/.agents/skills + block in ~/.codex/AGENTS.md",
+      "project": ".agents/skills + block in AGENTS.md",
+      "native": "Skills ($god-of-design), AGENTS.md"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "global": "~/.config/opencode/skills + commands",
+      "project": ".opencode/skills + .opencode/commands",
+      "native": "Skills, commands (also reads .claude/.agents skills)"
+    },
+    {
+      "id": "antigravity",
+      "name": "Google Antigravity",
+      "global": "~/.gemini/config/skills",
+      "project": ".agents/skills + .agents/rules/god-of-design.md",
+      "native": "Agent Skills, rules"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini CLI",
+      "global": "~/.gemini/skills",
+      "project": ".gemini/skills",
+      "native": "Agent Skills (also reads ~/.agents/skills)"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "global": "~/.cursor/skills",
+      "project": ".cursor/skills + .cursor/rules/god-of-design.mdc",
+      "native": "Agent Skills, project rules"
+    },
+    {
+      "id": "copilot",
+      "name": "GitHub Copilot (VS Code / CLI)",
+      "global": "~/.copilot/skills",
+      "project": ".github/skills + .github/instructions/god-of-design.instructions.md",
+      "native": "Agent Skills, custom instructions"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "global": "block in ~/.codeium/windsurf/memories/global_rules.md + bundle",
+      "project": ".windsurf/rules/god-of-design.md + bundle",
+      "native": "Rules (≤ 6,000 chars) + reference bundle"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "global": "~/Documents/Cline/Rules/god-of-design.md + bundle",
+      "project": ".clinerules/god-of-design.md + bundle",
+      "native": "Rules + reference bundle"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+name: 🎨 Style request / Stil isteği
+description: Add or improve a design style or cultural tradition in the atlas · Atlasa stil ekleyin
+labels: [style-atlas]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Style name / Stil adı
+      placeholder: "e.g. Ebru (Turkish paper marbling), Bauhaus, Frutiger Aero"
+    validations: { required: true }
+  - type: textarea
+    id: dna
+    attributes:
+      label: Origin & visual DNA / Köken ve görsel DNA
+      description: Era, place, makers, defining traits, palette (hex if you can), typefaces.
+    validations: { required: true }
+  - type: textarea
+    id: refs
+    attributes:
+      label: References / Kaynaklar
+      description: Museum collections, books, practitioners. For living cultural traditions, mention sacred or restricted elements to avoid.
+  - type: checkboxes
+    id: respect
+    attributes:
+      label: Respectful use / Saygılı kullanım
+      options:
+        - label: I checked that this entry does not reproduce sacred, restricted or trademarked designs.
+          required: true

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lale Atölyesi · İznik ceramics in Kadıköy</title>
+<meta name="description" content="Hand-painted İznik tiles and weekend workshops in Kadıköy, Istanbul.">
+<!-- Example output of God of Design: style `ottoman-iznik`, pairing Cormorant Garamond + Work Sans (both include latin-ext for ç ğ ı İ ö ş ü). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Tokens: from the ottoman-iznik atlas entry; contrast checked with god-color/scripts/contrast.mjs */
+    --cobalt: #1F3A93;      /* 10.1:1 on frit, body links & headings */
+    --turquoise: #2BB3B1;   /* decorative only (2.6:1), never text */
+    --iznik-red: #C0392B;   /* 5.4:1 on frit, accents & small caps */
+    --emerald: #2E7D32;
+    --frit: #FFFFFF;
+    --glaze: #F5F1E8;       /* warm off-white surface */
+    --ink: #1B1B1B;
+    --muted: #4A4A4A;       /* 8.9:1 */
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Work Sans", system-ui, sans-serif;
+    --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+    --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+    --step-2: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem);
+    --step-4: clamp(2.6rem, 1.8rem + 3.6vw, 5rem);
+    --space: clamp(1rem, 0.8rem + 1vw, 1.5rem);
+    --measure: 62ch;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 400 var(--step-0)/1.6 var(--font-body); color: var(--ink); background: var(--glaze); }
+  a { color: var(--cobalt); text-underline-offset: 0.2em; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--iznik-red); outline-offset: 3px; }
+  .wrap { width: min(1160px, 100% - 2 * var(--space)); margin-inline: auto; }
+  .eyebrow { font: 600 var(--step--1)/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--iznik-red); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; color: var(--cobalt); line-height: 1.05; margin: 0; }
+  h1 { font-size: var(--step-4); letter-spacing: -0.01em; }
+  h2 { font-size: var(--step-2); }
+  p { max-width: var(--measure); }
+
+  /* Header */
+  header { border-bottom: 1px solid color-mix(in srgb, var(--cobalt) 25%, transparent); background: var(--frit); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space); padding-block: 1rem; }
+  .logo { font: 700 1.5rem/1 var(--font-display); color: var(--cobalt); text-decoration: none; }
+  .logo span { color: var(--iznik-red); }
+  nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; font-weight: 500; color: var(--ink); }
+  nav a:hover { color: var(--cobalt); text-decoration: underline; }
+
+  /* Hero: asymmetric 7/5 split, tile panel as a real repeating module */
+  .hero { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-block: clamp(3rem, 8vw, 7rem); }
+  .hero p.lead { font-size: 1.2em; color: var(--muted); margin: 1.5rem 0 2rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+  .btn { display: inline-block; padding: 0.85rem 1.4rem; background: var(--cobalt); color: var(--frit); text-decoration: none; font-weight: 600; border-radius: 2px; transition: background-color .2s; }
+  .btn:hover { background: #172C70; }
+  .tile-panel { aspect-ratio: 4 / 5; border: 10px solid var(--frit); outline: 2px solid var(--cobalt); background: var(--frit) url("tile.svg") 0 0 / 50% auto repeat; box-shadow: 0 1px 0 var(--cobalt); }
+
+  /* Workshops: editorial numbered list, not three identical cards */
+  .band { background: var(--frit); border-block: 6px double var(--cobalt); }
+  .band .wrap { padding-block: clamp(3rem, 7vw, 6rem); display: grid; grid-template-columns: 4fr 8fr; gap: clamp(2rem, 5vw, 5rem); }
+  ol.offers { list-style: none; margin: 0; padding: 0; counter-reset: o; }
+  ol.offers li { counter-increment: o; display: grid; grid-template-columns: 3.5rem 1fr auto; gap: 1rem; padding-block: 1.4rem; border-top: 1px solid #D9D3C4; }
+  ol.offers li:last-child { border-bottom: 1px solid #D9D3C4; }
+  ol.offers li::before { content: counter(o, decimal-leading-zero); font: 500 1.6rem/1 var(--font-display); color: var(--iznik-red); }
+  ol.offers h3 { font-size: 1.5rem; }
+  ol.offers p { margin: 0.35rem 0 0; color: var(--muted); }
+  .price { font-weight: 600; white-space: nowrap; }
+
+  blockquote { margin: 0; padding-block: clamp(3rem, 7vw, 6rem); text-align: center; }
+  blockquote p { font: italic 500 var(--step-2)/1.3 var(--font-display); color: var(--cobalt); max-width: 30ch; margin-inline: auto; }
+  blockquote footer { margin-top: 1rem; font-size: var(--step--1); color: var(--muted); }
+
+  .visit { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: var(--space); padding-bottom: clamp(3rem, 7vw, 6rem); }
+  .visit dl { margin: 0; } .visit dt { font-weight: 600; margin-top: 0.8rem; } .visit dd { margin: 0; color: var(--muted); }
+  footer.site { background: var(--cobalt); color: var(--frit); padding-block: 2rem; font-size: var(--step--1); }
+  footer.site a { color: var(--frit); }
+
+  @media (max-width: 760px) {
+    .hero, .band .wrap { grid-template-columns: 1fr; }
+    .tile-panel { aspect-ratio: 16 / 10; }
+    nav ul { gap: 1rem; font-size: var(--step--1); }
+    ol.offers li { grid-template-columns: 2.5rem 1fr; } .price { grid-column: 2; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Lale <span>Atölyesi</span></a>
+    <nav aria-label="Main"><ul><li><a href="#workshops">Workshops</a></li><li><a href="#visit">Visit</a></li><li><a href="#visit">Commissions</a></li></ul></nav>
+  </div>
+</header>
+<main>
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">Kadıköy · Istanbul · since 2011</p>
+      <h1 id="hero-title">Tulips in cobalt, fired at 900&nbsp;°C.</h1>
+      <p class="lead">We paint İznik tiles by hand, one quartz-frit body at a time: saz leaves, carnations and that stubborn raised red. On weekends we teach you to do the same.</p>
+      <div class="actions"><a class="btn" href="#workshops">Book a Saturday workshop</a><a href="#visit">See the studio →</a></div>
+    </div>
+    <div class="tile-panel" role="img" aria-label="Repeating İznik-style tile panel with red tulips and turquoise saz leaves"></div>
+  </section>
+
+  <section class="band" id="workshops" aria-labelledby="ws-title">
+    <div class="wrap">
+      <div><p class="eyebrow">Atölye</p><h2 id="ws-title">Three ways to get glaze on your hands</h2><p>Small tables of six. Tea, clay and pigments included; you take your fired tile home two weeks later.</p></div>
+      <ol class="offers">
+        <li><div><h3>First tile</h3><p>Trace a classic tulip, outline in cobalt, fill turquoise. 3 hours, beginners.</p></div><span class="price">₺1.800</span></li>
+        <li><div><h3>The İznik red</h3><p>Mixing and layering bole red so it stands proud of the glaze. 2 sessions.</p></div><span class="price">₺3.200</span></li>
+        <li><div><h3>Four-tile panel</h3><p>Design a repeating module that mirrors across four tiles, like the Rüstem Pasha walls. 4 sessions.</p></div><span class="price">₺6.500</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <blockquote class="wrap"><p>“The red took me four tries. The fourth one I hung by my front door.”</p><footer>Elif, Saturday class of March</footer></blockquote>
+
+  <section class="wrap visit" id="visit" aria-labelledby="visit-title">
+    <div><p class="eyebrow">Ziyaret</p><h2 id="visit-title">Come by the studio</h2></div>
+    <dl><dt>Address</dt><dd>Moda Cad. 12, Kadıköy, İstanbul</dd><dt>Hours</dt><dd>Tue–Sat 11:00–19:00</dd></dl>
+    <dl><dt>Commissions</dt><dd>Kitchens, hammams, café counters. From 2 m².</dd><dt>Write to us</dt><dd><a href="mailto:merhaba@example.com">merhaba@example.com</a></dd></dl>
+  </section>
+</main>
+<footer class="site"><div class="wrap">© 2026 Lale Atölyesi (fictional). Example generated with the <a href="https://github.com/cumabozkurt/god-of-design">God of Design</a> skills.</div></footer>
+</body>
+</html>

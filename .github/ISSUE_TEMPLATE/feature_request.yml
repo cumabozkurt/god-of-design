@@ -1,0 +1,19 @@
+name: ✨ Feature request / Özellik isteği
+description: A new skill, design area, tool adapter or installer option · Yeni beceri, alan, araç desteği
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Sorun
+      description: What design task can't you do well today?
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / Öneri
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources / Kaynaklar
+      description: Official docs or references (required for tool paths and platform specs).
