@@ -234,7 +234,8 @@ export function install({ tool = "all", scope = "global", base = process.cwd(), 
   for (const [t, did] of summary) for (const d of did) log(`  ${c.g("✓")} ${t.padEnd(12)} ${d}`);
   if (!dry) log(c.d(`  manifest: ${mpath}`));
   log(`\nTry it: ask your agent ${c.b('"design a landing page for an Istanbul ceramics studio in Ottoman İznik style"')}`);
-  log(c.d(`Uninstall: npx github:cumabozkurt/god-of-design uninstall${scope === "project" ? " --project" : ""}`));
+  // npm exec works on every npm; `npx github:` exits silently on some npm 9 builds.
+  log(c.d(`Uninstall: npm exec --yes github:cumabozkurt/god-of-design -- uninstall${scope === "project" ? " --project" : ""}`));
   return { manifest: mpath, lines: rec.lines };
 }
 
@@ -311,9 +312,10 @@ Scope
   --project           the current directory (or --dir), committed with your repo
 
 Examples
-  npx github:cumabozkurt/god-of-design install
-  npx github:cumabozkurt/god-of-design install --tool cursor,windsurf --project
-  npx github:cumabozkurt/god-of-design uninstall
+  npm exec --yes github:cumabozkurt/god-of-design -- install
+  npm exec --yes github:cumabozkurt/god-of-design -- install --tool cursor,windsurf --project
+  npm exec --yes github:cumabozkurt/god-of-design -- uninstall
+  (npx github:cumabozkurt/god-of-design <command> also works on npm 10+)
 `;
 
 export function parseArgs(argv) {

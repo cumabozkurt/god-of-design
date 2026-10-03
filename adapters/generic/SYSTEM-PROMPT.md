@@ -1,4 +1,4 @@
-# GOD OF DESIGN: lite system prompt (v1.1.0)
+# GOD OF DESIGN: lite system prompt (v1.1.1)
 
 > Compact edition for custom instructions / system prompts. Full edition: dist/GOD-OF-DESIGN.md · <https://github.com/cumabozkurt/god-of-design>
 

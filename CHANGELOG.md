@@ -2,6 +2,21 @@
 
 All notable changes are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-10-03
+
+Follow-up to 1.1.0: CI and rendering-check fixes, verified `npx` guidance. No changes to skill content rules.
+
+### Fixed
+
+- **Uninstall hint**: the Node CLI printed `npx github:… uninstall`, which exits silently on some npm 9 builds (Debian npm 9.2.0). It now prints `npm exec --yes github:cumabozkurt/god-of-design -- uninstall`, which works on every npm. The CLI help examples and the README Node uninstall command use the same form.
+- **ShellCheck 0.9** (the version on GitHub runners) flagged an `A && B || C` check in `install.sh` (SC2015); rewritten as an explicit `if`.
+- **Render check** now measures code blocks at 817 px, the width of GitHub's file view at 1280 px (the repo home page is 838 px), matching what github.com shows. The font-pairing loading snippet was reworked to fit.
+
+### Changed
+
+- CI: the `npx` / `npm exec` smoke test uses a short commit hash, because npm 10 cannot run a `github:` spec pinned to a full 40-character hash ("GitFetcher requires an Arborist constructor"). GitHub Actions bumped to `actions/checkout@v7` and `actions/setup-node@v7` (Node 24 runtime).
+- README (EN + TR): note on pinning `npx` to a tag, branch or short hash; CI description lists codespell, Node 18 and the `npx` smoke test; version pin examples use `v1.1.1`.
+
 ## [1.1.0] - 2026-10-03
 
 QA release: rendering on GitHub, installer robustness and new quality gates.
@@ -45,5 +60,6 @@ QA release: rendering on GitHub, installer robustness and new quality gates.
 - CI on Linux, macOS and Windows: build check, validator and installer round-trip tests.
 - Research: benchmark of 52 related open-source repos (EN + TR).
 
+[1.1.1]: https://github.com/cumabozkurt/god-of-design/releases/tag/v1.1.1
 [1.1.0]: https://github.com/cumabozkurt/god-of-design/tree/v1.1.0
 [1.0.0]: https://github.com/cumabozkurt/god-of-design/commit/312652c

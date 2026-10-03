@@ -1,6 +1,6 @@
 {
   "name": "god-of-design",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Cross-tool design-intelligence pack for AI coding agents: 19 skills, 100+ world design styles, every design area. Claude Code, Codex, OpenCode, Antigravity, Cursor, Gemini CLI, Copilot, Windsurf, Cline.",
   "type": "module",
   "bin": {
