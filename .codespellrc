@@ -1,5 +1,5 @@
 [codespell]
-skip = ./node_modules,./.git,./dist,./.agents,*.png,*.svg,*.tr.md,catalog.json
+skip = ./node_modules,./site,./.git,./dist,./.agents,*.png,*.svg,*.tr.md,catalog.json
 # Real words in this repo: Herat, Bund (Shanghai), rouge, te reo Māori, Turkish "siz",
 # Vietnamese "nam", Gutenberg-diagram "fallow" areas.
 ignore-words-list = herat,nam,bund,rouge,te,fallow,siz
